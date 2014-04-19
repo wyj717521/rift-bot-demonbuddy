@@ -37,55 +37,55 @@
 	
 	<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) and
 					  not ActorExistsAt(363744, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
-		<While condition="CurrentWorldId == 288454">
+		<If condition="CurrentWorldId == 288454">
 			<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876094" interactRange="15" destinationWorldId="288685"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876094" destinationWorldId="288685"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
 			<LoadProfile file="ExploreFull.xml" />
-		</While>
-		<While condition="CurrentWorldId == 288685">
+		</If>
+		<If condition="CurrentWorldId == 288685">
 			<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876095" interactRange="15" destinationWorldId="288687"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876095" destinationWorldId="288687"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
 			<LoadProfile file="ExploreFull.xml" />
-		</While>
-		<While condition="CurrentWorldId == 288687">
+		</If>
+		<If condition="CurrentWorldId == 288687">
 			<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876096" interactRange="15" destinationWorldId="288798"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876096" destinationWorldId="288798"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
 			<LoadProfile file="ExploreFull.xml" />
-		</While>
-		<While condition="CurrentWorldId == 288798">
+		</If>
+		<If condition="CurrentWorldId == 288798">
 			<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876097" interactRange="15" destinationWorldId="288800"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876097" destinationWorldId="288800"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
 			<LoadProfile file="ExploreFull.xml" />
-		</While>
-		<While condition="CurrentWorldId == 288800">
+		</If>
+		<If condition="CurrentWorldId == 288800">
 			<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876098" interactRange="15" destinationWorldId="288802"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876098" destinationWorldId="288802"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
 			<LoadProfile file="ExploreFull.xml" />
-		</While>
-		<While condition="CurrentWorldId == 288802">
+		</If>
+		<If condition="CurrentWorldId == 288802">
 			<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876099" interactRange="15" destinationWorldId="288804"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876099" destinationWorldId="288804"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
 			<LoadProfile file="ExploreFull.xml" />
-		</While>
-		<While condition="CurrentWorldId == 288804">
+		</If>
+		<If condition="CurrentWorldId == 288804">
 			<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876100" interactRange="15" destinationWorldId="288810"/>
 			<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876100" destinationWorldId="288810"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
 			<LoadProfile file="ExploreFull.xml" />
-		</While>
+		</If>
 		<If condition="CurrentWorldId == 288810">
 			<LogMessage quest="1" step="2" output="====>EXPLORE LEVEL 8" />
 			<TrinityExploreRift questId="312429" stepId="2" until="ExitFound" markerDistance="80" exitNameHash="1938876101" boxTolerance="0.1" boxSize="25" ignoreMarkers="False" />
