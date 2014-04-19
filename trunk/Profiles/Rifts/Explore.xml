@@ -35,15 +35,14 @@
 		<WaitTimer questId="312429" stepId="2" waitTime="3000" />
 	</If>
 	
-	<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) and
-					  not ActorExistsAt(363744, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
+	<While condition="not ActorExistsAt(363744, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
 		<While condition="CurrentWorldId == 288454">
 			<RiftAtStep step="1">
 				<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876094" interactRange="15" destinationWorldId="288685"/>
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876094" destinationWorldId="288685"/>
 				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
-				<LoadProfile file="ExploreCommon.xml" />
+				<LoadProfile file="ExploreExplore.xml" />
 			</RiftAtStep>
 			<RiftAtStep step="3">
 				<LogMessage quest="1" step="2" output="====>BOSS SPAWNED BUT NOT FOUND, RECLEAR" />
@@ -64,7 +63,7 @@
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876095" interactRange="15" destinationWorldId="288687"/>
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876095" destinationWorldId="288687"/>
 				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
-				<LoadProfile file="ExploreCommon.xml" />
+				<LoadProfile file="ExploreExplore.xml" />
 			</RiftAtStep>
 			<RiftAtStep step="3">
 				<LogMessage quest="1" step="2" output="====>BOSS SPAWNED BUT NOT FOUND, RECLEAR" />
@@ -85,7 +84,7 @@
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876096" interactRange="15" destinationWorldId="288798"/>
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876096" destinationWorldId="288798"/>
 				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
-				<LoadProfile file="ExploreCommon.xml" />
+				<LoadProfile file="ExploreExplore.xml" />
 			</RiftAtStep>
 			<RiftAtStep step="3">
 				<LogMessage quest="1" step="2" output="====>BOSS SPAWNED BUT NOT FOUND, RECLEAR" />
@@ -106,7 +105,7 @@
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876097" interactRange="15" destinationWorldId="288800"/>
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876097" destinationWorldId="288800"/>
 				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
-				<LoadProfile file="ExploreCommon.xml" />
+				<LoadProfile file="ExploreExplore.xml" />
 			</RiftAtStep>
 			<RiftAtStep step="3">
 				<LogMessage quest="1" step="2" output="====>BOSS SPAWNED BUT NOT FOUND, RECLEAR" />
@@ -127,7 +126,7 @@
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876098" interactRange="15" destinationWorldId="288802"/>
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876098" destinationWorldId="288802"/>
 				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
-				<LoadProfile file="ExploreCommon.xml" />
+				<LoadProfile file="ExploreExplore.xml" />
 			</RiftAtStep>
 			<RiftAtStep step="3">
 				<LogMessage quest="1" step="2" output="====>BOSS SPAWNED BUT NOT FOUND, RECLEAR" />
@@ -148,7 +147,7 @@
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876099" interactRange="15" destinationWorldId="288804"/>
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876099" destinationWorldId="288804"/>
 				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
-				<LoadProfile file="ExploreCommon.xml" />
+				<LoadProfile file="ExploreExplore.xml" />
 			</RiftAtStep>
 			<RiftAtStep step="3">
 				<LogMessage quest="1" step="2" output="====>BOSS SPAWNED BUT NOT FOUND, RECLEAR" />
@@ -169,7 +168,7 @@
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876100" interactRange="15" destinationWorldId="288810"/>
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876100" destinationWorldId="288810"/>
 				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
-				<LoadProfile file="ExploreCommon.xml" />
+				<LoadProfile file="ExploreExplore.xml" />
 			</RiftAtStep>
 			<RiftAtStep step="3">
 				<LogMessage quest="1" step="2" output="====>BOSS SPAWNED BUT NOT FOUND, RECLEAR" />
@@ -197,28 +196,6 @@
 		<WaitTimer questId="1" stepId="1" waitTime="3000"/>
 	</While>
 	
-	<While condition="not Me.IsInTown ">
-		<RiftAtStep step="1">
-			<LogMessage quest="1" step="2" output="====>TOWNSTONE FOUND" />
-			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE') or CurrentWorldId == 288454">
-				<LogMessage quest="1" step="2" output="====>FULL EXPLORE CURRENT LEVEL" />
-				<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" boxTolerance="0.1" boxSize="25" ignoreMarkers="False" />
-				<WaitTimer questId="1" stepId="1" waitTime="1500"/>
-				<LogMessage quest="1" step="2" output="====>RIFT BOSS DOWN" />
-			</If>
-		</RiftAtStep>
-		<RiftAtStep step="3">
-			<LogMessage quest="1" step="2" output="====>BOSS SPAWNED BUT NOT FOUND, RECLEAR" />
-			<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" boxTolerance="0.1" boxSize="25" ignoreMarkers="False" />
-		</RiftAtStep>
-		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
-		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
-		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
-		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
-		<TrinityTownPortal questId="1" stepId="1" />
-		<WaitTimer questId="1" stepId="1" waitTime="3000"/>
-	</While>
-	
 	<If condition="Me.IsInTown ">
 		<RiftAtStep step="10">
 			<MoveToActor questId="312429" stepId="2" x="588" y="518" z="3" actorId="363744" interactRange="9" name="X1_LR_Nephalem-14254"  pathPrecision="5" pathPointLimit="250"/>
@@ -226,8 +203,8 @@
 		<LogMessage quest="1" step="2" output="====>RINSE AND REPEAT" />
 	</If>
 
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
-		<TrinityLoadProfile file="../Redirect/RBCB/RBCB.xml" />			
+	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
+		<TrinityLoadProfile file="../Redirect/RBEB/RBEB.xml" />			
 	</If>
 
 	<RiftFinished>
@@ -237,8 +214,8 @@
 		<ReloadProfile />
 	</RiftFinished>
 
-    <If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-        <TrinityLoadProfile file="../Redirect/RBC/RBC.xml" />
+    <If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+        <TrinityLoadProfile file="../Redirect/RBE/RBE.xml" />
     </If>
 	
 </Order>

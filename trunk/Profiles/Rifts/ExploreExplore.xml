@@ -1,0 +1,35 @@
+<Profile>
+<Name>Rift Bot</Name>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+<GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
+
+<TargetBlacklists>
+	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
+	<TargetBlacklist actorId="103919"/> <!-- Demonic Vessels -->
+	<TargetBlacklist actorId="58317"/> <!-- Tool/Weapon Rack -->
+	<TargetBlacklist actorId="289794"/> <!-- X1_PandExt_ArmorRack-7385 -->
+	<TargetBlacklist actorId="212491"/> <!-- Pony Clouds -->
+	<TargetBlacklist actorId="289756"/> <!-- Armor Racks -->
+	<TargetBlacklist actorId="5758"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="464"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="357299"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357297"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357295"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357306"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357301"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
+</TargetBlacklists>
+
+<Order>
+	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="100" killRadius="80" />
+	<LogMessage quest="1" step="2" output="====>EXPLORE CURRENT LEVEL" />
+	<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort 50/0.2 -->
+		<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="50" ignoreMarkers="False" />
+		<LoadProfile file="Explore.xml" />
+	</If>
+	<!-- Default 25/0.1 -->
+	<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" exitNameHash="1" boxTolerance="0.1" boxSize="25" ignoreMarkers="False" />
+	<LoadProfile file="Explore.xml" />
+</Order>
+</Profile>
