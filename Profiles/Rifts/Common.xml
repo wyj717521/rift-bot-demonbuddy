@@ -237,9 +237,7 @@
 		<ReloadProfile />
 	</RiftFinished>
 
-    <If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-        <TrinityLoadProfile file="../Redirect/RBC/RBC.xml" />
-    </If>
+    <TrinityLoadProfile file="../Redirect/RBC/RBC.xml" />
 	
 </Order>
 </Profile>
