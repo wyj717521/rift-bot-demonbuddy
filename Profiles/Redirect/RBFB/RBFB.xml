@@ -1,0 +1,20 @@
+<Profile>
+<Name>Rift Bot Full with Bounties</Name>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+<GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
+<Order>
+
+	<WaitTimer questId="1" stepId="1" waitTime="500"/>
+	<TrinityLoadOnce questId="1" stepId="1" noRandom="true">
+		<ProfileList>
+			<LoadProfileOnce profile="../../Bounties/act4.xml" />
+			<LoadProfileOnce profile="../../Rifts/Full.xml" />
+		</ProfileList>
+	</TrinityLoadOnce>	
+
+	<WaitTimer questId="1" stepId="1" waitTime="500"/>
+	<LeaveGame quest="1" step="1" stayInParty="False" />
+
+</Order>
+</Profile>
