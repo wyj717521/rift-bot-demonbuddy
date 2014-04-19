@@ -25,8 +25,8 @@
 	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="100" killRadius="80" />
 	<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
 		<LogMessage quest="1" step="2" output="====>EXPLORE CURRENT LEVEL" />
-		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort 50/0.2 -->
-			<TrinityExploreRift questId="312429" stepId="2" until="ExitFound" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="50" ignoreMarkers="False" />
+		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort 40/0.2 -->
+			<TrinityExploreRift questId="312429" stepId="2" until="ExitFound" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="40" ignoreMarkers="False" />
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep 30/0.2 -->
