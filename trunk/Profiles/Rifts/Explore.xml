@@ -214,9 +214,7 @@
 		<ReloadProfile />
 	</RiftFinished>
 
-    <If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-        <TrinityLoadProfile file="../Redirect/RBE/RBE.xml" />
-    </If>
+    <TrinityLoadProfile file="../Redirect/RBE/RBE.xml" />
 	
 </Order>
 </Profile>
