@@ -9,7 +9,7 @@ Create games and do rifts. Leave rift once boss is killed. Will explore the curr
 ====>Rift Bot Full
 Create games and do rifts. Leave rift once town stone found no matter boss killed or not!
 
-====>Rift Bot Common/Explore/Full
+====>Rift Bot Common/Explore/Full with Bounties
 Create games and do A4 bounties then rifts. Credits to sychotix and his wonderful team!
 
 The bounties profile is at r186.
