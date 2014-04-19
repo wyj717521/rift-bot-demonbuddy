@@ -37,6 +37,10 @@
 			<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="15" ignoreMarkers="False" />
 			<LoadProfile file="Common.xml" />
 		</If>
+		<If condition="CurrentLevelAreaId == 334821"> <!-- The Cursed Hold (Warden) 40/0.2 -->
+			<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="40" ignoreMarkers="False" />
+			<LoadProfile file="Common.xml" />
+		</If>
 		<!-- Default 25/0.1 -->
 		<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" exitNameHash="1" boxTolerance="0.1" boxSize="25" ignoreMarkers="False" />
 		<LoadProfile file="Common.xml" />
