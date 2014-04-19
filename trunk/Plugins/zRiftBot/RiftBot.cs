@@ -20,7 +20,7 @@ namespace RiftBot
 {
     public partial class RiftBot : IPlugin
     {
-        public Version Version { get { return new Version(0, 0, 4); } }
+        public Version Version { get { return new Version(0, 0, 5); } }
         public string Author { get { return "DyingHymn"; } }
         public string Description { get { return "Add support to rift objective detection"; } }
         public string Name { get { return "RiftBot"; } }
@@ -191,6 +191,63 @@ namespace RiftBot
             get { return _isDone || base.IsDone; }
         }
 
+    }
+	
+	[XmlElement("RiftFinished")]
+    public class RiftFinished : Trinity.XmlTags.BaseComplexNodeTag
+    {
+
+        protected override Composite CreateBehavior()
+        {
+            PrioritySelector decorated = new PrioritySelector(new Composite[0]);
+            foreach (ProfileBehavior behavior in base.GetNodes())
+            {
+                decorated.AddChild(behavior.Behavior);
+            }
+            return new Zeta.TreeSharp.Decorator(new CanRunDecoratorDelegate(CheckNotAlreadyDone), decorated);
+        }
+
+        public override bool GetConditionExec()
+        {
+            return ZetaDia.ActInfo.AllQuests.Any(q => q.QuestSNO == 337492 && (q.QuestStep == 10 || q.QuestStep == 5));
+        }
+
+        private bool CheckNotAlreadyDone(object obj)
+        {
+            return !IsDone;
+        }
+    }
+	
+	[XmlElement("RiftAtStep")]
+    public class RiftAtStep : Trinity.XmlTags.BaseComplexNodeTag
+    {
+
+        protected override Composite CreateBehavior()
+        {
+            PrioritySelector decorated = new PrioritySelector(new Composite[0]);
+            foreach (ProfileBehavior behavior in base.GetNodes())
+            {
+                decorated.AddChild(behavior.Behavior);
+            }
+            return new Zeta.TreeSharp.Decorator(new CanRunDecoratorDelegate(CheckNotAlreadyDone), decorated);
+        }
+
+        public override bool GetConditionExec()
+        {
+            return ZetaDia.ActInfo.AllQuests.Any(q => q.QuestSNO == 337492 && q.QuestStep == QuestStep);
+        }
+
+        private bool CheckNotAlreadyDone(object obj)
+        {
+            return !IsDone;
+        }
+
+        [XmlAttribute("step", true)]
+        public int QuestStep
+        {
+            get;
+            set;
+        }
     }
 
 } // namespace

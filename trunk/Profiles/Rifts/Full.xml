@@ -122,30 +122,20 @@
 		<LogMessage quest="1" step="2" output="====>RINSE AND REPEAT" />
 	</If>
 
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
-		<TrinityLoadProfile file="../Redirect/RBCB/RBCB.xml" />			
-	</If>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
-		<TrinityLoadProfile file="../Redirect/RBEB/RBEB.xml" />			
-	</If>
-
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
 		<TrinityLoadProfile file="../Redirect/RBFB/RBFB.xml" />			
 	</If>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-		<TrinityLoadProfile file="../Redirect/RBC/RBC.xml" />			
-	</If>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<TrinityLoadProfile file="../Redirect/RBE/RBE.xml" />			
-	</If>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
-		<TrinityLoadProfile file="../Redirect/RBF/RBF.xml" />			
-	</If>
 	
-	<LeaveGame/>
+	<RiftFinished>
+		<While condition="ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 1000)">
+			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
+		</While>
+		<ReloadProfile />
+	</RiftFinished>
+
+    <If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
+        <TrinityLoadProfile file="../Redirect/RBF/RBF.xml" />
+    </If>
+	
 </Order>
 </Profile>
