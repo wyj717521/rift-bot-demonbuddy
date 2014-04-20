@@ -48,8 +48,8 @@
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="35"/>
 			<LoadProfile file="Full.xml" />
 		</If>
-		<If condition="CurrentLevelAreaId == 342477"> <!-- Tower of the Damned Level 2 10/0.25 -->
-			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.25" boxSize="10"/>
+		<If condition="CurrentLevelAreaId == 342477"> <!-- Tower of the Damned 15/0.3 -->
+			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.3" boxSize="15"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons 15/0.2 -->
