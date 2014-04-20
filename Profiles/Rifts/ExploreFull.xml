@@ -31,7 +31,7 @@
 					  not (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
 					  not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
 					  not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
-		<LogMessage quest="1" step="2" output="====>EXPLORE CURRENT LEVEL" />
+		<LogMessage quest="1" step="2" output="[Rift Bot]EXPLORE CURRENT LEVEL" />
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort 40/0.2 -->
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="40"/>
 			<LoadProfile file="Full.xml" />
