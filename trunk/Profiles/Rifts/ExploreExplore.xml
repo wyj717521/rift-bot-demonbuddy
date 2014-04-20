@@ -23,7 +23,7 @@
 
 <Order>
 	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="100" killRadius="80" />
-	<LogMessage quest="1" step="2" output="====>EXPLORE CURRENT LEVEL" />
+	<LogMessage quest="1" step="2" output="[Rift Bot]EXPLORE CURRENT LEVEL" />
 	<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort 40/0.2 -->
 		<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.2" boxSize="40"/>
 		<LoadProfile file="Explore.xml" />
