@@ -48,6 +48,10 @@
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="40"/>
 			<LoadProfile file="Full.xml" />
 		</If>
+		<If condition="CurrentLevelAreaId == 342477"> <!-- Tower of the Damned Level 2 10/0.25 -->
+			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.25" boxSize="10"/>
+			<LoadProfile file="Full.xml" />
+		</If>
 		<!-- Default 25/0.1 -->
 		<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.1" boxSize="25"/>
 		<LoadProfile file="Full.xml" />
