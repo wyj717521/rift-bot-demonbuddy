@@ -60,6 +60,10 @@
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.3" boxSize="15"/>
 			<LoadProfile file="Full.xml" />
 		</If>
+		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress 11/0.3 -->
+			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.3" boxSize="11"/>
+			<LoadProfile file="Full.xml" />
+		</If>
 		<!-- Default 20/0.1 -->
 		<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.1" boxSize="20"/>
 		<LoadProfile file="Full.xml" />
