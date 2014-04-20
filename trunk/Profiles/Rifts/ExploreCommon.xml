@@ -26,23 +26,23 @@
 	<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
 		<LogMessage quest="1" step="2" output="====>EXPLORE CURRENT LEVEL" />
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort 40/0.2 -->
-			<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="40" ignoreMarkers="False" />
+			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.2" boxSize="40"/>
 			<LoadProfile file="Common.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep 30/0.2 -->
-			<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="30" ignoreMarkers="False" />
+			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.2" boxSize="30"/>
 			<LoadProfile file="Common.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae 15/0.2 -->
-			<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="15" ignoreMarkers="False" />
+			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.2" boxSize="15"/>
 			<LoadProfile file="Common.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 334821"> <!-- The Cursed Hold (Warden) 40/0.2 -->
-			<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="40" ignoreMarkers="False" />
+			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.2" boxSize="40"/>
 			<LoadProfile file="Common.xml" />
 		</If>
 		<!-- Default 25/0.1 -->
-		<TrinityExploreRift questId="312429" stepId="2" until="RiftComplete" markerDistance="80" exitNameHash="1" boxTolerance="0.1" boxSize="25" ignoreMarkers="False" />
+		<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.1" boxSize="25"/>
 		<LoadProfile file="Common.xml" />
 	</While>
 	<LoadProfile file="Common.xml" />

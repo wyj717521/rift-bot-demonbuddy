@@ -23,26 +23,34 @@
 
 <Order>
 	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="100" killRadius="80" />
-	<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
+	<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) and 
+					  not (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+					  not (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+					  not (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+					  not (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+					  not (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+					  not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+					  not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
 		<LogMessage quest="1" step="2" output="====>EXPLORE CURRENT LEVEL" />
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort 40/0.2 -->
-			<TrinityExploreRift questId="312429" stepId="2" until="ExitFound" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="40" ignoreMarkers="False" />
+			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="40"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep 30/0.2 -->
-			<TrinityExploreRift questId="312429" stepId="2" until="ExitFound" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="30" ignoreMarkers="False" />
+			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="30"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae 15/0.2 -->
-			<TrinityExploreRift questId="312429" stepId="2" until="ExitFound" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="15" ignoreMarkers="False" />
+			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="15"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 334821"> <!-- The Cursed Hold (Warden) 40/0.2 -->
-			<TrinityExploreRift questId="312429" stepId="2" until="ExitFound" markerDistance="80" exitNameHash="1" boxTolerance="0.2" boxSize="40" ignoreMarkers="False" />
+			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="40"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<!-- Default 25/0.1 -->
-		<TrinityExploreRift questId="312429" stepId="2" until="ExitFound" markerDistance="80" exitNameHash="1" boxTolerance="0.1" boxSize="25" ignoreMarkers="False" />
+		<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.1" boxSize="25"/>
+		<LoadProfile file="Full.xml" />
 	</While>
 	<LoadProfile file="Full.xml" />
 </Order>
