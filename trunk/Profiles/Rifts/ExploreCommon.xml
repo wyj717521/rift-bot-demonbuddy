@@ -69,6 +69,11 @@
 			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.3" boxSize="15"/>
 			<LoadProfile file="Common.xml" />
 		</If>
+		<If condition="CurrentLevelAreaId == 352652"> <!-- Plague Tunnel 15/0.3 -->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Plague Tunnel @ 15/0.3" />
+			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.3" boxSize="15"/>
+			<LoadProfile file="Common.xml" />
+		</If>
 		<!-- Default 20/0.1 -->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/0.1" />
 		<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.1" boxSize="20"/>
