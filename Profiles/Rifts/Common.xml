@@ -30,12 +30,12 @@
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
 		<TrinityTownRun minFreeBagSlots="40"/>
-		<LogMessage quest="1" step="2" output="[Rift Bot]OPEN RIFT" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] OPEN RIFT" />
 		<While condition="not ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
 			<MoveToActor questId="312429" stepId="2" x="594" y="508" z="3" actorId="364715" interactRange="11" name="x1_OpenWorld_LootRunObelisk_B-596"  pathPrecision="5" pathPointLimit="250" isPortal="True"/> 
 			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
 		</While>
-		<LogMessage quest="1" step="2" output="[Rift Bot]ENTER RIFT" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] ENTER RIFT" />
 		<MoveToActor questId="312429" stepId="2" x="594" y="508" z="3" actorId="345935" interactRange="9" name="X1_OpenWorld_LootRunPortal-1589" isPortal="True" pathPrecision="5" pathPointLimit="250"/>  
 		<WaitTimer questId="312429" stepId="2" waitTime="3000" />
 	</If>
@@ -77,11 +77,11 @@
 				<LoadProfile file="ExploreCommon.xml" />
 			</HasQuestAndStep>
 			<HasQuestAndStep questId="337492" stepId="3">
-				<LogMessage quest="1" step="2" output="[Rift Bot]BOSS SPAWNED" />
+				<LogMessage quest="1" step="2" output="[Rift Bot] BOSS SPAWNED" />
 				<TrinityExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="80" boxTolerance="0.1" boxSize="25"/>
 			</HasQuestAndStep>
 			<HasQuestAndStep questId="337492" stepId="10">
-				<LogMessage quest="1" step="2" output="[Rift Bot]RIFT BOSS DOWN" />
+				<LogMessage quest="1" step="2" output="[Rift Bot] RIFT BOSS DOWN" />
 				<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -90,9 +90,9 @@
 			</HasQuestAndStep>
 		</While>
 		<While condition="CurrentWorldId == 288810">
-			<LogMessage quest="1" step="2" output="[Rift Bot]EXPLORE LAST LEVEL" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORE LAST LEVEL" />
 			<TrinityExploreDungeon questId="337492" stepId="1" until="FullyExplored" markerDistance="80" exitNameHash="1" boxTolerance="0.1" boxSize="25"/>
-			<LogMessage quest="1" step="2" output="[Rift Bot]FORCE RESET" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] FORCE RESET" />
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -104,16 +104,16 @@
 	
 	<While condition="not Me.IsInTown ">
 		<HasQuestAndStep questId="337492" stepId="1">
-			<LogMessage quest="1" step="2" output="[Rift Bot]TOWNSTONE FOUND" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] TOWNSTONE FOUND" />
 			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE') or CurrentWorldId == 288454">
-				<LogMessage quest="1" step="2" output="[Rift Bot]FULL EXPLORE CURRENT LEVEL" />
+				<LogMessage quest="1" step="2" output="[Rift Bot] FULL EXPLORE CURRENT LEVEL" />
 				<TrinityExploreDungeon questId="337492" stepId="1" until="FullyExplored" markerDistance="80" boxTolerance="0.1" boxSize="25"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1500"/>
-				<LogMessage quest="1" step="2" output="[Rift Bot]EXPLORATION FINISH" />
+				<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORATION FINISH" />
 			</If>
 		</HasQuestAndStep>
 		<HasQuestAndStep questId="337492" stepId="3">
-			<LogMessage quest="1" step="2" output="[Rift Bot]BOSS SPAWNED" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] BOSS SPAWNED" />
 			<TrinityExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="80" boxTolerance="0.1" boxSize="25"/>
 		</HasQuestAndStep>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -131,44 +131,44 @@
 	</If>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
-		<LogMessage quest="1" step="2" output="[Rift Bot]LOGOUT AND REPEAT" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] LOGOUT AND REPEAT" />
 		<TrinityLoadProfile file="../Redirect/RBCB/RBCB.xml" />			
 	</If>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
-		<LogMessage quest="1" step="2" output="[Rift Bot]LOGOUT AND REPEAT" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] LOGOUT AND REPEAT" />
 		<TrinityLoadProfile file="../Redirect/RBCB/RBEB.xml" />			
 	</If>
 
 	<HasQuestAndStep questId="337492" stepId="1">
-		<LogMessage quest="1" step="2" output="[Rift Bot]LOGOUT AND REPEAT" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] LOGOUT AND REPEAT" />
 		
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-			<LogMessage quest="1" step="2" output="[Rift Bot]LOGOUT AND REPEAT" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] LOGOUT AND REPEAT" />
 			<TrinityLoadProfile file="../Redirect/RBCB/RBC.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LogMessage quest="1" step="2" output="[Rift Bot]LOGOUT AND REPEAT" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] LOGOUT AND REPEAT" />
 			<TrinityLoadProfile file="../Redirect/RBCB/RBE.xml" />			
 		</If>
 	</HasQuestAndStep>
 	
 	<HasQuestAndStep questId="337492" stepId="3">
-		<LogMessage quest="1" step="2" output="[Rift Bot]LOGOUT AND REPEAT" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] LOGOUT AND REPEAT" />
 		
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-			<LogMessage quest="1" step="2" output="[Rift Bot]LOGOUT AND REPEAT" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] LOGOUT AND REPEAT" />
 			<TrinityLoadProfile file="../Redirect/RBCB/RBC.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LogMessage quest="1" step="2" output="[Rift Bot]LOGOUT AND REPEAT" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] LOGOUT AND REPEAT" />
 			<TrinityLoadProfile file="../Redirect/RBCB/RBE.xml" />			
 		</If>
 	</HasQuestAndStep>
 	
-	<LogMessage quest="1" step="2" output="[Rift Bot]WAIT FOR PORTAL CLOSE" />
+	<LogMessage quest="1" step="2" output="[Rift Bot] WAIT FOR PORTAL CLOSE" />
 	<While condition="ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 1000)">
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 	</While>
