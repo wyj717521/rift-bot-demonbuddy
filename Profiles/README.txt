@@ -1,4 +1,4 @@
-If you don't know what is this, use Rift Bot Common with Bounties.
+*If you don't know what is this, use Rift Bot Common with Bounties.
 
 ====>Rift Bot Common
 Create games and do rifts. Leave rift once boss is killed. Will not explore the current level if town stone found unless it is the first level.
@@ -12,4 +12,4 @@ Create games and do rifts. Leave rift once town stone found no matter boss kille
 ====>Rift Bot Common/Explore/Full with Bounties
 Create games and do A4 bounties then rifts. Credits to sychotix and his wonderful team!
 
-The bounties profile is at r186.
+*The bounties profile is at r186.
