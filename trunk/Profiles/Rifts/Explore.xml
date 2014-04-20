@@ -75,7 +75,7 @@
 				<LoadProfile file="ExploreExplore.xml" />
 			</HasQuestAndStep>
 			<HasQuestAndStep questId="337492" stepId="3">
-				<LogMessage quest="1" step="2" output="[Rift Bot]BOSS SPAWNED BUT NOT FOUND, RECLEAR" />
+				<LogMessage quest="1" step="2" output="[Rift Bot]BOSS SPAWNED" />
 				<TrinityExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="80" boxTolerance="0.1" boxSize="25"/>
 			</HasQuestAndStep>
 			<HasQuestAndStep questId="337492" stepId="10">
