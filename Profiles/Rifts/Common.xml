@@ -108,7 +108,7 @@
 				<LogMessage quest="1" step="2" output="[Rift Bot]FULL EXPLORE CURRENT LEVEL" />
 				<TrinityExploreDungeon questId="337492" stepId="1" until="FullyExplored" markerDistance="80" boxTolerance="0.1" boxSize="25"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1500"/>
-				<LogMessage quest="1" step="2" output="[Rift Bot]RIFT BOSS DOWN" />
+				<LogMessage quest="1" step="2" output="[Rift Bot]EXPLORATION FINISH" />
 			</If>
 		</HasQuestAndStep>
 		<HasQuestAndStep questId="337492" stepId="3">
