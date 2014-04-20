@@ -32,47 +32,47 @@
 					  not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
 					  not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort 40/0.2 -->
-			<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORE Stonefort @ 40/0.2" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort @ 40/0.2" />
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="40"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep 30/0.2 -->
-			<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORE Bastion's Keep @ 30/0.2" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 30/0.2" />
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="30"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae 15/0.2 -->
-			<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORE Caverns of Araneae @ 15/0.2" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Caverns of Araneae @ 15/0.2" />
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="15"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 334821"> <!-- The Cursed Hold (Warden) 35/0.2 -->
-			<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORE Cursed Hold (Warden) @ 35/0.2" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cursed Hold (Warden) @ 35/0.2" />
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="35"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 342477"> <!-- Tower of the Damned 15/0.3 -->
-			<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORE Tower of the Damned @ 15/0.3" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 15/0.3" />
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.3" boxSize="15"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons 15/0.2 -->
-			<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORE Westmarch Commons @ 15/0.2" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/0.2" />
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="15"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacomb 15/0.3 -->
-			<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORE Catacomb @ 15/0.3" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacomb @ 15/0.3" />
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.3" boxSize="15"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress 11/0.3 -->
-			<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORE Pandemonium Fortress @ 11/0.3" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 11/0.3" />
 			<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.3" boxSize="11"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<!-- Default 20/0.1 -->
-		<LogMessage quest="1" step="2" output="[Rift Bot] EXPLORE CURRENT LEVEL @ 20/0.1" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore CURRENT LEVEL @ 20/0.1" />
 		<TrinityExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.1" boxSize="20"/>
 		<LoadProfile file="Full.xml" />
 	</While>
