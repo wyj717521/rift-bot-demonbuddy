@@ -124,7 +124,7 @@
 	</While>
 	
 	<If condition="Me.IsInTown ">
-		<RiftAtStep step="10">
+		<HasQuestAndStep questId="337492" stepId="10">
 			<MoveToActor questId="312429" stepId="2" x="588" y="518" z="3" actorId="363744" interactRange="9" name="X1_LR_Nephalem-14254"  pathPrecision="5" pathPointLimit="250"/>
 		</HasQuestAndStep>
 	</If>
