@@ -29,9 +29,9 @@
 			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.2" boxSize="40"/>
 			<LoadProfile file="Common.xml" />
 		</If>
-		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep 30/0.2 -->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 30/0.2" />
-			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.2" boxSize="30"/>
+		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep 16/0.2 -->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 16/0.2" />
+			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.2" boxSize="16"/>
 			<LoadProfile file="Common.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae 15/0.2 -->
