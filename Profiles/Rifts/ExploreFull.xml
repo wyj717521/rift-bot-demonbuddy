@@ -1,5 +1,5 @@
 <Profile>
-<Name>Rift Bot</Name>
+<Name>Rift Bot Optimized Explore</Name>
 <KillMonsters>True</KillMonsters>
 <PickupLoot>True</PickupLoot>
 <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
