@@ -86,6 +86,11 @@
 			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.2" boxSize="15"/>
 			<LoadProfile file="Full.xml" />
 		</If>
+		<If condition="CurrentLevelAreaId == 332323"> <!-- Dahlgur Oasis 35/0.15 -->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Dahlgur Oasis @ 35/0.15" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.15" boxSize="35"/>
+			<LoadProfile file="Full.xml" />
+		</If>
 		<!-- Default 20/0.01 -->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/0.01" />
 		<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxTolerance="0.01" boxSize="20"/>
