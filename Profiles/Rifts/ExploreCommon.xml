@@ -74,6 +74,11 @@
 			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.3" boxSize="15"/>
 			<LoadProfile file="Common.xml" />
 		</If>
+		<If condition="CurrentLevelAreaId == 275927"> <!-- Westmarch Commons 15/0.2 -->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Halls of Agony @ 15/0.2" />
+			<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.2" boxSize="15"/>
+			<LoadProfile file="Common.xml" />
+		</If>
 		<!-- Default 20/0.01 -->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/0.01" />
 		<TrinityExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxTolerance="0.01" boxSize="20"/>
