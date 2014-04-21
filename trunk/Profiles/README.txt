@@ -1,3 +1,4 @@
+*Only use the six xml files in the root folder! Stop then start is fine.
 *If you don't know what is this, use Rift Bot Common with Bounties.
 
 ====>Rift Bot Common
