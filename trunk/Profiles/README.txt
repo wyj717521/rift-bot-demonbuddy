@@ -2,7 +2,7 @@
 *If you don't know what is this, use Rift Bot Common with Bounties.
 
 ====>Rift Bot Common
-Create games and do rifts. Leave rift once boss is killed. Will not explore the current level if town stone found unless it is the first level.
+Create games and do rifts. Leave rift once boss is killed or town stone found. Will not explore the current level if town stone found unless it is the first level.
 
 ====>Rift Bot Explore
 Create games and do rifts. Leave rift once boss is killed. Will explore the current level if town stone found. Set gold inactivity timer!
