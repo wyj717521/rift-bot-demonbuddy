@@ -20,7 +20,7 @@ namespace RiftBot
 {
     public partial class RiftBot : IPlugin
     {
-        public Version Version { get { return new Version(0, 0, 6); } }
+        public Version Version { get { return new Version(0, 0, 7); } }
         public string Author { get { return "DyingHymn"; } }
         public string Description { get { return "Add support to rift objective detection"; } }
         public string Name { get { return "RiftBot"; } }
@@ -89,6 +89,11 @@ namespace RiftBot
         public TrinityExploreRift()
             : base()
         {
+            if (PriorityScenes == null)
+                PriorityScenes = new List<PrioritizeScene>();
+			PriorityScenes.Add(new PrioritizeScene("Exit"));
+			PriorityScenes.Add(new PrioritizeScene("Entrance"));
+			PriorityScenes.Add(new PrioritizeScene("Portal"));
         }
 
         private bool _isDone = false;
