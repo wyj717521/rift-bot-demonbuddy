@@ -4,6 +4,14 @@
 <PickupLoot>True</PickupLoot>
 <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
 <Order>
+	<LogMessage quest="1" step="2" output="=================WARNING=================" />
+	<LogMessage quest="1" step="2" output="Currently Trinity .25 seems not working" />
+	<LogMessage quest="1" step="2" output="well with dungeon exploration. Questools" />
+	<LogMessage quest="1" step="2" output=".50 sometimes refuse to take markers. I" />
+	<LogMessage quest="1" step="2" output="strongly recommend you to downgrade to" />
+	<LogMessage quest="1" step="2" output="Trinity .24 and QuestTools .45. Details" />
+	<LogMessage quest="1" step="2" output="can be found in Rift Bot thread." />
+	<LogMessage quest="1" step="2" output="=================WARNING=================" />
 	<LoadProfile file="Redirect/RBE/RBE.xml" />
 </Order>
 </Profile>
