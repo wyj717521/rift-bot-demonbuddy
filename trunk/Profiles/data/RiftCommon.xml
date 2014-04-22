@@ -190,7 +190,7 @@
 	<While condition="ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 1000)">
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 	</While>
-	<TrinityLoadProfile file="Common.xml" />	
+	<TrinityLoadProfile file="RiftCommon.xml" />	
 	
 </Order>
 </Profile>
