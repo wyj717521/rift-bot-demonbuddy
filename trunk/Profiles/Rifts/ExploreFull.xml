@@ -33,7 +33,7 @@
 					  not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort @ 40/30/0.2" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="40" pathPrecision="30" boxTolerance="0.2"/>
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
