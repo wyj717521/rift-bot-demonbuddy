@@ -1,5 +1,5 @@
 <Profile>
-<Name>Rift Bot Full</Name>
+<Name>Rift Bot Common</Name>
 <KillMonsters>True</KillMonsters>
 <PickupLoot>True</PickupLoot>
 <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
@@ -8,7 +8,7 @@
 	<WaitTimer questId="1" stepId="1" waitTime="500"/>
 	<TrinityLoadOnce questId="1" stepId="1" noRandom="true">
 		<ProfileList>
-			<LoadProfileOnce profile="../../Rifts/Full.xml" />
+			<LoadProfileOnce profile="../RiftCommon.xml" />
 		</ProfileList>
 	</TrinityLoadOnce>	
 
