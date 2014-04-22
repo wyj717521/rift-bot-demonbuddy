@@ -19,6 +19,7 @@
 	<TargetBlacklist actorId="357306"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorId="357301"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="157531"/>
 </TargetBlacklists>
 
 <Order>
