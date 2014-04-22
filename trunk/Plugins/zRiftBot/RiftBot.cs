@@ -20,7 +20,7 @@ namespace RiftBot
 {
     public partial class RiftBot : IPlugin
     {
-        public Version Version { get { return new Version(0, 0, 7); } }
+        public Version Version { get { return new Version(0, 0, 8); } }
         public string Author { get { return "DyingHymn"; } }
         public string Description { get { return "Add support to rift objective detection"; } }
         public string Name { get { return "RiftBot"; } }
