@@ -97,6 +97,11 @@
 			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="RiftFull.xml" />
 		</If>
+		<If condition="CurrentLevelAreaId == 275923"> <!-- Cathedral-->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 15/30/0.2" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
+			<LoadProfile file="RiftFull.xml" />
+		</If>
 		<!-- Default 20/0.01 -->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/30/0.05" />
 		<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="20" pathPrecision="30" boxTolerance="0.05"/>
