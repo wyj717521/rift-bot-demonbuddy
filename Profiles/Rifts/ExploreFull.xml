@@ -37,13 +37,13 @@
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 16/20/0.2" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="16" pathPrecision="20" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 16/30/0.2" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="16" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Caverns of Araneae @ 15/20/0.2" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="20" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Caverns of Araneae @ 15/30/0.2" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 334821"> <!-- The Cursed Hold (Warden) 35/30/0.2 -->
@@ -52,48 +52,48 @@
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 342477"> <!-- Tower of the Damned-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 15/20/0.3" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="20" boxTolerance="0.3"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 15/30/0.3" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.3"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/20/0.2" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="20" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/30/0.2" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacomb-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacomb @ 15/20/0.3" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="20" boxTolerance="0.3"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacomb @ 15/30/0.3" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.3"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 11/20/0.3" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="11" pathPrecision="20" boxTolerance="0.3"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 11/30/0.3" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="11" pathPrecision="30" boxTolerance="0.3"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 323580"> <!-- Arreat Crater-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Arreat Crater @ 15/20/0.3" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="20" boxTolerance="0.3"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Arreat Crater @ 15/30/0.3" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.3"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352652"> <!-- Plague Tunnel-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Plague Tunnel @ 15/20/0.3" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="20" boxTolerance="0.3"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Plague Tunnel @ 15/30/0.3" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.3"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 275927"> <!-- Halls of Agony-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Halls of Agony @ 15/20/0.2" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="20" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Halls of Agony @ 15/30/0.2" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 332323"> <!-- Dahlgur Oasis\-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Dahlgur Oasis @ 15/20/0.2" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="20" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Dahlgur Oasis @ 15/30/0.2" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="Full.xml" />
 		</If>
 		<!-- Default 20/0.01 -->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/20/0.05" />
-		<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="20" pathPrecision="20" boxTolerance="0.05"/>
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/30/0.05" />
+		<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="20" pathPrecision="30" boxTolerance="0.05"/>
 		<LoadProfile file="Full.xml" />
 	</While>
 	<LoadProfile file="Full.xml" />
