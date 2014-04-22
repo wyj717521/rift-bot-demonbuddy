@@ -31,8 +31,8 @@
 			<LoadProfile file="RiftCommon.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 16/30/0.2" />
-			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="16" pathPrecision="30" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 30/30/0.2" />
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="30" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="RiftCommon.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae-->
@@ -56,8 +56,8 @@
 			<LoadProfile file="RiftCommon.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacomb-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacomb @ 15/30/0.3" />
-			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.3"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacomb @ 30/30/0.2" />
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="30" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="RiftCommon.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
