@@ -127,7 +127,7 @@ namespace RiftBot
 			if (__index < 0) {
 				return false;
 			}
-            return ZetaDia.Minimap.Markers.CurrentWorldMarkers.Any(m => riftPortalHashes[__index] == m.NameHash && m.Position.Distance2D(Trinity.Trinity.Player.Position) <= MarkerDistance + 20f);
+            return ZetaDia.Minimap.Markers.CurrentWorldMarkers.Any(m => riftPortalHashes[__index] == m.NameHash && m.Position.Distance2D(Trinity.Trinity.Player.Position) <= MarkerDistance + 10f && m.Position.Distance2D(Trinity.Trinity.Player.Position) >= 1.4 * (Trinity.Trinity.Player.Position.Z - m.Position.Z));
         }
 		
         private DateTime __LastCheckRiftDone = DateTime.MinValue;
