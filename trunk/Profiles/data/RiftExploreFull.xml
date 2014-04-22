@@ -88,7 +88,12 @@
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 332323"> <!-- Dahlgur Oasis-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Dahlgur Oasis @ 15/30/0.2" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis @ 15/30/0.2" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
+			<LoadProfile file="RiftFull.xml" />
+		</If>
+		<If condition="CurrentLevelAreaId == 312606"> <!-- Archives of Zoltun Kulle-->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Archives of Zoltun Kulle @ 15/30/0.2" />
 			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="RiftFull.xml" />
 		</If>
