@@ -73,7 +73,7 @@
 				<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876100" destinationWorldId="288810"/>
 			</If>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
-			<LoadProfile file="ExploreFull.xml" />
+			<LoadProfile file="RiftExploreFull.xml" />
 		</While>
 		<While condition="CurrentWorldId == 288810">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore last level" />
@@ -114,17 +114,17 @@
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-		<TrinityLoadProfile file="../Redirect/RBFB/RBFB.xml" />			
+		<TrinityLoadProfile file="RBFB/RBFB.xml" />			
 	</If>
 
 	<RiftQuestAndStep questId="337492" stepId="1">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-		<TrinityLoadProfile file="../Redirect/RBF/RBF.xml" />
+		<TrinityLoadProfile file="RBF/RBF.xml" />
 	</RiftQuestAndStep>
 	
 	<RiftQuestAndStep questId="337492" stepId="3">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-		<TrinityLoadProfile file="../Redirect/RBF/RBF.xml" />
+		<TrinityLoadProfile file="RBF/RBF.xml" />
 	</RiftQuestAndStep>
 	
 	<LogMessage quest="1" step="2" output="[Rift Bot] Wait for portal close" />

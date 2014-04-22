@@ -74,7 +74,7 @@
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876100" destinationWorldId="288810"/>
 				</If>
 				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
-				<LoadProfile file="ExploreCommon.xml" />
+				<LoadProfile file="RiftExploreCommon.xml" />
 			</RiftQuestAndStep>
 			<RiftQuestAndStep questId="337492" stepId="3">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Boss Spawned" />
@@ -150,12 +150,12 @@
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-		<TrinityLoadProfile file="../Redirect/RBCB/RBCB.xml" />			
+		<TrinityLoadProfile file="RBCB/RBCB.xml" />			
 	</If>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-		<TrinityLoadProfile file="../Redirect/RBEB/RBEB.xml" />			
+		<TrinityLoadProfile file="RBEB/RBEB.xml" />			
 	</If>
 
 	<RiftQuestAndStep questId="337492" stepId="1">
@@ -163,12 +163,12 @@
 		
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-			<TrinityLoadProfile file="../Redirect/RBC/RBC.xml" />			
+			<TrinityLoadProfile file="RBC/RBC.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-			<TrinityLoadProfile file="../Redirect/RBE/RBE.xml" />			
+			<TrinityLoadProfile file="RBE/RBE.xml" />			
 		</If>
 	</RiftQuestAndStep>
 	
@@ -177,12 +177,12 @@
 		
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-			<TrinityLoadProfile file="../Redirect/RBC/RBC.xml" />			
+			<TrinityLoadProfile file="RBC/RBC.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-			<TrinityLoadProfile file="../Redirect/RBE/RBE.xml" />		
+			<TrinityLoadProfile file="RBE/RBE.xml" />		
 		</If>
 	</RiftQuestAndStep>
 	
