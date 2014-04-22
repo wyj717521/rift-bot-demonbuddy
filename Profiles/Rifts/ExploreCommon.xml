@@ -26,7 +26,7 @@
 	<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort @ 40/30/0.2" />
-			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="40" pathPrecision="30" boxTolerance="0.2"/>
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="40" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="Common.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
@@ -45,8 +45,8 @@
 			<LoadProfile file="Common.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 342477"> <!-- Tower of the Damned-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 15/30/0.3" />
-			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.3"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 15/15/0.1" />
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="15" pathPrecision="15" boxTolerance="0.1"/>
 			<LoadProfile file="Common.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons-->
@@ -60,8 +60,8 @@
 			<LoadProfile file="Common.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 11/30/0.3" />
-			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="11" pathPrecision="30" boxTolerance="0.3"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 11/15/0.3" />
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="11" pathPrecision="15" boxTolerance="0.3"/>
 			<LoadProfile file="Common.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 323580"> <!-- Arreat Crater-->
