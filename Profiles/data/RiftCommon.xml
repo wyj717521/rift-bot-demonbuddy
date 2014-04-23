@@ -153,12 +153,12 @@
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-		<TrinityLoadProfile file="RBCB/RBCB.xml" />			
+		<TrinityLoadProfile file="RBCB.xml" />			
 	</If>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-		<TrinityLoadProfile file="RBEB/RBEB.xml" />			
+		<TrinityLoadProfile file="RBEB.xml" />			
 	</If>
 
 	<RiftQuestAndStep questId="337492" stepId="1">
@@ -166,12 +166,12 @@
 		
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-			<TrinityLoadProfile file="RBC/RBC.xml" />			
+			<TrinityLoadProfile file="RBC.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-			<TrinityLoadProfile file="RBE/RBE.xml" />			
+			<TrinityLoadProfile file="RBE.xml" />			
 		</If>
 	</RiftQuestAndStep>
 	
@@ -180,12 +180,12 @@
 		
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-			<TrinityLoadProfile file="RBC/RBC.xml" />			
+			<TrinityLoadProfile file="RBC.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-			<TrinityLoadProfile file="RBE/RBE.xml" />		
+			<TrinityLoadProfile file="RBE.xml" />		
 		</If>
 	</RiftQuestAndStep>
 	

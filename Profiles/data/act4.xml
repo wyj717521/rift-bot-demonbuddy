@@ -160,27 +160,27 @@
 	</ActBountiesComplete>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
-		<TrinityLoadProfile file="RBCB/RBCB.xml" />			
+		<TrinityLoadProfile file="RBCB.xml" />			
 	</If>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
-		<TrinityLoadProfile file="RBEB/RBEB.xml" />			
+		<TrinityLoadProfile file="RBEB.xml" />			
 	</If>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
-		<TrinityLoadProfile file="RBFB/RBFB.xml" />			
+		<TrinityLoadProfile file="RBFB.xml" />			
 	</If>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-		<TrinityLoadProfile file="RBC/RBC.xml" />			
+		<TrinityLoadProfile file="RBC.xml" />			
 	</If>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<TrinityLoadProfile file="RBE/RBE.xml" />			
+		<TrinityLoadProfile file="RBE.xml" />			
 	</If>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
-		<TrinityLoadProfile file="RBF/RBF.xml" />			
+		<TrinityLoadProfile file="RBF.xml" />			
 	</If>
 	
 	<LogMessage quest="1" step="2" output="====>ERROR" />
