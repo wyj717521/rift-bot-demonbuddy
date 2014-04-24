@@ -64,8 +64,8 @@
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacomb-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacomb @ 30/30/0.2" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="30" pathPrecision="30" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacomb @ 15/30/0.2" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
