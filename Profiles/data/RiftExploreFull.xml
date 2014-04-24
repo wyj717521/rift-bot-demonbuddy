@@ -69,8 +69,8 @@
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/15/0.55" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="9" pathPrecision="15" boxTolerance="0.55"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 11/15/0.3" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="11" pathPrecision="15" boxTolerance="0.3"/>
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 323580"> <!-- Arreat Crater-->
