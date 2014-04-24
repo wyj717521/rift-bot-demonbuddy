@@ -132,7 +132,7 @@
 			<LoadProfile file="RiftCommon.xml" /> 
 		</If>
 		<If condition="CurrentLevelAreaId == 353527"> <!-- Aquaducts--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 12/30/0.45" /> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Aquaducts @ 12/30/0.45" /> 
 			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="12" pathPrecision="30" boxTolerance="0.45"/> 
 			<LoadProfile file="RiftCommon.xml" /> 
 		</If>
