@@ -113,6 +113,16 @@
 			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="RiftFull.xml" />
 		</If>
+        <If condition="CurrentLevelAreaId == 346565"> <!-- Gardens of Hope--> 
+            <LogMessage quest="1" step="2" output="[Rift Bot] Explore Gardens of Hope @ 15/30/0.45" /> 
+            <TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.45"/> 
+            <LoadProfile file="RiftFull.xml" /> 
+        </If> 
+        <If condition="CurrentLevelAreaId == 362179"> <!-- Hell Rift--> 
+            <LogMessage quest="1" step="2" output="[Rift Bot] Explore Hell Rift @ 15/30/0.53" /> 
+            <TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.53"/> 
+            <LoadProfile file="RiftFull.xml" /> 
+        </If> 
 		<!-- Default 20/0.01 -->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/30/0.05" />
 		<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="20" pathPrecision="30" boxTolerance="0.05"/>
