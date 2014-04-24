@@ -115,7 +115,12 @@
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Hell Rift @ 15/30/0.53" /> 
 			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.53"/> 
 			<LoadProfile file="RiftCommon.xml" /> 
-		</If> 
+		</If>
+		<If condition="CurrentLevelAreaId == 347562"> <!-- Southern Highlands-->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands @ 15/30/0.22" />
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.22"/>
+			<LoadProfile file="RiftCommon.xml" /> 
+		</If>
 		<!-- Default-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/30/0.05" />
 		<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="20" pathPrecision="30" boxTolerance="0.05"/>
