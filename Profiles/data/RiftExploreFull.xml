@@ -128,6 +128,11 @@
 			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.22"/>
 			<LoadProfile file="RiftFull.xml" /> 
 		</If>
+		<If condition="CurrentLevelAreaId == 349181"> <!-- Boneyards--> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Boneyards @ 20/30/0.5" /> 
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="20" pathPrecision="30" boxTolerance="0.5"/> 
+			<LoadProfile file="RiftFull.xml" /> 
+		</If> 
 		<!-- Default 20/0.01 -->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/30/0.05" />
 		<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="20" pathPrecision="30" boxTolerance="0.05"/>
