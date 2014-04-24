@@ -137,7 +137,12 @@
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 15/30/0.35" /> 
 			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.35"/> 
 			<LoadProfile file="RiftFull.xml" /> 
-		</If> 
+		</If>
+		<If condition="CurrentLevelAreaId == 353527"> <!-- Aquaducts--> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 12/30/0.45" /> 
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="12" pathPrecision="30" boxTolerance="0.45"/> 
+			<LoadProfile file="RiftCommon.xml" /> 
+		</If>
 		<!-- Default 20/0.01 -->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/30/0.05" />
 		<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="20" pathPrecision="30" boxTolerance="0.05"/>
