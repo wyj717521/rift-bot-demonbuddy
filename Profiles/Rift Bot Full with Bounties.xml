@@ -6,7 +6,8 @@
 <Order>
 	<LogMessage quest="1" step="2" output="=================WARNING=================" />
 	<LogMessage quest="1" step="2" output="Currently Trinity .25 seems not working well with exploration." />
-	<LogMessage quest="1" step="2" output=" I strongly recommend you to downgrade to Trinity .24" />
+	<LogMessage quest="1" step="2" output="I strongly recommend you to downgrade to Trinity .24" />
+	<LogMessage quest="1" step="2" output="If you are using .24 Trinity, just ignore this message." />
 	<LogMessage quest="1" step="2" output="=================WARNING=================" />
 	<LoadProfile file="data/RBFB/RBFB.xml" />
 </Order>
