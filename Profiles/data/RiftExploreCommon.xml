@@ -63,6 +63,7 @@
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 11/15/0.3" />
+			<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="20" killRadius="20" />
 			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="11" pathPrecision="15" boxTolerance="0.3"/>
 			<LoadProfile file="RiftCommon.xml" />
 		</If>
