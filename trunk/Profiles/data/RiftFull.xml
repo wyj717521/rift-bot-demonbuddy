@@ -81,7 +81,7 @@
 		</While>
 		<While condition="CurrentWorldId == 288810">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore last level" />
-			<TrinityExploreRift questId="337492" stepId="1" until="FullyExplored" markerDistance="45" boxTolerance="0.01" boxSize="20"/>
+			<TrinityExploreRift questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="3000"/>
 	</While>
@@ -90,7 +90,7 @@
 		<LogMessage quest="1" step="2" output="[Rift Bot] Townstone Found" />
 		<If condition="CurrentWorldId == 288454">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore current level" />
-			<TrinityExploreRift questId="337492" stepId="1" until="FullyExplored" markerDistance="45" boxTolerance="0.01" boxSize="20"/>
+			<TrinityExploreRift questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			<RiftQuestAndStep questId="337492" stepId="1">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Fully explored" />
