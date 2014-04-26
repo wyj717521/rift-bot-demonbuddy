@@ -37,6 +37,10 @@
 				   not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
 				   not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cursed Hold (Warden) @ 35/20/0.2" />
+		<!-- Start from x="1016" y="827" z="0". If add moveTo tags, start from this 
+		coordinate and form a complete path of the map. The path shall ends next to the 
+		town stone to make the main logic functions. moveTo tags shall replace this
+		following TrinityExploreRift-->
 		<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
 			<TrinityLoadProfile file="RiftCommon.xml" />			
