@@ -158,6 +158,11 @@
 			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="30" boxTolerance="0.45"/> 
 			<LoadProfile file="RiftFull.xml" /> 
 		</If>
+		<If condition="CurrentLevelAreaId == 275929"> <!-- Corrupt Spire--> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Corrupt Spire @ 14/30/0.56" /> 
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="14" pathPrecision="30" boxTolerance="0.56"/> 
+			<LoadProfile file="RiftCommon.xml" /> 
+		</If>
 		<!-- Default 20/0.01 -->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/30/0.05" />
 		<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="30" boxTolerance="0.05"/>
