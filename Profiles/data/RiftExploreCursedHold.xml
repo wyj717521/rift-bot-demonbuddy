@@ -51,13 +51,7 @@
 		<TrinityMoveTo questId="312429" stepId="2" x="839" y="729" z="0" pathPrecision="5" statusText="" /> 
 		<TrinityMoveTo questId="312429" stepId="2" x="837" y="840" z="0" pathPrecision="5" statusText="" /> 
 		<TrinityMoveTo questId="312429" stepId="2" x="968" y="822" z="0" pathPrecision="5" statusText="" /> 
-		<If condition="(CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
-		(CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or
-		(CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or
-		(CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or
-		(CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or
-		(CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or
-		(CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
+		<If condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)>
 			<TrinityMoveTo questId="312429" stepId="2" x="1010" y="890" z="0" pathPrecision="5" statusText="" /> 
 			<TrinityMoveTo questId="312429" stepId="2" x="1165" y="877" z="0" pathPrecision="5" statusText="" /> 
 			<TrinityMoveTo questId="312429" stepId="2" x="1105" y="823" z="0" pathPrecision="5" statusText="" /> 
@@ -92,13 +86,7 @@
 		<TrinityMoveTo questId="312429" stepId="2" x="839" y="729" z="0" pathPrecision="5" statusText="" /> 
 		<TrinityMoveTo questId="312429" stepId="2" x="837" y="840" z="0" pathPrecision="5" statusText="" /> 
 		<TrinityMoveTo questId="312429" stepId="2" x="968" y="822" z="0" pathPrecision="5" statusText="" /> 
-		<If condition="(CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
-		(CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or
-		(CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or
-		(CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or
-		(CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or
-		(CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or
-		(CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
+		<If condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)>
 			<TrinityMoveTo questId="312429" stepId="2" x="1010" y="890" z="0" pathPrecision="5" statusText="" /> 
 			<TrinityMoveTo questId="312429" stepId="2" x="1165" y="877" z="0" pathPrecision="5" statusText="" /> 
 			<TrinityMoveTo questId="312429" stepId="2" x="1105" y="823" z="0" pathPrecision="5" statusText="" /> 
@@ -110,10 +98,11 @@
 		<TrinityLoadProfile file="RiftFull.xml" />
 	</If>
 	<!-- Large Cursed Hold-->
-	<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+		<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
 		<TrinityLoadProfile file="RiftCommon.xml" />			
 	</If>
+	<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
 	<TrinityLoadProfile file="RiftFull.xml" />
 </Order>
 </Profile>
