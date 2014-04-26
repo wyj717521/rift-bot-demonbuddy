@@ -72,6 +72,21 @@
 	and not (MarkerExistsAt(1938876099, 303.0258, 600.2885, 1.596355, 100))
 	and not (MarkerExistsAt(1938876100, 303.0258, 600.2885, 1.596355, 100))">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Medium Cursed Hold with TrinityMoveTo. Bot will not stop when boss spawns/killed." />
+		<TrinityMoveTo questId="312429" stepId="2" x="727" y="817" z="0" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="714" y="959" z="0" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="492" y="961" z="0" pathPrecision="5" statusText="" /> 
+		<TrinityMoveTo questId="312429" stepId="2" x="485" y="841" z="0" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="481" y="647" z="0" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="484" y="478" z="0" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="560" y="486" z="0" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="562" y="675" z="0" pathPrecision="5" statusText="" /> 
+		<TrinityMoveTo questId="312429" stepId="2" x="560" y="486" z="0" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="719" y="482" z="0" pathPrecision="5" statusText="" /> 
+		<TrinityMoveTo questId="312429" stepId="2" x="721" y="705" z="0" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="599" y="729" z="0" pathPrecision="5" statusText="" /> 
+		<TrinityMoveTo questId="312429" stepId="2" x="597" y="840" z="0" pathPrecision="5" statusText="" /> 
+		<TrinityMoveTo questId="312429" stepId="2" x="728" y="822" z="0" pathPrecision="5" statusText="" /> 
+	
 		<TrinityMoveTo questId="312429" stepId="2" x="967" y="817" z="0" pathPrecision="5" statusText="" />
 		<TrinityMoveTo questId="312429" stepId="2" x="954" y="959" z="0" pathPrecision="5" statusText="" />
 		<TrinityMoveTo questId="312429" stepId="2" x="732" y="961" z="0" pathPrecision="5" statusText="" /> 
@@ -98,14 +113,50 @@
 		<TrinityLoadProfile file="RiftFull.xml" />
 	</If>
 	<!-- Large Cursed Hold-->
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Large Cursed Hold with TrinityMoveTo. Bot will not stop when boss spawns/killed." />
+	<TrinityMoveTo questId="312429" stepId="2" x="727" y="817" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="714" y="959" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="492" y="961" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="485" y="841" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="481" y="647" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="484" y="478" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="560" y="486" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="562" y="675" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="560" y="486" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="719" y="482" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="721" y="705" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="599" y="729" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="597" y="840" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="728" y="822" z="0" pathPrecision="5" statusText="" /> 
+	
+	<TrinityMoveTo questId="312429" stepId="2" x="967" y="817" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="954" y="959" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="732" y="961" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="725" y="841" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="721" y="647" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="724" y="478" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="800" y="486" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="802" y="675" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="800" y="486" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="959" y="482" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="961" y="705" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="839" y="729" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="837" y="840" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="968" y="822" z="0" pathPrecision="5" statusText="" /> 
+	<If condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
+		<TrinityMoveTo questId="312429" stepId="2" x="1010" y="890" z="0" pathPrecision="5" statusText="" /> 
+		<TrinityMoveTo questId="312429" stepId="2" x="1165" y="877" z="0" pathPrecision="5" statusText="" /> 
+		<TrinityMoveTo questId="312429" stepId="2" x="1105" y="823" z="0" pathPrecision="5" statusText="" /> 
+		<TrinityMoveTo questId="312429" stepId="2" x="1028" y="814" z="-50" pathPrecision="5" statusText="" /> 
+	</If>
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
 		<TrinityLoadProfile file="RiftCommon.xml" />
 	</If>
 	<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
 	<TrinityLoadProfile file="RiftFull.xml" />
 </Order>
 </Profile>
+<!--TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/!-->
 <!--
 Small entrance:
 [2CA1F120] GizmoType: Portal Name: g_Portal_Arch_Blue-110351 ActorSNO: 176000 Distance: 6.808267 Position: <543.0258, 840.2885, 1.596355> Barracade: False Radius: 20.18645
