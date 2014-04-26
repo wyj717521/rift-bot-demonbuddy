@@ -34,6 +34,7 @@
 		<TrinityTownRun minFreeBagSlots="40"/>
 		<WaitTimer questId="312429" stepId="2" waitTime="500" />
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
+		<MoveToActor questId="312429" stepId="2" x="594" y="508" z="3" actorId="364715" interactRange="11" name="x1_OpenWorld_LootRunObelisk_B-596"  pathPrecision="5" pathPointLimit="250" isPortal="True"/> 
 		<While condition="not ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
 			<MoveToActor questId="312429" stepId="2" x="594" y="508" z="3" actorId="364715" interactRange="11" name="x1_OpenWorld_LootRunObelisk_B-596"  pathPrecision="5" pathPointLimit="250" isPortal="True"/> 
 			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
@@ -131,8 +132,6 @@
 	</RiftQuestAndStep>
 	
 	<LogMessage quest="1" step="2" output="[Rift Bot] Wait for portal close" />
-	<TrinityTownRun minFreeBagSlots="60"/>
-	<WaitTimer questId="1" stepId="1" waitTime="10000"/>
 	<While condition="ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 1000)">
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 	</While>
