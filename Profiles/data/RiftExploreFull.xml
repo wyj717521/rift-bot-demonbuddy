@@ -113,7 +113,7 @@
 			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.5"/>
 			<LoadProfile file="RiftFull.xml" />
 		</If>
-		<If condition="CurrentLevelAreaId == 275923"> <!-- Forgotten Battlefield-->
+		<If condition="CurrentLevelAreaId == 347961"> <!-- Forgotten Battlefield-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Forgotten Battlefield @ 15/30/0.2" />
 			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="RiftFull.xml" />
