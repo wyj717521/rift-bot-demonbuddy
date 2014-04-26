@@ -195,6 +195,7 @@
 	
 	<LogMessage quest="1" step="2" output="[Rift Bot] Wait for portal close" />
 	<While condition="ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 1000)">
+		<TrinityTownRun minFreeBagSlots="60"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 	</While>
 	<TrinityLoadProfile file="RiftCommon.xml" />	
