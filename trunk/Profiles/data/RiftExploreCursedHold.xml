@@ -1,0 +1,71 @@
+<Profile>
+<Name>Rift Bot Optimized Explore</Name>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+<GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
+
+<TargetBlacklists>
+	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
+	<TargetBlacklist actorId="103919"/> <!-- Demonic Vessels -->
+	<TargetBlacklist actorId="58317"/> <!-- Tool/Weapon Rack -->
+	<TargetBlacklist actorId="289794"/> <!-- X1_PandExt_ArmorRack-7385 -->
+	<TargetBlacklist actorId="212491"/> <!-- Pony Clouds -->
+	<TargetBlacklist actorId="289756"/> <!-- Armor Racks -->
+	<TargetBlacklist actorId="5758"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="464"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="357299"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357297"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357295"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357306"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357301"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
+	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
+	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
+</TargetBlacklists>
+<Order>
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cursed Hold" />
+	<TrinityMoveTo questId="312429" stepId="2" x="1016" y="827" z="0" pathPrecision="5" statusText="" />
+	<If condition="not (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+				   not (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+				   not (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+				   not (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+				   not (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+				   not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and 
+				   not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cursed Hold (Warden) @ 35/20/0.2" />
+		<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+			<TrinityLoadProfile file="RiftCommon.xml" />			
+		</If>
+		<TrinityLoadProfile file="RiftFull.xml" />
+	</If>
+	<!-- Small Cursed Hold-->
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Small Cursed Hold with TrinityMoveTo. Bot will not stop when boss spawns/killed." />
+	<TrinityMoveTo questId="312429" stepId="2" x="967" y="817" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="954" y="959" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="732" y="961" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="725" y="841" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="721" y="647" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="724" y="478" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="800" y="486" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="802" y="675" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="800" y="486" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="959" y="482" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="961" y="705" z="0" pathPrecision="5" statusText="" />
+	<TrinityMoveTo questId="312429" stepId="2" x="839" y="729" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="837" y="840" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="968" y="822" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1010" y="890" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1165" y="877" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1105" y="823" z="0" pathPrecision="5" statusText="" /> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1028" y="814" z="-50" pathPrecision="5" statusText="" /> 
+	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+		<TrinityLoadProfile file="RiftCommon.xml" />			
+	</If>
+	<TrinityLoadProfile file="RiftFull.xml" />
+</Order>
+</Profile>

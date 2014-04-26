@@ -55,9 +55,7 @@
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 334821"> <!-- The Cursed Hold (Warden)-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cursed Hold (Warden) @ 35/20/0.2" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
-			<LoadProfile file="RiftFull.xml" />
+			<LoadProfile file="RiftExploreCursedHold.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 342477"> <!-- Tower of the Damned-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 11/15/0.55" />
