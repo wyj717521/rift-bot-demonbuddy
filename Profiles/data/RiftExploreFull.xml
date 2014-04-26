@@ -21,7 +21,11 @@
 	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
 	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
-</TargetBlacklists>
+	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
+	</TargetBlacklists>
 
 <Order>
 	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="100" killRadius="80" />
