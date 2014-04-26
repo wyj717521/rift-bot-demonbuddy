@@ -24,6 +24,8 @@
 	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289756"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="341124"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
 	</TargetBlacklists>
 
@@ -58,8 +60,8 @@
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 342477"> <!-- Tower of the Damned-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 15/15/0.1" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="15" pathPrecision="15" boxTolerance="0.1"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 11/15/0.55" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="45" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons-->
