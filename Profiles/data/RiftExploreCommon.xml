@@ -59,8 +59,8 @@
 			<LoadProfile file="RiftCommon.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacomb-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacomb @ 15/30/0.2" />
-			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="15" pathPrecision="30" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacomb @ 13/30/0.2" />
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="13" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="RiftCommon.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
@@ -142,6 +142,11 @@
 		<If condition="CurrentLevelAreaId == 348617"> <!-- Wortham--> 
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Wortham @ 13/30/0.35" /> 
 			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="13" pathPrecision="30" boxTolerance="0.35"/> 
+			<LoadProfile file="RiftCommon.xml" /> 
+		</If>
+		<If condition="CurrentLevelAreaId == 290245"> <!-- Sewers--> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Sewers @ 12/30/0.45" /> 
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="45" boxSize="12" pathPrecision="30" boxTolerance="0.45"/> 
 			<LoadProfile file="RiftCommon.xml" /> 
 		</If>
 		<!-- Default-->
