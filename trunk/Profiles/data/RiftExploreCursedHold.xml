@@ -19,23 +19,31 @@
 	<TargetBlacklist actorId="357306"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorId="357301"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="362323"/> <!-- A buged NPC in A5 -->
 	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
 	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
 	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="341124"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192466"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192463"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167519"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289244"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289246"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="77354"/> <!-- Weapon Rack -->
 </TargetBlacklists>
 <Order>
 	<!-- Small Cursed Hold-->
-	<If condition="(MarkerExistsAt(1877684886, 543.0258, 840.2885, 1.596355, 100))
-	or (MarkerExistsAt(1938876094, 543.0258, 840.2885, 1.596355, 100))
-	or (MarkerExistsAt(1938876095, 543.0258, 840.2885, 1.596355, 100))
-	or (MarkerExistsAt(1938876096, 543.0258, 840.2885, 1.596355, 100))
-	or (MarkerExistsAt(1938876097, 543.0258, 840.2885, 1.596355, 100))
-	or (MarkerExistsAt(1938876098, 543.0258, 840.2885, 1.596355, 100))
-	or (MarkerExistsAt(1938876099, 543.0258, 840.2885, 1.596355, 100))
-	or (MarkerExistsAt(1938876100, 543.0258, 840.2885, 1.596355, 100))">
+	<If condition="not (MarkerExistsAt(1877684886, 543.0258, 840.2885, 1.596355, 100))
+	and not (MarkerExistsAt(1938876094, 543.0258, 840.2885, 1.596355, 100))
+	and not (MarkerExistsAt(1938876095, 543.0258, 840.2885, 1.596355, 100))
+	and not (MarkerExistsAt(1938876096, 543.0258, 840.2885, 1.596355, 100))
+	and not (MarkerExistsAt(1938876097, 543.0258, 840.2885, 1.596355, 100))
+	and not (MarkerExistsAt(1938876098, 543.0258, 840.2885, 1.596355, 100))
+	and not (MarkerExistsAt(1938876099, 543.0258, 840.2885, 1.596355, 100))
+	and not (MarkerExistsAt(1938876100, 543.0258, 840.2885, 1.596355, 100))">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Small Cursed Hold with TrinityMoveTo. Bot will not stop when boss spawns/killed." />
 		<TrinityMoveTo questId="312429" stepId="2" x="967" y="817" z="0" pathPrecision="5" statusText="" />
 		<TrinityMoveTo questId="312429" stepId="2" x="954" y="959" z="0" pathPrecision="5" statusText="" />

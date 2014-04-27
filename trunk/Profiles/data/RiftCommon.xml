@@ -25,7 +25,14 @@
 	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="341124"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192466"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192463"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167519"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289244"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289246"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="77354"/> <!-- Weapon Rack -->
 </TargetBlacklists>
 
 <Order>
