@@ -19,15 +19,21 @@
 	<TargetBlacklist actorId="357306"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorId="357301"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="362323"/> <!-- A buged NPC in A5 -->
 	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
 	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
 	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
-	<TargetBlacklist actorid="289756"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="341124"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
-	</TargetBlacklists>
+	<TargetBlacklist actorid="192466"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192463"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167519"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289244"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289246"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="77354"/> <!-- Weapon Rack -->
+</TargetBlacklists>
 
 <Order>
 	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="100" killRadius="80" />
@@ -161,6 +167,11 @@
 		<If condition="CurrentLevelAreaId == 275929"> <!-- Corrupt Spire--> 
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Corrupt Spire @ 14/30/0.56" /> 
 			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="14" pathPrecision="30" boxTolerance="0.56"/> 
+			<LoadProfile file="RiftCommon.xml" /> 
+		</If>
+		<If condition="CurrentLevelAreaId == 349048"> <!-- Battlefield Bridge--> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge @ 40/30/0.3" /> 
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="40" pathPrecision="30" boxTolerance="0.3"/> 
 			<LoadProfile file="RiftCommon.xml" /> 
 		</If>
 		<!-- Default 20/0.01 -->
