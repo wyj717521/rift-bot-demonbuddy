@@ -32,6 +32,10 @@
 	<TargetBlacklist actorid="167519"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="289244"/> <!-- Weapon Rack -->
 	<TargetBlacklist actorid="289246"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="77354"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="340114"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="340113"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="78030"/> <!-- Wilderness Scarecrow -->
 </TargetBlacklists>
 
 <Order>
