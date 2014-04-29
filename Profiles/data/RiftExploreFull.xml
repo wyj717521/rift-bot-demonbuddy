@@ -56,8 +56,8 @@
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 20/30/0.3" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="20" pathPrecision="30" boxTolerance="0.3"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 20/20/0.3" />
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="20" pathPrecision="20" boxTolerance="0.3"/>
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae-->
@@ -82,9 +82,9 @@
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/15/0.45" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.45" />
 			<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="20" killRadius="20" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="15" boxTolerance="0.45"/>
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.45"/>
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 323580"> <!-- Arreat Crater-->
@@ -128,8 +128,8 @@
 			<LoadProfile file="RiftFull.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 346565"> <!-- Gardens of Hope--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Gardens of Hope @ 15/30/0.45" /> 
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="30" boxTolerance="0.45"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Gardens of Hope @ 20/30/0.3" /> 
+			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="30" boxTolerance="0.3"/> 
 			<LoadProfile file="RiftFull.xml" /> 
 		</If> 
 		<If condition="CurrentLevelAreaId == 362179"> <!-- Hell Rift--> 
