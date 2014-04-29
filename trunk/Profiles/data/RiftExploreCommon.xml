@@ -65,8 +65,8 @@
 			<LoadProfile file="RiftExploreCursedTower.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 9/30/0.2" />
-			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="9" pathPrecision="30" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 9/20/0.2" />
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="9" pathPrecision="20" boxTolerance="0.2"/>
 			<LoadProfile file="RiftCommon.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacomb-->
@@ -151,8 +151,8 @@
 			<LoadProfile file="RiftCommon.xml" /> 
 		</If>
 		<If condition="CurrentLevelAreaId == 348617"> <!-- Wortham--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Wortham @ 13/30/0.35" /> 
-			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="13" pathPrecision="30" boxTolerance="0.35"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Wortham @ 13/20/0.35" /> 
+			<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="13" pathPrecision="20" boxTolerance="0.35"/> 
 			<LoadProfile file="RiftCommon.xml" /> 
 		</If>
 		<If condition="CurrentLevelAreaId == 290245"> <!-- Sewers--> 
