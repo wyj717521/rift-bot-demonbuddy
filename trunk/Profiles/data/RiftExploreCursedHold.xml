@@ -42,14 +42,14 @@
 
 <Order>
 	<!-- Small Cursed Hold-->
-	<If condition="not (MarkerExistsAt(1877684886, 543.0258, 840.2885, 1.596355, 100))
-	and not (MarkerExistsAt(1938876094, 543.0258, 840.2885, 1.596355, 100))
-	and not (MarkerExistsAt(1938876095, 543.0258, 840.2885, 1.596355, 100))
-	and not (MarkerExistsAt(1938876096, 543.0258, 840.2885, 1.596355, 100))
-	and not (MarkerExistsAt(1938876097, 543.0258, 840.2885, 1.596355, 100))
-	and not (MarkerExistsAt(1938876098, 543.0258, 840.2885, 1.596355, 100))
-	and not (MarkerExistsAt(1938876099, 543.0258, 840.2885, 1.596355, 100))
-	and not (MarkerExistsAt(1938876100, 543.0258, 840.2885, 1.596355, 100))">
+	<If condition="(MarkerExistsAt(1877684886, 543.0258, 840.2885, 1.596355, 100))
+	or (MarkerExistsAt(1938876094, 543.0258, 840.2885, 1.596355, 100))
+	or (MarkerExistsAt(1938876095, 543.0258, 840.2885, 1.596355, 100))
+	or (MarkerExistsAt(1938876096, 543.0258, 840.2885, 1.596355, 100))
+	or (MarkerExistsAt(1938876097, 543.0258, 840.2885, 1.596355, 100))
+	or (MarkerExistsAt(1938876098, 543.0258, 840.2885, 1.596355, 100))
+	or (MarkerExistsAt(1938876099, 543.0258, 840.2885, 1.596355, 100))
+	or (MarkerExistsAt(1938876100, 543.0258, 840.2885, 1.596355, 100))">
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Small Cursed Hold with TrinityMoveTo. Bot will not stop when boss spawns/killed." />
 		<TrinityMoveTo questId="312429" stepId="2" x="967" y="817" z="0" pathPrecision="5" statusText="" />
 		<TrinityMoveTo questId="312429" stepId="2" x="954" y="959" z="0" pathPrecision="5" statusText="" />
