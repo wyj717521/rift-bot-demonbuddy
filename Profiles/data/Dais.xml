@@ -8,18 +8,18 @@
 
 <Order>
 <While condition="CurrentWorldId != 109513">
-        <UseWaypoint waypointNumber="41" questId="1"/>
-        <WaitTimer questId="1" stepId="1" waitTime="5000"/>
+	<UseWaypoint waypointNumber="41" questId="1"/>
+	<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 </While>
     <!-- Look for him -->
-                <If condition="CurrentWorldId == 109513">
-                        <TrinityExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="300" actorId="368169" boxTolerance="0.01" boxSize="25" ignoreMarkers="False" stayAfterBounty="False" />
-                        <MoveToActor questId="1" stepId="2" actorId="368169"/>
-                        <While condition="ActorExistsAt(368169, Me.Position.X, Me.Position.Y, Me.Position.Z, 150)">
-                                <MoveToActor questId="1" stepId="2" actorId="368169"/>
-                        </While>
-                </If>
+		<If condition="CurrentWorldId == 109513">
+			<TrinityExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="300" actorId="368169" boxSize="15" pathPrecision="30" boxTolerance="0.45" ignoreMarkers="False" stayAfterBounty="False" />
+			<MoveToActor questId="1" stepId="2" actorId="368169"/>
+			<While condition="ActorExistsAt(368169, Me.Position.X, Me.Position.Y, Me.Position.Z, 150)">
+				<MoveToActor questId="1" stepId="2" actorId="368169"/>
+			</While>
+		</If>
 
-        <LoadProfile file="act4.xml" />
+	<LoadProfile file="act4.xml" />
 </Order>
 </Profile>
