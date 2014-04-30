@@ -183,7 +183,8 @@
 		<TrinityLoadProfile file="RBF.xml" />			
 	</If>
 	
-	<LogMessage quest="1" step="2" output="====>ERROR" />
+	<LeaveGame quest="1" step="1" reason="done." stayInParty="False" />		
+	<ReloadProfile />	
 	
 </Order>
 </Profile>

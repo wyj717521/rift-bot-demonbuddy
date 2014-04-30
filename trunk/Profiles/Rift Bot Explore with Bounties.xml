@@ -4,6 +4,9 @@
 <PickupLoot>True</PickupLoot>
 <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
 <Order>
+	<LogMessage quest="1" step="1" output="==========WARNING==========" /> 
+	<LogMessage quest="1" step="1" output="Bounties profiles are not supported by us." />
+	<LogMessage quest="1" step="1" output="==========WARNING==========" />  
 	<LoadProfile file="data/RBEB/RBEB.xml" />
 </Order>
 </Profile>
