@@ -73,6 +73,7 @@
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		</While>
+		<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="368169"/>
 		<While condition="HasQuest(369900)">
 			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="368169"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="3000"/>
@@ -238,6 +239,7 @@
 					<PriorityScene sceneName="a4dun_spire_corrupt_SE_02" pathPrecision="40" />          
 				</PrioritizeScenes>
 			</TrinityExploreDungeon>
+				<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="364559"/>
 			<While condition="HasQuest(369878)">
 				<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="364559"/>
 				<WaitTimer questId="312429" stepId="2" waitTime="3000"/>
