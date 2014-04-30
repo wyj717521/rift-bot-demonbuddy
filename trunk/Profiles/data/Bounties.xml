@@ -277,8 +277,8 @@
 	</While>
 
 	<ActBountiesComplete act="A4">
-		<While condition="!Me.IsInTown">  
-			<TrinityTownPortal questId="1" /> 
+		<While condition="CurrentWorldId != 172909">  
+			<UseWaypoint waypointNumber="26" questId="1"/> 
 			<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		</While>
 		<MoveToActor questId="1" stepId="1" actorId="114622" x="379" y="422" z="0"  />
@@ -307,10 +307,9 @@
 			<TrinityLoadProfile file="RBF.xml" />			
 		</If>
 		
-		<LeaveGame quest="1" step="1" reason="done." stayInParty="False" />		
+		<LeaveGame quest="1" step="1" reason="done." stayInParty="False" />	
 	</ActBountiesComplete>
-	
-	<ReloadProfile />	
+	<ReloadProfile />		
 	
 </Order>
 </Profile>
