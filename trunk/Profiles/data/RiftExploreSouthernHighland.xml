@@ -1,0 +1,97 @@
+<Profile>
+<Name>Rift Bot Optimized Explore</Name>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+<GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
+
+<TargetBlacklists>
+	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
+	<TargetBlacklist actorId="103919"/> <!-- Demonic Vessels -->
+	<TargetBlacklist actorId="58317"/> <!-- Tool/Weapon Rack -->
+	<TargetBlacklist actorId="289794"/> <!-- X1_PandExt_ArmorRack-7385 -->
+	<TargetBlacklist actorId="212491"/> <!-- Pony Clouds -->
+	<TargetBlacklist actorId="289756"/> <!-- Armor Racks -->
+	<TargetBlacklist actorId="5758"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="464"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="357299"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357297"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357295"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357306"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357301"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="362323"/> <!-- A buged NPC in A5 -->
+	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
+	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
+	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="341124"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192466"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192463"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167519"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289244"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289246"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="77354"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="340114"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="340113"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="5671"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="15937"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="78030"/> <!-- Wilderness Scarecrow -->
+</TargetBlacklists>
+
+<Order>
+	<!-- Southern Highlands-->
+	<If condition="(MarkerExistsAt(1877684886, 1055.51, 1473.244, 61.84594, 100))
+	or (MarkerExistsAt(1938876093, 1055.51, 1473.244, 61.84594, 100))
+	or (MarkerExistsAt(1938876094, 1055.51, 1473.244, 61.84594, 100))
+	or (MarkerExistsAt(1938876095, 1055.51, 1473.244, 61.84594, 100))
+	or (MarkerExistsAt(1938876096, 1055.51, 1473.244, 61.84594, 100))
+	or (MarkerExistsAt(1938876097, 1055.51, 1473.244, 61.84594, 100))
+	or (MarkerExistsAt(1938876098, 1055.51, 1473.244, 61.84594, 100))
+	or (MarkerExistsAt(1938876099, 1055.51, 1473.244, 61.84594, 100))
+	or (MarkerExistsAt(1938876100, 1055.51, 1473.244, 61.84594, 100))">
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with TrinityMoveTo." />
+			<TrinityMoveTo questId="337492" stepId="1" x="1220" y="1438" z="41" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="1258" y="1092" z="38" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="1194" y="722" z="40" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="970" y="999" z="40" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="774" y="907" z="38" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="759" y="837" z="50" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="604" y="778" z="78" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="499" y="601" z="80" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="302" y="920" z="80" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="191" y="728" z="90" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="288" y="600" z="80" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="421" y="589" z="78" pathPrecision="5" statusText="" />
+			<TrinityMoveTo questId="337492" stepId="1" x="420" y="346" z="63" pathPrecision="5" statusText="" />
+			<TrinityLoadProfile file="RiftCommon.xml" />			
+		</If>
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with TrinityMoveTo." />
+		<TrinityMoveTo questId="312429" stepId="2" x="1220" y="1438" z="41" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="1258" y="1092" z="38" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="1194" y="722" z="40" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="970" y="999" z="40" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="774" y="907" z="38" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="759" y="837" z="50" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="604" y="778" z="78" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="499" y="601" z="80" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="302" y="920" z="80" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="191" y="728" z="90" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="288" y="600" z="80" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="421" y="589" z="78" pathPrecision="5" statusText="" />
+		<TrinityMoveTo questId="312429" stepId="2" x="420" y="346" z="63" pathPrecision="5" statusText="" />
+		<TrinityLoadProfile file="RiftFull.xml" />
+	</If>
+	<!-- Unknown version-->
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Southern Highland with TrinityExplorer." />		
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands @ 11/15/0.55" />
+	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+		<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="15" pathPrecision="30" boxTolerance="0.22"/>
+		<TrinityLoadProfile file="RiftCommon.xml" />			
+	</If>
+	<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="30" boxTolerance="0.22"/>
+	<TrinityLoadProfile file="RiftFull.xml" />
+</Order>
+</Profile>
