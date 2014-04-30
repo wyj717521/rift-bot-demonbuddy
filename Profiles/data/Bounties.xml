@@ -41,12 +41,12 @@
 </TargetBlacklists>
 
 <Order>
+	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="100" killRadius="80" />
 	<If condition="Me.IsInTown">   
 		<TrinityTownRun minFreeBagSlots="40"/>
 	</If>
 	<!-- Cursed Dais, Kill Khatun, Kill Torchlighter, Kill Veshan the fierce, Kill the aspect of destruction-->
 	<While condition="HasQuest(369900) or HasQuest(349258) or HasQuest(349256) or HasQuest(349260) or HasQuest(357131)">
-		<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="100" killRadius="80" />
 		<While condition="CurrentWorldId != 109513">
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="5000"/>
@@ -80,7 +80,6 @@
 	</While>
 	<!-- Kill Rakanoth -->
 	<While condition="HasQuest(349262)">
-		<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="100" killRadius="20" />
 		<While condition="CurrentWorldId != 109513 and CurrentWorldId != 166640">
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="5000"/>
