@@ -282,33 +282,34 @@
 			<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		</While>
 		<MoveToActor questId="1" stepId="1" actorId="114622" x="379" y="422" z="0"  />
+
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
+			<TrinityLoadProfile file="RBCB.xml" />			
+		</If>
+
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
+			<TrinityLoadProfile file="RBEB.xml" />			
+		</If>
+
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
+			<TrinityLoadProfile file="RBFB.xml" />			
+		</If>
+
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
+			<TrinityLoadProfile file="RBC.xml" />			
+		</If>
+
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+			<TrinityLoadProfile file="RBE.xml" />			
+		</If>
+
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
+			<TrinityLoadProfile file="RBF.xml" />			
+		</If>
+		
+		<LeaveGame quest="1" step="1" reason="done." stayInParty="False" />		
 	</ActBountiesComplete>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
-		<TrinityLoadProfile file="RBCB.xml" />			
-	</If>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
-		<TrinityLoadProfile file="RBEB.xml" />			
-	</If>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
-		<TrinityLoadProfile file="RBFB.xml" />			
-	</If>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-		<TrinityLoadProfile file="RBC.xml" />			
-	</If>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<TrinityLoadProfile file="RBE.xml" />			
-	</If>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
-		<TrinityLoadProfile file="RBF.xml" />			
-	</If>
 	
-	<LeaveGame quest="1" step="1" reason="done." stayInParty="False" />		
 	<ReloadProfile />	
 	
 </Order>
