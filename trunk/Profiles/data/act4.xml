@@ -9,7 +9,9 @@
 
 	<!-- Act 4 Bounties -->
 	<LogMessage quest="1" step="1" output="Act 4 Bounties" /> 
-	<TrinityTownRun minFreeBagSlots="40"/>
+	<If condition="Me.IsInTown">   
+		<TrinityTownRun minFreeBagSlots="40"/>
+	</If>
 	
 	
 	<!-- Waypoint [41] -->
