@@ -122,7 +122,7 @@
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
-		<TrinityTownPortal questId="1" stepId="1" />
+		<UseTownPortal questId="1" />
 		<WaitTimer questId="1" stepId="1" waitTime="3000"/>
 	</While>
 	
