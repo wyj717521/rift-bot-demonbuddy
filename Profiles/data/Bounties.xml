@@ -246,7 +246,7 @@
 
 	<!-- kill diablo -->
 	<If condition="HasQuest(349288)">
-		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
+		<WaitTimer questId="1" stepId="1" waitTime="2500"/>
 		<While condition="CurrentWorldId != 129305 and CurrentWorldId != 153670 and CurrentWorldId != 205399 and CurrentWorldId != 196292 and CurrentWorldId !=109561">
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="5000"/>
