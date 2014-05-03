@@ -332,6 +332,10 @@
 		<UseWaypoint waypointNumber="45" questId="1"/>
 		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 	</While>
+	<If condition="HasQuest(369878) and CurrentWorldId == 129305 and not (ActorExistsAt(5466, Me.Position.X, Me.Position.Y, Me.Position.Z, 50))">
+		<LogMessage quest="1" step="2" output="[Bounty] Cursed Chapel ToggleTargeting to 30/60" />
+		<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="60" killRadius="30" />
+	</If>
 		<While condition="HasQuest(369878) and CurrentWorldId == 129305 and not (ActorExistsAt(5466, Me.Position.X, Me.Position.Y, Me.Position.Z, 50))">
 			<TrinityExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="365097" boxSize="14" pathPrecision="20" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False">
 				<PrioritizeScenes>
@@ -344,7 +348,10 @@
 				<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="365097"/>
 				<WaitTimer questId="312429" stepId="2" waitTime="3000"/>
 			</While>
-
+		<If condition="not HasQuest(369878)">
+			<LogMessage quest="1" step="2" output="[Bounty] Cursed Chapel ToggleTargeting to default" />
+			<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="150" killRadius="80" />
+		</If>
 	<!-- kill diablo -->
 	<If condition="HasQuest(349288)">
 		<WaitTimer questId="1" stepId="1" waitTime="2500"/>
@@ -380,7 +387,7 @@
 			<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		</While>
 	</If>
-	<!-- We get ported to Shadow Realm
+	<!-- We got ported to Shadow Realm
 	[QuestTools] worldId changed from 109561 to 153670 - a4dun_Diablo_ShadowRealm_01
 	[QuestTools] levelAreaId changed from 109563 to 153669 - a4dun_Diablo_ShadowRealm_01
 	-->
