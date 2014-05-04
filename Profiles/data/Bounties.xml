@@ -164,6 +164,9 @@
 			<TrinityMoveTo questId="312429" stepId="2" x="2336" y="2605" z="-30" pathPrecision="5"/>
 		</If>
 	</While>
+	<If condition="not Me.IsInTown">   
+		<UseTownPortal questId="1" />
+	</If>
 	<!-- Kill sledge, hammermash, clear hell rift-->
 	<While condition="HasQuest(364336) or HasQuest(364333) or HasQuest(362140)">
 		<While condition="CurrentWorldId != 109526 and CurrentWorldId != 109525 and CurrentWorldId != 109530">
@@ -223,58 +226,6 @@
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
-		<!--If condition="(ActorExistsAt(197816, 359.8367, 616.173, -1.24326, 10))">
-			<TrinityMoveTo questId="312429" stepId="2" x="338" y="470" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="423" y="419" z="1" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="486" y="355" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="569" y="439" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="604" y="331" z="15" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="718" y="362" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="864" y="343" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="878" y="455" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="788" y="454" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="806" y="525" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="887" y="553" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="795" y="648" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="725" y="580" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="600" y="571" z="-2" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="604" y="468" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="597" y="716" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="569" y="987" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="555" y="1226" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="594" y="1351" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="702" y="1351" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="692" y="1272" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="631" y="1159" z="1" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="628" y="956" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="637" y="723" z="0" pathPrecision="5"/> 
-		</If>	
-		<If condition="(ActorExistsAt(197816, 1319.837, 1096.173, -1.337975, 10))">
-			<TrinityMoveTo questId="312429" stepId="2" x="1289" y="949" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="1308" y="847" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="1185" y="849" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="1089" y="728" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="1079" y="859" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="969" y="871" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="949" y="803" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="836" y="877" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="817" y="751" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="812" y="638" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="911" y="575" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="890" y="752" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="1032" y="736" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="1071" y="606" z="-2" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="997" y="601" z="-1" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="1046" y="448" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="1118" y="400" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="1006" y="326" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="994" y="404" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="722" y="392" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="472" y="384" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="499" y="326" z="0" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="756" y="329" z="-2" pathPrecision="5"/> 
-			<TrinityMoveTo questId="312429" stepId="2" x="963" y="313" z="0" pathPrecision="5"/> 
-		</If-->	
 		<TrinityExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="14" pathPrecision="30" boxTolerance="0.56" ignoreMarkers="False" stayAfterBounty="False" />
 	</While>
 	<If condition="not Me.IsInTown">   
@@ -287,27 +238,6 @@
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
 		<While condition="CurrentWorldId == 121579">
-			<!--If condition="(ActorExistsAt(197816, 359.8367, 616.173, -1.24326, 10))">
-				<TrinityMoveTo questId="312429" stepId="2" x="385" y="480" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="502" y="421" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="596" y="516" z="-1" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="591" y="713" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="567" y="966" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="584" y="1201" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="749" y="1318" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="813" y="1320" z="-1" pathPrecision="5"/> 
-				<MoveToActor questId="1" stepId="2" actorId="225195" isPortal="True" destinationWorldId="214956" interactRange="20" />
-				<WaitTimer questId="1" stepId="2" waitTime="1000" />
-			</If>
-			<If condition="(ActorExistsAt(197816, 1319.837, 1096.173, -1.337975, 10))">
-				<TrinityMoveTo questId="312429" stepId="2" x="1290" y="958" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="1156" y="780" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="1076" y="677" z="-2" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="1045" y="446" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="935" y="389" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="473" y="384" z="0" pathPrecision="5"/> 
-				<TrinityMoveTo questId="312429" stepId="2" x="391" y="358" z="-1" pathPrecision="5"/> 
-			</If-->
 			<TrinityExploreDungeon questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="14" pathPrecision="30" boxTolerance="0.56" ignoreMarkers="false" stayAfterBounty="False">
 				<PrioritizeScenes>
 					<PriorityScene sceneName="Exit" />
@@ -342,9 +272,6 @@
 		</While>
 		<TrinityExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="14" pathPrecision="30" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False"/>
 	</While>
-	<If condition="not Me.IsInTown">   
-		<UseTownPortal questId="1" />
-	</If>
 	<!-- Cursed chapel-->
 	<While condition="HasQuest(369878)">
         <While condition="CurrentWorldId != 129305">
@@ -372,9 +299,6 @@
 		<LogMessage quest="1" step="2" output="[Bounty] Cursed Chapel ToggleTargeting to default" />
 		<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="150" killRadius="80" />
 	</If>
-	<If condition="not Me.IsInTown">   
-		<UseTownPortal questId="1" />
-	</If>
 	<!-- kill diablo -->
 	<While condition="HasQuest(349288)">
 		<WaitTimer questId="1" stepId="1" waitTime="2500"/>
@@ -397,10 +321,6 @@
 			<MoveToActor questId="1" stepId="2" actorId="210763" isPortal="True" interactRange="20"/>
 			<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		</While>
-	<!--
-	[QuestTools] worldId changed from 129305 to 109561 - a4dun_Diablo_Arena
-	[QuestTools] levelAreaId changed from 109540 to 109563 - A4_dun_Diablo_Arena
-	-->
 	    <If condition="CurrentWorldId == 205399">
 	        <MoveToActor questId="1" stepId="2" actorId="161279" isPortal="True" interactRange="20"/>
 	        <WaitTimer questId="1" stepId="2" waitTime="1000" />
@@ -409,17 +329,9 @@
 	            <WaitTimer questId="1" stepId="2" waitTime="1000" />
 	        </While>
 	    </If>
-	<!-- We got ported to Shadow Realm
-	[QuestTools] worldId changed from 109561 to 153670 - a4dun_Diablo_ShadowRealm_01
-	[QuestTools] levelAreaId changed from 109563 to 153669 - a4dun_Diablo_ShadowRealm_01
-	-->
 	    <While condition="CurrentWorldId == 153670">
 	        <WaitTimer questId="1" stepId="2" waitTime="1000" />
 	    </While>
-	<!-- We got ported back to Diablo Arena
-	[QuestTools] worldId changed from 153670 to 196292 - a4dun_Diablo_Arena_Phase3
-	[QuestTools] levelAreaId changed from 153669 to 215235 - A4_dun_Diablo_Arena_Phase3	
-	-->
 	    <If condition="CurrentWorldId == 196292">
 	        <TrinityMoveTo questId="1" stepId="2" pathPrecision="10" x="360" y="358" z="40"/>
 	        <While condition="Me.IsInBossEncounter">
@@ -470,3 +382,80 @@
 	
 </Order>
 </Profile>
+
+<!-- Silver Spire Level 1 Kill SuperUnique
+<If condition="(ActorExistsAt(197816, 359.8367, 616.173, -1.24326, 10))">
+	<TrinityMoveTo questId="312429" stepId="2" x="338" y="470" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="423" y="419" z="1" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="486" y="355" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="569" y="439" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="604" y="331" z="15" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="718" y="362" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="864" y="343" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="878" y="455" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="788" y="454" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="806" y="525" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="887" y="553" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="795" y="648" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="725" y="580" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="600" y="571" z="-2" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="604" y="468" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="597" y="716" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="569" y="987" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="555" y="1226" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="594" y="1351" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="702" y="1351" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="692" y="1272" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="631" y="1159" z="1" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="628" y="956" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="637" y="723" z="0" pathPrecision="5"/> 
+</If>	
+<If condition="(ActorExistsAt(197816, 1319.837, 1096.173, -1.337975, 10))">
+	<TrinityMoveTo questId="312429" stepId="2" x="1289" y="949" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1308" y="847" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1185" y="849" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1089" y="728" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1079" y="859" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="969" y="871" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="949" y="803" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="836" y="877" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="817" y="751" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="812" y="638" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="911" y="575" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="890" y="752" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1032" y="736" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1071" y="606" z="-2" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="997" y="601" z="-1" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1046" y="448" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1118" y="400" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1006" y="326" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="994" y="404" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="722" y="392" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="472" y="384" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="499" y="326" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="756" y="329" z="-2" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="963" y="313" z="0" pathPrecision="5"/> 
+</If-->	
+
+<!-- Kill Izual
+<If condition="(ActorExistsAt(197816, 359.8367, 616.173, -1.24326, 10))">
+	<TrinityMoveTo questId="312429" stepId="2" x="385" y="480" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="502" y="421" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="596" y="516" z="-1" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="591" y="713" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="567" y="966" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="584" y="1201" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="749" y="1318" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="813" y="1320" z="-1" pathPrecision="5"/> 
+	<MoveToActor questId="1" stepId="2" actorId="225195" isPortal="True" destinationWorldId="214956" interactRange="20" />
+	<WaitTimer questId="1" stepId="2" waitTime="1000" />
+</If>
+<If condition="(ActorExistsAt(197816, 1319.837, 1096.173, -1.337975, 10))">
+	<TrinityMoveTo questId="312429" stepId="2" x="1290" y="958" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1156" y="780" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1076" y="677" z="-2" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="1045" y="446" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="935" y="389" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="473" y="384" z="0" pathPrecision="5"/> 
+	<TrinityMoveTo questId="312429" stepId="2" x="391" y="358" z="-1" pathPrecision="5"/> 
+</If-->
