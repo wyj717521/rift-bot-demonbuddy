@@ -231,7 +231,7 @@
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
-		<TrinityExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="40" pathPrecision="30" boxTolerance="0.25" ignoreMarkers="False" stayAfterBounty="False" />
+		<TrinityExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="40" pathPrecision="30" boxTolerance="0.2" ignoreMarkers="False" stayAfterBounty="False" />
 	</While>
 	<!-- Kill izual-->
 	<While condition="HasQuest(361421)">
