@@ -95,7 +95,7 @@
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876100" interactRange="15" destinationWorldId="288810"/>
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876100" destinationWorldId="288810"/>
 				</If>
-				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
+				<WaitTimer questId="312429" stepId="2" waitTime="3000" />
 				<LoadProfile file="RiftExploreCommon.xml" />
 			</RiftQuestAndStep>
 			<RiftQuestAndStep questId="337492" stepId="3">

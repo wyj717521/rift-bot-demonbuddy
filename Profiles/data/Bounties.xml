@@ -56,6 +56,7 @@
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<While condition="(HasQuest(369900) and not ActorExistsAt(368169, Me.Position.X, Me.Position.Y, Me.Position.Z, 150)) or HasQuest(349258) or HasQuest(349256) or HasQuest(349260) or HasQuest(357131)">
 			<TrinityMoveTo questId="312429" stepId="2" x="795" y="1134" z="-15" pathPrecision="5"/> 
 			<TrinityMoveTo questId="312429" stepId="2" x="774" y="1049" z="-30" pathPrecision="5"/> 
@@ -91,6 +92,7 @@
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<TrinityMoveTo questId="312429" stepId="2" x="862" y="1003" z="-15" pathPrecision="5"/> 
 		<TrinityMoveTo questId="312429" stepId="2" x="724" y="905" z="0" pathPrecision="5"/> 
 		<TrinityMoveTo questId="312429" stepId="2" x="859" y="714" z="0" pathPrecision="5"/> 
@@ -115,6 +117,7 @@
 			<UseWaypoint waypointNumber="42" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<If condition="(ActorExistsAt(197816, 2072.5, 2747.5, -30, 10))"> 
 			<TrinityMoveTo questId="312429" stepId="2" x="2085" y="2810" z="-15" pathPrecision="5"/> 
 			<TrinityMoveTo questId="312429" stepId="2" x="2080" y="2954" z="-15" pathPrecision="5"/> 
@@ -178,6 +181,7 @@
 			<UseWaypoint waypointNumber="43" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<While condition="CurrentWorldId == 109526 or CurrentWorldId == 109525">
 			<If condition="(ActorExistsAt(6442, 775.6774, 1206.639, -9.316513, 10))"> 
 				<TrinityMoveTo questId="312429" stepId="2" x="724" y="1068" z="0" pathPrecision="5"/> 
@@ -231,6 +235,7 @@
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<TrinityExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="40" pathPrecision="30" boxTolerance="0.2" ignoreMarkers="False" stayAfterBounty="False" />
 	</While>
 	<!-- Kill izual-->
@@ -242,6 +247,7 @@
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<While condition="CurrentWorldId == 121579">
 			<TrinityExploreDungeon questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="40" pathPrecision="30" boxTolerance="0.15" ignoreMarkers="false" stayAfterBounty="False">
 				<PrioritizeScenes>
@@ -275,6 +281,7 @@
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<TrinityExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="14" pathPrecision="30" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False"/>
 	</While>
 	<!-- Cursed chapel-->
@@ -286,6 +293,7 @@
 		    <UseWaypoint waypointNumber="45" questId="1"/>
 		    <WaitTimer questId="1" stepId="1" waitTime="1000"/>
 	    </While>
+		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 	    <If condition="CurrentWorldId == 129305 and not (ActorExistsAt(5466, Me.Position.X, Me.Position.Y, Me.Position.Z, 50))">
 		    <ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="60" killRadius="30" />
 	    </If>
@@ -315,6 +323,7 @@
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<While condition="CurrentWorldId == 129305">
 			<TrinityExploreDungeon questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="210763" boxSize="14" pathPrecision="30" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False">
 				<PrioritizeScenes>
@@ -350,16 +359,11 @@
 	</While>
 
 	<ActBountiesComplete act="A4">
-		<While condition="CurrentWorldId != 304235">
-		    <LogMessage quest="1" step="2" output="TP to A5 to clear map cache." />
-			<UseWaypoint waypointNumber="46" questId="1"/>
-			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
-		</While>
-		<WaitTimer questId="1" stepId="1" waitTime="3000"/>
 		<While condition="CurrentWorldId != 172909">  
 			<UseWaypoint waypointNumber="26" questId="1"/> 
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<TrinityTownRun minFreeBagSlots="40"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<MoveToActor questId="1" stepId="1" actorId="114622"/>
