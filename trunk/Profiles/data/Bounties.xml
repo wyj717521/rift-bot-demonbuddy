@@ -253,12 +253,6 @@
 				<PrioritizeScenes>
 					<PriorityScene sceneName="Exit" />
 				</PrioritizeScenes>
-				<IgnoreScenes>
-					<IgnoreScene sceneName="_N_" />
-					<IgnoreScene sceneName="_S_" />
-					<IgnoreScene sceneName="_E_" />
-					<IgnoreScene sceneName="_W_" />
-				</IgnoreScenes>
 			</TrinityExploreDungeon>
 			<MoveToActor questId="1" stepId="2" actorId="225195" isPortal="True" destinationWorldId="214956" interactRange="20" />
 			<WaitTimer questId="1" stepId="2" waitTime="1000" />
@@ -329,12 +323,6 @@
 				<PrioritizeScenes>
 					<PriorityScene sceneName="Exit" />
 				</PrioritizeScenes>
-				<IgnoreScenes>
-					<IgnoreScene sceneName="_N_0" />
-					<IgnoreScene sceneName="_S_0" />
-					<IgnoreScene sceneName="_E_0" />
-					<IgnoreScene sceneName="_W_0" />
-				</IgnoreScenes>
 			</TrinityExploreDungeon>
 			<MoveToActor questId="1" stepId="2" actorId="210763" isPortal="True" interactRange="20"/>
 			<WaitTimer questId="1" stepId="2" waitTime="1000" />
