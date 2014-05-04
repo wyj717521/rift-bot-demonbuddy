@@ -9,9 +9,6 @@
 </TargetBlacklists>
 
 <Order>
-	<LogMessage quest="1" step="1" output="==========WARNING==========" /> 
-	<LogMessage quest="1" step="1" output="Bounties profiles are not supported by us." />
-	<LogMessage quest="1" step="1" output="==========WARNING==========" />  
 	<LoadProfile file="data/Bounties.xml" />
 </Order>
 </Profile>

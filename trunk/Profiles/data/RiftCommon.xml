@@ -6,6 +6,7 @@
 
 <TargetBlacklists>
     <TargetBlacklist actorId="114622" name="Tyrael" />
+    <TargetBlacklist actorId="363744" name="Orek" /> 
 	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
 	<TargetBlacklist actorId="103919"/> <!-- Demonic Vessels -->
 	<TargetBlacklist actorId="58317"/> <!-- Tool/Weapon Rack -->
