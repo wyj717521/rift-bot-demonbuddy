@@ -145,26 +145,13 @@
 		</RiftQuestAndStep>
 	</If>
 
+	<LogMessage quest="1" step="2" output="[Rift Bot] Reset and repeat" />
+	
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
-		<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
 		<TrinityLoadProfile file="RBFB.xml" />			
 	</If>
 
-	<RiftQuestAndStep questId="337492" stepId="1">
-		<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-		<TrinityLoadProfile file="RBF.xml" />
-	</RiftQuestAndStep>
-	
-	<RiftQuestAndStep questId="337492" stepId="3">
-		<LogMessage quest="1" step="2" output="[Rift Bot] Logout and repeat" />
-		<TrinityLoadProfile file="RBF.xml" />
-	</RiftQuestAndStep>
-	
-	<LogMessage quest="1" step="2" output="[Rift Bot] Wait for portal close" />
-	<While condition="ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 1000)">
-		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
-	</While>
-	<TrinityLoadProfile file="RiftFull.xml" />
+	<TrinityLoadProfile file="RBF.xml" />
 		
 </Order>
 </Profile>
