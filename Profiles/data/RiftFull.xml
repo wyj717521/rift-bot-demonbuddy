@@ -113,7 +113,7 @@
 		</RiftQuestAndStep>
 		<RiftQuestAndStep questId="337492" stepId="1">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Fully explored but no boss spawned. Now go to explore the first level" />
-			<UseTownPortal questId="1" />
+			<TrinityTownPortal wait="1000"/>
 			<WaitTimer questId="1" stepId="1" waitTime="3000"/>
 			<MoveToActor questId="312429" stepId="2" x="594" y="508" z="3" actorId="345935" interactRange="9" name="X1_OpenWorld_LootRunPortal-1589" isPortal="True" pathPrecision="5" pathPointLimit="250"/>  
 			<WaitTimer questId="312429" stepId="2" waitTime="3000" />
@@ -135,7 +135,7 @@
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
-		<UseTownPortal questId="1" />
+		<TrinityTownPortal wait="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="3000"/>
 	</While>
 	

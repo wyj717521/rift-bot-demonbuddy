@@ -51,7 +51,7 @@
 	<While condition="HasQuest(369900) or HasQuest(349258) or HasQuest(349256) or HasQuest(349260) or HasQuest(357131)">
 		<While condition="CurrentWorldId != 109513">
 			<If condition="not Me.IsInTown">   
-				<UseTownPortal questId="1" />
+				<TrinityTownPortal wait="1000"/>
 			</If>
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -87,7 +87,7 @@
 	<While condition="HasQuest(349262)">
 		<While condition="CurrentWorldId != 109513 and CurrentWorldId != 166640">
 			<If condition="not Me.IsInTown">   
-				<UseTownPortal questId="1" />
+				<TrinityTownPortal wait="1000"/>
 			</If>
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -112,7 +112,7 @@
 	<While condition="HasQuest(357129) or HasQuest(357127) or HasQuest(349254) or HasQuest(349252)">
 		<While condition="CurrentWorldId != 219659">
 			<If condition="not Me.IsInTown">   
-				<UseTownPortal questId="1" />
+				<TrinityTownPortal wait="1000"/>
 			</If>
 			<UseWaypoint waypointNumber="42" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -176,7 +176,7 @@
 	<While condition="HasQuest(364336) or HasQuest(364333) or HasQuest(362140)">
 		<While condition="CurrentWorldId != 109526 and CurrentWorldId != 109525 and CurrentWorldId != 109530">
 			<If condition="not Me.IsInTown">   
-				<UseTownPortal questId="1" />
+				<TrinityTownPortal wait="1000"/>
 			</If>
 			<UseWaypoint waypointNumber="43" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -230,7 +230,7 @@
 	<While condition="HasQuest(357133) or HasQuest(357135) or HasQuest(349280) or HasQuest(349276) or HasQuest(349278)">
 		<While condition="CurrentWorldId != 121579">
 			<If condition="not Me.IsInTown">   
-				<UseTownPortal questId="1" />
+				<TrinityTownPortal wait="1000"/>
 			</If>
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -242,7 +242,7 @@
 	<While condition="HasQuest(361421)">
 		<While condition="CurrentWorldId != 121579 and CurrentWorldId != 214956">
 			<If condition="not Me.IsInTown">   
-				<UseTownPortal questId="1" />
+				<TrinityTownPortal wait="1000"/>
 			</If>
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -270,7 +270,7 @@
 	<While condition="HasQuest(357139) or HasQuest(349272) or HasQuest(349274) or HasQuest(349282) or HasQuest(349270) or HasQuest(357137)">
 		<While condition="CurrentWorldId != 129305">
 			<If condition="not Me.IsInTown">   
-				<UseTownPortal questId="1" />
+				<TrinityTownPortal wait="1000"/>
 			</If>
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -282,7 +282,7 @@
 	<While condition="HasQuest(369878)">
         <While condition="CurrentWorldId != 129305">
 			<If condition="not Me.IsInTown">   
-				<UseTownPortal questId="1" />
+				<TrinityTownPortal wait="1000"/>
 			</If>
 		    <UseWaypoint waypointNumber="45" questId="1"/>
 		    <WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -312,7 +312,7 @@
 		<WaitTimer questId="1" stepId="1" waitTime="2500"/>
 		<While condition="CurrentWorldId != 129305 and CurrentWorldId != 153670 and CurrentWorldId != 205399 and CurrentWorldId != 196292 and CurrentWorldId !=109561">
 			<If condition="not Me.IsInTown">   
-				<UseTownPortal questId="1" />
+				<TrinityTownPortal wait="1000"/>
 			</If>
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
