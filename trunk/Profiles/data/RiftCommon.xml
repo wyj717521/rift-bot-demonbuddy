@@ -5,6 +5,7 @@
 <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
 
 <TargetBlacklists>
+    <TargetBlacklist actorId="114622" name="Tyrael" />
 	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
 	<TargetBlacklist actorId="103919"/> <!-- Demonic Vessels -->
 	<TargetBlacklist actorId="58317"/> <!-- Tool/Weapon Rack -->

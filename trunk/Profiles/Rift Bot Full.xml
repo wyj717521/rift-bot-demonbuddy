@@ -3,6 +3,11 @@
 <KillMonsters>True</KillMonsters>
 <PickupLoot>True</PickupLoot>
 <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
+
+<TargetBlacklists>
+	<TargetBlacklist actorId="114622" name="Tyrael" />
+</TargetBlacklists>
+
 <Order>
 	<LoadProfile file="data/RBF/RBF.xml" />
 </Order>
