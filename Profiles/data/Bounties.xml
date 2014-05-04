@@ -359,6 +359,8 @@
 			<UseWaypoint waypointNumber="26" questId="1"/> 
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<TrinityTownRun minFreeBagSlots="40"/>
+		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<MoveToActor questId="1" stepId="1" actorId="114622"/>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
