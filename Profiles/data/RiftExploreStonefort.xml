@@ -70,6 +70,37 @@
 		<LoadProfile file="RiftFull.xml" />
 	</If>
 
+	<!-- Stonefort 2-->
+	<If condition="(MarkerExistsAt(1877684886, 1861.255, 2265.319, -23.04723, 10))
+	or (MarkerExistsAt(1938876093, 1861.255, 2265.319, -23.04723, 10))
+	or (MarkerExistsAt(1938876094, 1861.255, 2265.319, -23.04723, 10))
+	or (MarkerExistsAt(1938876095, 1861.255, 2265.319, -23.04723, 10))
+	or (MarkerExistsAt(1938876096, 1861.255, 2265.319, -23.04723, 10))
+	or (MarkerExistsAt(1938876097, 1861.255, 2265.319, -23.04723, 10))
+	or (MarkerExistsAt(1938876098, 1861.255, 2265.319, -23.04723, 10))
+	or (MarkerExistsAt(1938876099, 1861.255, 2265.319, -23.04723, 10))
+	or (MarkerExistsAt(1938876100, 1861.255, 2265.319, -23.04723, 10))">
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 2 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+		<SafeMoveTo questId="312429" stepId="2" x="1857" y="2330" z="-25" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1799" y="2115" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1809" y="1803" z="1" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1550" y="1777" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1380" y="1876" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1250" y="1826" z="25" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1322" y="1698" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1293" y="1345" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1117" y="1320" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1068" y="1283" z="25" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="839" y="1291" z="25" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="841" y="1007" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="802" y="828" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="775" y="747" z="25" pathPrecision="5" />
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+			<TrinityLoadProfile file="RiftCommon.xml" />			
+		</If>
+		<TrinityLoadProfile file="RiftFull.xml" />
+	</If>
+
 	<!-- Unknown version of Stonefort-->
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Stonefort with ExploreDungeon." />		
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort @ 40/30/0.2" />
