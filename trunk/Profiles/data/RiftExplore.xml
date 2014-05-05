@@ -75,8 +75,8 @@
 			<LoadProfile file="RiftExploreCursedTower.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 9/30/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="30" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 9/15/0.2" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="15" boxTolerance="0.2"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacomb-->
