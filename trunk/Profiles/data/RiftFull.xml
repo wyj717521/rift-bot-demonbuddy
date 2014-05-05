@@ -104,16 +104,8 @@
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876102" interactRange="15" destinationWorldId="288816"/>
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876102" destinationWorldId="288816"/>
 				</If>
-				<If condition="CurrentWorldId == 288816">
-					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876103" interactRange="15" destinationWorldId="288816"/>
-					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876103" destinationWorldId="288816"/>
-				</If>
 			<WaitTimer questId="312429" stepId="2" waitTime="3000" />
 			<LoadProfile file="RiftExploreFull.xml" />
-		</While>
-		<While condition="CurrentWorldId == 288810">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore last level" />
-			<TrinityExploreRift questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="3000"/>
 	</While>
