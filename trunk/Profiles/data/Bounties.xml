@@ -48,11 +48,8 @@
 		<TownRun minFreeBagSlots="40"/>
 	</If>
 	<!-- Cursed Dais, Kill Khatun, Kill Torchlighter, Kill Veshan the fierce, Kill the aspect of destruction-->
-	<While condition="HasQuest(369900) or HasQuest(349258) or HasQuest(349256) or HasQuest(349260) or HasQuest(357131)">
+	<If condition="HasQuest(369900) or HasQuest(349258) or HasQuest(349256) or HasQuest(349260) or HasQuest(357131)">
 		<While condition="CurrentWorldId != 109513">
-			<If condition="not Me.IsInTown">   
-				<TownPortal questId="1" />
-			</If>
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
@@ -82,13 +79,10 @@
 			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="368169"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="3000"/>
 		</While>
-	</While>
+	</If>
 	<!-- Kill Rakanoth -->
-	<While condition="HasQuest(349262)">
+	<If condition="HasQuest(349262)">
 		<While condition="CurrentWorldId != 109513 and CurrentWorldId != 166640">
-			<If condition="not Me.IsInTown">   
-				<TownPortal questId="1" />
-			</If>
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
@@ -107,13 +101,10 @@
 			<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		</While>  
 		<SafeMoveTo questId="1" stepId="2" pathPrecision="10" x="358" y="352" z="0" />
-	</While>
+	</If>
 	<!-- Kill the aspect of pain, Kill the aspect of anguish, Kill kao'ahn, Kill oah'tash-->
-	<While condition="HasQuest(357129) or HasQuest(357127) or HasQuest(349254) or HasQuest(349252)">
+	<If condition="HasQuest(357129) or HasQuest(357127) or HasQuest(349254) or HasQuest(349252)">
 		<While condition="CurrentWorldId != 219659">
-			<If condition="not Me.IsInTown">   
-				<TownPortal questId="1" />
-			</If>
 			<UseWaypoint waypointNumber="42" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
@@ -171,13 +162,10 @@
 			<SafeMoveTo questId="312429" stepId="2" x="2359" y="2697" z="-24" pathPrecision="5"/> 
 			<SafeMoveTo questId="312429" stepId="2" x="2336" y="2605" z="-30" pathPrecision="5"/>
 		</If>
-	</While>
+	</If>
 	<!-- Kill sledge, hammermash, clear hell rift-->
-	<While condition="HasQuest(364336) or HasQuest(364333) or HasQuest(362140)">
+	<If condition="HasQuest(364336) or HasQuest(364333) or HasQuest(362140)">
 		<While condition="CurrentWorldId != 109526 and CurrentWorldId != 109525 and CurrentWorldId != 109530">
-			<If condition="not Me.IsInTown">   
-				<TownPortal questId="1" />
-			</If>
 			<UseWaypoint waypointNumber="43" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
@@ -225,25 +213,19 @@
 			</If>
 			<ExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="15" pathPrecision="30" boxTolerance="0.5" ignoreMarkers="False" stayAfterBounty="False"/>
 		</While>
-	</While>
+	</If>
 	<!-- Kill aspect of hatred, aspect of lies, slarg the behemoth, kysindra the wretched, pyres the damned-->
-	<While condition="HasQuest(357133) or HasQuest(357135) or HasQuest(349280) or HasQuest(349276) or HasQuest(349278)">
+	<If condition="HasQuest(357133) or HasQuest(357135) or HasQuest(349280) or HasQuest(349276) or HasQuest(349278)">
 		<While condition="CurrentWorldId != 121579">
-			<If condition="not Me.IsInTown">   
-				<TownPortal questId="1" />
-			</If>
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<ExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="40" pathPrecision="30" boxTolerance="0.2" ignoreMarkers="False" stayAfterBounty="False" />
-	</While>
+	</If>
 	<!-- Kill izual-->
-	<While condition="HasQuest(361421)">
+	<If condition="HasQuest(361421)">
 		<While condition="CurrentWorldId != 121579 and CurrentWorldId != 214956">
-			<If condition="not Me.IsInTown">   
-				<TownPortal questId="1" />
-			</If>
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
@@ -265,9 +247,9 @@
 			</While>
 			<SafeMoveTo questId="1" stepId="2" pathPrecision="10" x="583" y="558" z="0" />
 		</While>
-	</While>
+	</If>
 	<!-- Kill aspect of terror, grimnight the soulless, Sao'thall, rhau'kye, haures, aspect of sin-->
-	<While condition="HasQuest(357139) or HasQuest(349272) or HasQuest(349274) or HasQuest(349282) or HasQuest(349270) or HasQuest(357137)">
+	<If condition="HasQuest(357139) or HasQuest(349272) or HasQuest(349274) or HasQuest(349282) or HasQuest(349270) or HasQuest(357137)">
 		<While condition="CurrentWorldId != 129305">
 			<If condition="not Me.IsInTown">   
 				<TownPortal questId="1" />
@@ -277,13 +259,10 @@
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<ExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="14" pathPrecision="30" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False"/>
-	</While>
+	</If>
 	<!-- Cursed chapel-->
-	<While condition="HasQuest(369878)">
+	<If condition="HasQuest(369878)">
         <While condition="CurrentWorldId != 129305">
-			<If condition="not Me.IsInTown">   
-				<TownPortal questId="1" />
-			</If>
 		    <UseWaypoint waypointNumber="45" questId="1"/>
 		    <WaitTimer questId="1" stepId="1" waitTime="1000"/>
 	    </While>
@@ -303,17 +282,14 @@
 		    <MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="365097"/>
 		    <WaitTimer questId="312429" stepId="2" waitTime="3000"/>
 	    </While>
-	</While>
+	</If>
     <If condition="not HasQuest(369878)">
 		<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="150" killRadius="80" />
 	</If>
 	<!-- kill diablo -->
-	<While condition="HasQuest(349288)">
+	<If condition="HasQuest(349288)">
 		<WaitTimer questId="1" stepId="1" waitTime="2500"/>
 		<While condition="CurrentWorldId != 129305 and CurrentWorldId != 153670 and CurrentWorldId != 205399 and CurrentWorldId != 196292 and CurrentWorldId !=109561">
-			<If condition="not Me.IsInTown">   
-				<TownPortal questId="1" />
-			</If>
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
@@ -344,7 +320,7 @@
 	            <WaitTimer questId="1" stepId="2" waitTime="1000" />
 	        </While>
         </If>
-	</While>
+	</If>
 
 	<ActBountiesComplete act="A4">
 		<While condition="CurrentWorldId != 172909">  
