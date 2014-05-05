@@ -174,7 +174,7 @@
 		</If>
 		<If condition="CurrentLevelAreaId == 276215"> <!-- Worm Caves--> 
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Worm Caves @ 14/15/0.25" /> 
-			<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="14" pathPrecision="15" boxTolerance="0.25"/> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="14" pathPrecision="15" boxTolerance="0.25"/> 
 			<LoadProfile file="RiftCommon.xml" /> 
 		</If>
 		
