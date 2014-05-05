@@ -64,10 +64,7 @@
 		<SafeMoveTo questId="312429" stepId="2" x="860" y="1233" z="0" pathPrecision="5" />
 		<SafeMoveTo questId="312429" stepId="2" x="858" y="971" z="1" pathPrecision="5" />
 		<SafeMoveTo questId="312429" stepId="2" x="863" y="796" z="1" pathPrecision="5" />
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LoadProfile file="RiftCommon.xml" />			
-		</If>
-		<LoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
 
 	<!-- Stonefort 2-->
@@ -95,20 +92,17 @@
 		<SafeMoveTo questId="312429" stepId="2" x="841" y="1007" z="0" pathPrecision="5" />
 		<SafeMoveTo questId="312429" stepId="2" x="802" y="828" z="0" pathPrecision="5" />
 		<SafeMoveTo questId="312429" stepId="2" x="775" y="747" z="25" pathPrecision="5" />
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<TrinityLoadProfile file="RiftCommon.xml" />			
-		</If>
-		<TrinityLoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
 
 	<!-- Unknown version of Stonefort-->
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Stonefort with ExploreDungeon." />		
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort @ 40/30/0.2" />
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="40" pathPrecision="30" boxTolerance="0.2"/>
-		<LoadProfile file="RiftCommon.xml" />			
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
-	<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
-	<LoadProfile file="RiftFull.xml" />
+	<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="40" pathPrecision="30" boxTolerance="0.2"/>
+	<LoadProfile file="RiftSwitch.xml" />
 </Order>
 </Profile>
