@@ -86,13 +86,13 @@
 		<LoadProfile file="RiftFull.xml" />
 	</If>
 	<!-- Unknown version-->
-	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Southern Highland with Explorer." />		
-	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands @ 11/15/0.55" />
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Southern Highland with ExploreDungeon." />		
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands @ 15/20/0.22" />
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="15" pathPrecision="30" boxTolerance="0.22"/>
+		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="15" pathPrecision="20" boxTolerance="0.22"/>
 		<LoadProfile file="RiftCommon.xml" />			
 	</If>
-	<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="30" boxTolerance="0.22"/>
+	<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="20" boxTolerance="0.22"/>
 	<LoadProfile file="RiftFull.xml" />
 </Order>
 </Profile>
