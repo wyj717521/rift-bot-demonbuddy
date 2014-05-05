@@ -73,10 +73,7 @@
 			<SafeMoveTo questId="312429" stepId="2" x="1105" y="823" z="0" pathPrecision="5" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="1028" y="814" z="-50" pathPrecision="5" statusText="" />
 		</If>
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LoadProfile file="RiftCommon.xml" />		
-		</If>
-		<LoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
 	<!-- Medium Cursed Hold-->
 	<If condition="(MarkerExistsAt(1877684886, 303.0258, 600.2885, 1.596355, 100))
@@ -124,10 +121,7 @@
 			<SafeMoveTo questId="312429" stepId="2" x="1105" y="823" z="0" pathPrecision="5" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="1028" y="814" z="-50" pathPrecision="5" statusText="" />
 		</If>
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LoadProfile file="RiftCommon.xml" />	
-		</If>
-		<LoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
 	<!-- Large Cursed Hold-->
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Large Cursed Hold with SafeMoveTo. Bot will not stop when boss spawns/killed." />
@@ -173,11 +167,7 @@
 		<SafeMoveTo questId="312429" stepId="2" x="1200" y="1438" z="0" pathPrecision="5" statusText="" />
 		<SafeMoveTo questId="312429" stepId="2" x="1201" y="1113" z="0" pathPrecision="5" statusText="" />
 	</If>
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<LoadProfile file="RiftCommon.xml" />
-	</If>
-	<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
-	<LoadProfile file="RiftFull.xml" />
+	<LoadProfile file="RiftSwitch.xml" />
 </Order>
 </Profile>
 <!--ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/!-->

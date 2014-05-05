@@ -14,7 +14,7 @@
 	<LoadOnce questId="1" stepId="1" noRandom="true">
 		<ProfileList>
 			<LoadProfileOnce profile="Bounties.xml" />
-			<LoadProfileOnce profile="RiftFull.xml" />
+			<LoadProfileOnce profile="Rift.xml" />
 		</ProfileList>
 	</LoadOnce>	
 

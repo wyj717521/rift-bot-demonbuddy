@@ -64,20 +64,17 @@
 		<SafeMoveTo questId="312429" stepId="2" x="1087" y="1098" z="0" pathPrecision="5"/>
 		<SafeMoveTo questId="312429" stepId="2" x="888" y="1062" z="0" pathPrecision="5"/>
 		<SafeMoveTo questId="312429" stepId="2" x="848" y="921" z="0" pathPrecision="5"/>
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LoadProfile file="RiftCommon.xml" />			
-		</If>
-		<LoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
 	
 	<!-- Unknown version of the Catacombs-->
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Catacombs with ExploreDungeon." />		
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs @ 13/15/0.2" />
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="13" pathPrecision="15" boxTolerance="0.2"/>
-		<LoadProfile file="RiftCommon.xml" />			
+	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="13" pathPrecision="15" boxTolerance="0.2"/>
+		<LoadProfile file="RiftSwitch.xml" />			
 	</If>
-	<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
-	<LoadProfile file="RiftFull.xml" />
+	<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="13" pathPrecision="15" boxTolerance="0.2"/>
+	<LoadProfile file="RiftSwitch.xml" />
 </Order>
 </Profile>

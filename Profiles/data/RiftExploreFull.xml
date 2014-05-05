@@ -54,6 +54,7 @@
 					  not (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
 					  not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
 					  not (CurrentWorldId == 288816 and MarkerExistsAt(1938876103, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
+					  not (not Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not IsActiveQuestAndStep(337492, 1))">
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort-->
 			<LoadProfile file="RiftExploreStonefort.xml" />
 		</If>
@@ -173,7 +174,7 @@
 		<If condition="CurrentLevelAreaId == 276215"> <!-- Worm Caves--> 
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Worm Caves @ 14/15/0.25" /> 
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="14" pathPrecision="15" boxTolerance="0.25"/> 
-			<LoadProfile file="RiftCommon.xml" /> 
+			<LoadProfile file="RiftFull.xml" /> 
 		</If>
 		
 		<!-- Default 20/0.01 -->

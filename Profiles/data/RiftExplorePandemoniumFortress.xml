@@ -71,10 +71,7 @@
 		<SafeMoveTo questId="312429" stepId="2" x="419" y="1163" z="0" pathPrecision="5" /> 
 		<SafeMoveTo questId="312429" stepId="2" x="422" y="1417" z="0" pathPrecision="5" /> 
 		<SafeMoveTo questId="312429" stepId="2" x="336" y="1511" z="-16" pathPrecision="5" /> 
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LoadProfile file="RiftCommon.xml" />			
-		</If>
-		<LoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
 
 	<!-- Pandemonium Fortress 2-->
@@ -112,20 +109,17 @@
 		<SafeMoveTo questId="312429" stepId="2" x="1608" y="598" z="10" pathPrecision="5" /> 
 		<SafeMoveTo questId="312429" stepId="2" x="1622" y="730" z="0" pathPrecision="5" /> 
 		<SafeMoveTo questId="312429" stepId="2" x="1538" y="791" z="-15" pathPrecision="5" /> 
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LoadProfile file="RiftCommon.xml" />			
-		</If>
-		<LoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
 	
 	<!-- Unknown version of Pandemonium Fortress-->
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Pandemonium Fortress with ExploreDungeon." />		
-	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.40" />
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.40"/>
-		<LoadProfile file="RiftCommon.xml" />			
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.4" />
+	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.4"/>
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
-	<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
-	<LoadProfile file="RiftFull.xml" />
+	<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.4"/>
+	<LoadProfile file="RiftSwitch.xml" />
 </Order>
 </Profile>

@@ -71,20 +71,17 @@
 		<SafeMoveTo questId="312429" stepId="2" x="1507" y="867" z="-25" pathPrecision="5" />
 		<SafeMoveTo questId="312429" stepId="2" x="1342" y="849" z="0" pathPrecision="5" />
 		<SafeMoveTo questId="312429" stepId="2" x="1010" y="838" z="0" pathPrecision="5" />
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LoadProfile file="RiftCommon.xml" />			
-		</If>
-		<LoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
 	
 	<!-- Unknown version of Battlefield Bridge-->
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Battlefield Bridge with ExploreDungeon." />		
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge @ 30/30/0.15" />
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="30" pathPrecision="30" boxTolerance="0.15"/>
-		<LoadProfile file="RiftCommon.xml" />			
+	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="30" boxTolerance="0.15"/>
+		<LoadProfile file="RiftSwitch.xml" />
 	</If>
-	<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
-	<LoadProfile file="RiftFull.xml" />
+	<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="30" pathPrecision="30" boxTolerance="0.15"/>
+	<LoadProfile file="RiftSwitch.xml" />
 </Order>
 </Profile>
