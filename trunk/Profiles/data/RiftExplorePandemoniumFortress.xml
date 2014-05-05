@@ -72,9 +72,9 @@
 		<SafeMoveTo questId="312429" stepId="2" x="422" y="1417" z="0" pathPrecision="5" /> 
 		<SafeMoveTo questId="312429" stepId="2" x="336" y="1511" z="-16" pathPrecision="5" /> 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<TrinityLoadProfile file="RiftCommon.xml" />			
+			<LoadProfile file="RiftCommon.xml" />			
 		</If>
-		<TrinityLoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftFull.xml" />
 	</If>
 
 	<!-- Pandemonium Fortress 2-->
@@ -113,19 +113,19 @@
 		<SafeMoveTo questId="312429" stepId="2" x="1622" y="730" z="0" pathPrecision="5" /> 
 		<SafeMoveTo questId="312429" stepId="2" x="1538" y="791" z="-15" pathPrecision="5" /> 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<TrinityLoadProfile file="RiftCommon.xml" />			
+			<LoadProfile file="RiftCommon.xml" />			
 		</If>
-		<TrinityLoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftFull.xml" />
 	</If>
 	
 	<!-- Unknown version of Pandemonium Fortress-->
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Pandemonium Fortress with ExploreDungeon." />		
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.40" />
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.40"/>
-		<TrinityLoadProfile file="RiftCommon.xml" />			
+		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.40"/>
+		<LoadProfile file="RiftCommon.xml" />			
 	</If>
-	<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
-	<TrinityLoadProfile file="RiftFull.xml" />
+	<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
+	<LoadProfile file="RiftFull.xml" />
 </Order>
 </Profile>

@@ -65,19 +65,19 @@
 		<SafeMoveTo questId="312429" stepId="2" x="888" y="1062" z="0" pathPrecision="5"/>
 		<SafeMoveTo questId="312429" stepId="2" x="848" y="921" z="0" pathPrecision="5"/>
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<TrinityLoadProfile file="RiftCommon.xml" />			
+			<LoadProfile file="RiftCommon.xml" />			
 		</If>
-		<TrinityLoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftFull.xml" />
 	</If>
 	
 	<!-- Unknown version of the Catacombs-->
-	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Catacombs with TrinityExplorer." />		
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Catacombs with Explorer." />		
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs @ 11/15/0.55" />
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
-		<TrinityLoadProfile file="RiftCommon.xml" />			
+		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
+		<LoadProfile file="RiftCommon.xml" />			
 	</If>
-	<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
-	<TrinityLoadProfile file="RiftFull.xml" />
+	<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
+	<LoadProfile file="RiftFull.xml" />
 </Order>
 </Profile>
