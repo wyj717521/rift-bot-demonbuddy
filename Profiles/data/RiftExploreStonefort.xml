@@ -42,67 +42,70 @@
 </TargetBlacklists>
 
 <Order>
-	<!-- Stonefort 1-->
-	<If condition="(MarkerExistsAt(1877684886, 1890.154, 1759.493, -22.55594, 10))
-	or (MarkerExistsAt(1938876093, 1890.154, 1759.493, -22.55594, 10))
-	or (MarkerExistsAt(1938876094, 1890.154, 1759.493, -22.55594, 10))
-	or (MarkerExistsAt(1938876095, 1890.154, 1759.493, -22.55594, 10))
-	or (MarkerExistsAt(1938876096, 1890.154, 1759.493, -22.55594, 10))
-	or (MarkerExistsAt(1938876097, 1890.154, 1759.493, -22.55594, 10))
-	or (MarkerExistsAt(1938876098, 1890.154, 1759.493, -22.55594, 10))
-	or (MarkerExistsAt(1938876099, 1890.154, 1759.493, -22.55594, 10))
-	or (MarkerExistsAt(1938876100, 1890.154, 1759.493, -22.55594, 10))">
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
-		<SafeMoveTo questId="312429" stepId="2" x="1886" y="1870" z="-25" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1857" y="1811" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1526" y="1776" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1290" y="1779" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1179" y="1769" z="1" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1082" y="1764" z="25" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1044" y="1557" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="858" y="1533" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="860" y="1233" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="858" y="971" z="1" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="863" y="796" z="1" pathPrecision="5" />
-		<LoadProfile file="Rift.xml" />
-	</If>
+	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
+		<!-- Stonefort 1-->
+		<If condition="(MarkerExistsAt(1877684886, 1890.154, 1759.493, -22.55594, 10))
+		or (MarkerExistsAt(1938876093, 1890.154, 1759.493, -22.55594, 10))
+		or (MarkerExistsAt(1938876094, 1890.154, 1759.493, -22.55594, 10))
+		or (MarkerExistsAt(1938876095, 1890.154, 1759.493, -22.55594, 10))
+		or (MarkerExistsAt(1938876096, 1890.154, 1759.493, -22.55594, 10))
+		or (MarkerExistsAt(1938876097, 1890.154, 1759.493, -22.55594, 10))
+		or (MarkerExistsAt(1938876098, 1890.154, 1759.493, -22.55594, 10))
+		or (MarkerExistsAt(1938876099, 1890.154, 1759.493, -22.55594, 10))
+		or (MarkerExistsAt(1938876100, 1890.154, 1759.493, -22.55594, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+			<SafeMoveTo questId="312429" stepId="2" x="1886" y="1870" z="-25" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1857" y="1811" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1526" y="1776" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1290" y="1779" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1179" y="1769" z="1" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1082" y="1764" z="25" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1044" y="1557" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="858" y="1533" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="860" y="1233" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="858" y="971" z="1" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="863" y="796" z="1" pathPrecision="5" />
+			<LoadProfile file="Rift.xml" />
+		</If>
 
-	<!-- Stonefort 2-->
-	<If condition="(MarkerExistsAt(1877684886, 1861.255, 2265.319, -23.04723, 10))
-	or (MarkerExistsAt(1938876093, 1861.255, 2265.319, -23.04723, 10))
-	or (MarkerExistsAt(1938876094, 1861.255, 2265.319, -23.04723, 10))
-	or (MarkerExistsAt(1938876095, 1861.255, 2265.319, -23.04723, 10))
-	or (MarkerExistsAt(1938876096, 1861.255, 2265.319, -23.04723, 10))
-	or (MarkerExistsAt(1938876097, 1861.255, 2265.319, -23.04723, 10))
-	or (MarkerExistsAt(1938876098, 1861.255, 2265.319, -23.04723, 10))
-	or (MarkerExistsAt(1938876099, 1861.255, 2265.319, -23.04723, 10))
-	or (MarkerExistsAt(1938876100, 1861.255, 2265.319, -23.04723, 10))">
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 2 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
-		<SafeMoveTo questId="312429" stepId="2" x="1857" y="2330" z="-25" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1799" y="2115" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1809" y="1803" z="1" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1550" y="1777" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1380" y="1876" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1250" y="1826" z="25" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1322" y="1698" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1293" y="1345" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1117" y="1320" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="1068" y="1283" z="25" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="839" y="1291" z="25" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="841" y="1007" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="802" y="828" z="0" pathPrecision="5" />
-		<SafeMoveTo questId="312429" stepId="2" x="775" y="747" z="25" pathPrecision="5" />
-		<LoadProfile file="Rift.xml" />
-	</If>
+		<!-- Stonefort 2-->
+		<If condition="(MarkerExistsAt(1877684886, 1861.255, 2265.319, -23.04723, 10))
+		or (MarkerExistsAt(1938876093, 1861.255, 2265.319, -23.04723, 10))
+		or (MarkerExistsAt(1938876094, 1861.255, 2265.319, -23.04723, 10))
+		or (MarkerExistsAt(1938876095, 1861.255, 2265.319, -23.04723, 10))
+		or (MarkerExistsAt(1938876096, 1861.255, 2265.319, -23.04723, 10))
+		or (MarkerExistsAt(1938876097, 1861.255, 2265.319, -23.04723, 10))
+		or (MarkerExistsAt(1938876098, 1861.255, 2265.319, -23.04723, 10))
+		or (MarkerExistsAt(1938876099, 1861.255, 2265.319, -23.04723, 10))
+		or (MarkerExistsAt(1938876100, 1861.255, 2265.319, -23.04723, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 2 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+			<SafeMoveTo questId="312429" stepId="2" x="1857" y="2330" z="-25" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1799" y="2115" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1809" y="1803" z="1" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1550" y="1777" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1380" y="1876" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1250" y="1826" z="25" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1322" y="1698" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1293" y="1345" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1117" y="1320" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1068" y="1283" z="25" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="839" y="1291" z="25" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="841" y="1007" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="802" y="828" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="775" y="747" z="25" pathPrecision="5" />
+			<LoadProfile file="Rift.xml" />
+		</If>
 
-	<!-- Unknown version of Stonefort-->
-	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Stonefort with ExploreDungeon." />		
-	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort @ 40/30/0.2" />
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
+		<!-- Unknown version of Stonefort-->
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Stonefort with ExploreDungeon." />		
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort @ 40/30/0.2" />
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
+			<LoadProfile file="Rift.xml" />
+		</If>
+		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="40" pathPrecision="30" boxTolerance="0.2"/>
 		<LoadProfile file="Rift.xml" />
-	</If>
-	<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="40" pathPrecision="30" boxTolerance="0.2"/>
+	</While>
 	<LoadProfile file="Rift.xml" />
 </Order>
 </Profile>
