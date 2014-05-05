@@ -55,9 +55,7 @@
 					  not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
 					  not (CurrentWorldId == 288816 and MarkerExistsAt(1938876103, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort @ 40/30/0.2" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="40" pathPrecision="30" boxTolerance="0.2"/>
-			<LoadProfile file="RiftFull.xml" />
+			<LoadProfile file="RiftExploreStonefort.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 20/30/0.3" />
@@ -84,10 +82,7 @@
 			<LoadProfile file="RiftExploreCatacombs.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.40" />
-			<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="20" killRadius="20" />
-			<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.40"/>
-			<LoadProfile file="RiftFull.xml" />
+			<LoadProfile file="RiftExplorePandemoniumFortress.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 323580"> <!-- Arreat Crater-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Arreat Crater @ 15/15/0.2" />

@@ -1,0 +1,131 @@
+<Profile>
+<Name>Rift Bot Optimized Explore</Name>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+<GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
+
+<TargetBlacklists>
+    <TargetBlacklist actorId="114622" name="Tyrael" />
+	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
+	<TargetBlacklist actorId="103919"/> <!-- Demonic Vessels -->
+	<TargetBlacklist actorId="58317"/> <!-- Tool/Weapon Rack -->
+	<TargetBlacklist actorId="289794"/> <!-- X1_PandExt_ArmorRack-7385 -->
+	<TargetBlacklist actorId="212491"/> <!-- Pony Clouds -->
+	<TargetBlacklist actorId="289756"/> <!-- Armor Racks -->
+	<TargetBlacklist actorId="5758"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="464"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="357299"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357297"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357295"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357306"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357301"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="362323"/> <!-- A buged NPC in A5 -->
+	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
+	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
+	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="341124"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192466"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192463"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167519"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289244"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289246"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="77354"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="340114"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="340113"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="5671"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="15937"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="78030"/> <!-- Wilderness Scarecrow -->
+</TargetBlacklists>
+
+<Order>
+	<!-- Pandemonium Fortress 1-->
+	<If condition="(MarkerExistsAt(1877684886, 1140.219, 335.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876093, 1140.219, 335.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876094, 1140.219, 335.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876095, 1140.219, 335.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876096, 1140.219, 335.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876097, 1140.219, 335.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876098, 1140.219, 335.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876099, 1140.219, 335.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876100, 1140.219, 335.6021, 27.61337, 10))">
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+		<SafeMoveTo questId="312429" stepId="2" x="1144" y="509" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1172" y="590" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1108" y="587" z="10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1054" y="569" z="10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1025" y="647" z="10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1143" y="674" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1139" y="820" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1039" y="919" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="890" y="922" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="797" y="819" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="765" y="820" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="761" y="919" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="661" y="932" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="658" y="1060" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="559" y="1161" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="419" y="1163" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="422" y="1417" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="336" y="1511" z="-16" pathPrecision="5" /> 
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+			<TrinityLoadProfile file="RiftCommon.xml" />			
+		</If>
+		<TrinityLoadProfile file="RiftFull.xml" />
+	</If>
+
+	<!-- Pandemonium Fortress 2-->
+	<If condition="(MarkerExistsAt(1877684886, 660.2192, 815.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876093, 660.2192, 815.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876094, 660.2192, 815.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876095, 660.2192, 815.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876096, 660.2192, 815.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876097, 660.2192, 815.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876098, 660.2192, 815.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876099, 660.2192, 815.6021, 27.61337, 10))
+	or (MarkerExistsAt(1938876100, 660.2192, 815.6021, 27.61337, 10))">
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 2 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+		<SafeMoveTo questId="312429" stepId="2" x="626" y="1048" z="-10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="670" y="1125" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="811" y="1148" z="10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="812" y="1075" z="20" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="764" y="1035" z="10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="901" y="1016" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="897" y="860" z="10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="807" y="859" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="770" y="816" z="-10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="784" y="760" z="-10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="900" y="760" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="904" y="681" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1054" y="604" z="-10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1122" y="627" z="10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1139" y="690" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1243" y="675" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1261" y="539" z="10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1312" y="550" z="-10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1347" y="678" z="-10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1485" y="668" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1549" y="560" z="-10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1608" y="598" z="10" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1622" y="730" z="0" pathPrecision="5" /> 
+		<SafeMoveTo questId="312429" stepId="2" x="1538" y="791" z="-15" pathPrecision="5" /> 
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+			<TrinityLoadProfile file="RiftCommon.xml" />			
+		</If>
+		<TrinityLoadProfile file="RiftFull.xml" />
+	</If>
+	
+	<!-- Unknown version of Pandemonium Fortress-->
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Pandemonium Fortress with ExploreDungeon." />		
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.40" />
+	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
+		<TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.40"/>
+		<TrinityLoadProfile file="RiftCommon.xml" />			
+	</If>
+	<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="11" pathPrecision="15" boxTolerance="0.55"/>
+	<TrinityLoadProfile file="RiftFull.xml" />
+</Order>
+</Profile>

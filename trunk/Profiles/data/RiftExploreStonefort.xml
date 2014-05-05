@@ -52,18 +52,18 @@
 	or (MarkerExistsAt(1938876098, 1890.154, 1759.493, -22.55594, 10))
 	or (MarkerExistsAt(1938876099, 1890.154, 1759.493, -22.55594, 10))
 	or (MarkerExistsAt(1938876100, 1890.154, 1759.493, -22.55594, 10))">
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 1 with SafeSafeMoveTo. Bot will not stop when boss spawns/killed." />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="1886" y="1870" z="-25" pathPrecision="5" />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="1857" y="1811" z="0" pathPrecision="5" />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="1526" y="1776" z="0" pathPrecision="5" />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="1290" y="1779" z="0" pathPrecision="5" />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="1179" y="1769" z="1" pathPrecision="5" />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="1082" y="1764" z="25" pathPrecision="5" />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="1044" y="1557" z="0" pathPrecision="5" />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="858" y="1533" z="0" pathPrecision="5" />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="860" y="1233" z="0" pathPrecision="5" />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="858" y="971" z="1" pathPrecision="5" />
-		<SafeSafeMoveTo questId="312429" stepId="2" x="863" y="796" z="1" pathPrecision="5" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+		<SafeMoveTo questId="312429" stepId="2" x="1886" y="1870" z="-25" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1857" y="1811" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1526" y="1776" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1290" y="1779" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1179" y="1769" z="1" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1082" y="1764" z="25" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="1044" y="1557" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="858" y="1533" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="860" y="1233" z="0" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="858" y="971" z="1" pathPrecision="5" />
+		<SafeMoveTo questId="312429" stepId="2" x="863" y="796" z="1" pathPrecision="5" />
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
 			<TrinityLoadProfile file="RiftCommon.xml" />			
 		</If>
