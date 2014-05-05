@@ -194,7 +194,7 @@
 			<MoveToActor questId="1" stepId="2" actorId="224890" InteractAttempts="5" isPortal="True"/>
 			<WaitTimer questId="1" stepId="2" waitTime="2500" />
 		</While>
-		<While condition="CurrentWorldId == 109530">	
+		<While condition="(CurrentWorldId == 109530) and (HasQuest(364336) or HasQuest(364333) or HasQuest(362140))">	
 			<If condition="(ActorExistsAt(224890, 732.4023, 1237.725, -9.603254, 10))">
 				<SafeMoveTo questId="312429" stepId="2" x="763" y="1144" z="-10" pathPrecision="5"/> 
 				<SafeMoveTo questId="312429" stepId="2" x="691" y="1148" z="-10" pathPrecision="5"/> 
