@@ -65,7 +65,8 @@
 	<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) and
 					  not ActorExistsAt(363744, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
 		<While condition="CurrentWorldId == 288454 or CurrentWorldId == 288685 or CurrentWorldId == 288687 or CurrentWorldId == 288798 or
-						  CurrentWorldId == 288800 or CurrentWorldId == 288802 or CurrentWorldId == 288804">
+						  CurrentWorldId == 288800 or CurrentWorldId == 288802 or CurrentWorldId == 288804 or CurrentWorldId == 288810 or
+						  CurrentWorldId == 288814 or CurrentWorldId == 288816">
 			<RiftQuestAndStep questId="337492" stepId="1">
 				<If condition="CurrentWorldId == 288454">
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876094" interactRange="15" destinationWorldId="288685"/>
@@ -94,6 +95,18 @@
 				<If condition="CurrentWorldId == 288804">
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876100" interactRange="15" destinationWorldId="288810"/>
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876100" destinationWorldId="288810"/>
+				</If>
+				<If condition="CurrentWorldId == 288810">
+					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876101" interactRange="15" destinationWorldId="288814"/>
+					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876101" destinationWorldId="288814"/>
+				</If>
+				<If condition="CurrentWorldId == 288814">
+					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876102" interactRange="15" destinationWorldId="288816"/>
+					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876102" destinationWorldId="288816"/>
+				</If>
+				<If condition="CurrentWorldId == 288816">
+					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876103" interactRange="15" destinationWorldId="288816"/>
+					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876103" destinationWorldId="288816"/>
 				</If>
 				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
 				<LoadProfile file="RiftExploreCommon.xml" />
