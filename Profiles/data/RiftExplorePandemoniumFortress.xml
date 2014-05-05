@@ -140,9 +140,9 @@
 			<SafeMoveTo questId="312429" stepId="2" x="618" y="1046" z="-10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-52818" interactAttempts="2" />
 			<SafeMoveTo questId="312429" stepId="2" x="672" y="1139" z="0" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="808" y="1143" z="10" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="806" y="1150" z="10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-53882" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="811" y="1068" z="20" pathPrecision="5" straightLinePathing="true" />
+			<SafeMoveTo questId="312429" stepId="2" x="810" y="1019" z="10" pathPrecision="5" straightLinePathing="true" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="896" y="1013" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="897" y="856" z="10" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="810" y="855" z="0" pathPrecision="5" />
