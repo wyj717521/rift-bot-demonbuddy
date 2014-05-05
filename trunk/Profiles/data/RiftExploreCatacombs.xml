@@ -52,18 +52,18 @@
 	or (MarkerExistsAt(1938876096, 342.3823, 371.7244, 2.573257, 10))
 	or (MarkerExistsAt(1938876096, 342.3823, 371.7244, 2.573257, 10))
 	or (MarkerExistsAt(1938876096, 342.3823, 371.7244, 2.573257, 10))">
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs 1 with TrinityMoveTo. Bot will not stop when boss spawns/killed." />
-		<TrinityMoveTo questId="312429" stepId="2" x="583" y="367" z="0" pathPrecision="5"/>
-		<TrinityMoveTo questId="312429" stepId="2" x="597" y="543" z="1" pathPrecision="5"/>
-		<TrinityMoveTo questId="312429" stepId="2" x="744" y="576" z="0" pathPrecision="5"/>
-		<TrinityMoveTo questId="312429" stepId="2" x="854" y="592" z="1" pathPrecision="5"/>
-		<TrinityMoveTo questId="312429" stepId="2" x="1022" y="673" z="0" pathPrecision="5"/>
-		<TrinityMoveTo questId="312429" stepId="2" x="1080" y="737" z="0" pathPrecision="5"/>
-		<TrinityMoveTo questId="312429" stepId="2" x="1009" y="833" z="0" pathPrecision="5"/>
-		<TrinityMoveTo questId="312429" stepId="2" x="1072" y="988" z="0" pathPrecision="5"/>
-		<TrinityMoveTo questId="312429" stepId="2" x="1087" y="1098" z="0" pathPrecision="5"/>
-		<TrinityMoveTo questId="312429" stepId="2" x="888" y="1062" z="0" pathPrecision="5"/>
-		<TrinityMoveTo questId="312429" stepId="2" x="848" y="921" z="0" pathPrecision="5"/>
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+		<SafeMoveTo questId="312429" stepId="2" x="583" y="367" z="0" pathPrecision="5"/>
+		<SafeMoveTo questId="312429" stepId="2" x="597" y="543" z="1" pathPrecision="5"/>
+		<SafeMoveTo questId="312429" stepId="2" x="744" y="576" z="0" pathPrecision="5"/>
+		<SafeMoveTo questId="312429" stepId="2" x="854" y="592" z="1" pathPrecision="5"/>
+		<SafeMoveTo questId="312429" stepId="2" x="1022" y="673" z="0" pathPrecision="5"/>
+		<SafeMoveTo questId="312429" stepId="2" x="1080" y="737" z="0" pathPrecision="5"/>
+		<SafeMoveTo questId="312429" stepId="2" x="1009" y="833" z="0" pathPrecision="5"/>
+		<SafeMoveTo questId="312429" stepId="2" x="1072" y="988" z="0" pathPrecision="5"/>
+		<SafeMoveTo questId="312429" stepId="2" x="1087" y="1098" z="0" pathPrecision="5"/>
+		<SafeMoveTo questId="312429" stepId="2" x="888" y="1062" z="0" pathPrecision="5"/>
+		<SafeMoveTo questId="312429" stepId="2" x="848" y="921" z="0" pathPrecision="5"/>
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
 			<TrinityLoadProfile file="RiftCommon.xml" />			
 		</If>

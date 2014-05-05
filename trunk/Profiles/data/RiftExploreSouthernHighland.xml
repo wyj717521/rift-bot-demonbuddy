@@ -53,36 +53,36 @@
 	or (MarkerExistsAt(1938876099, 1055.51, 1473.244, 61.84594, 100))
 	or (MarkerExistsAt(1938876100, 1055.51, 1473.244, 61.84594, 100))">
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with TrinityMoveTo." />
-			<TrinityMoveTo questId="337492" stepId="1" x="1220" y="1438" z="41" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="1258" y="1092" z="38" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="1194" y="722" z="40" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="970" y="999" z="40" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="774" y="907" z="38" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="759" y="837" z="50" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="604" y="778" z="78" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="499" y="601" z="80" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="302" y="920" z="80" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="191" y="728" z="90" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="288" y="600" z="80" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="421" y="589" z="78" pathPrecision="5" statusText="" />
-			<TrinityMoveTo questId="337492" stepId="1" x="420" y="346" z="63" pathPrecision="5" statusText="" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with SafeMoveTo." />
+			<SafeMoveTo questId="337492" stepId="1" x="1220" y="1438" z="41" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="1258" y="1092" z="38" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="1194" y="722" z="40" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="970" y="999" z="40" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="774" y="907" z="38" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="759" y="837" z="50" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="604" y="778" z="78" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="499" y="601" z="80" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="302" y="920" z="80" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="191" y="728" z="90" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="288" y="600" z="80" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="421" y="589" z="78" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="337492" stepId="1" x="420" y="346" z="63" pathPrecision="5" statusText="" />
 			<TrinityLoadProfile file="RiftCommon.xml" />			
 		</If>
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with TrinityMoveTo." />
-		<TrinityMoveTo questId="312429" stepId="2" x="1220" y="1438" z="41" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="1258" y="1092" z="38" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="1194" y="722" z="40" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="970" y="999" z="40" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="774" y="907" z="38" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="759" y="837" z="50" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="604" y="778" z="78" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="499" y="601" z="80" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="302" y="920" z="80" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="191" y="728" z="90" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="288" y="600" z="80" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="421" y="589" z="78" pathPrecision="5" statusText="" />
-		<TrinityMoveTo questId="312429" stepId="2" x="420" y="346" z="63" pathPrecision="5" statusText="" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with SafeMoveTo." />
+		<SafeMoveTo questId="312429" stepId="2" x="1220" y="1438" z="41" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="1258" y="1092" z="38" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="1194" y="722" z="40" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="970" y="999" z="40" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="774" y="907" z="38" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="759" y="837" z="50" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="604" y="778" z="78" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="499" y="601" z="80" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="302" y="920" z="80" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="191" y="728" z="90" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="288" y="600" z="80" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="421" y="589" z="78" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="420" y="346" z="63" pathPrecision="5" statusText="" />
 		<TrinityLoadProfile file="RiftFull.xml" />
 	</If>
 	<!-- Unknown version-->
