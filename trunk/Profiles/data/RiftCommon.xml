@@ -59,7 +59,7 @@
 		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Enter Rift" />
 		<MoveToActor questId="312429" stepId="2" x="594" y="508" z="3" actorId="345935" interactRange="9" name="X1_OpenWorld_LootRunPortal-1589" isPortal="True" pathPrecision="5" pathPointLimit="250"/>  
-		<WaitTimer questId="312429" stepId="2" waitTime="1000" />
+		<WaitTimer questId="312429" stepId="2" waitTime="3000" />
 	</If>
 	
 	<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) and
@@ -104,7 +104,7 @@
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876102" interactRange="15" destinationWorldId="288816"/>
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876102" destinationWorldId="288816"/>
 				</If>
-				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
+				<WaitTimer questId="312429" stepId="2" waitTime="3000" />
 				<LoadProfile file="RiftExploreCommon.xml" />
 			</RiftQuestAndStep>
 			<RiftQuestAndStep questId="337492" stepId="3">
@@ -136,9 +136,9 @@
 			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Fully explored but no boss spawned. Now go to explore the first level" />
 				<UseTownPortal questId="1" />
-				<WaitTimer questId="1" stepId="1" waitTime="1000"/>
+				<WaitTimer questId="1" stepId="1" waitTime="3000"/>
 				<MoveToActor questId="312429" stepId="2" x="594" y="508" z="3" actorId="345935" interactRange="9" name="X1_OpenWorld_LootRunPortal-1589" isPortal="True" pathPrecision="5" pathPointLimit="250"/>  
-				<WaitTimer questId="312429" stepId="2" waitTime="1000" />
+				<WaitTimer questId="312429" stepId="2" waitTime="3000" />
 				<LogMessage quest="1" step="2" output="[Rift Bot] Explore current level" />
 				<TrinityExploreRift questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1500"/>
@@ -161,7 +161,7 @@
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<UseTownPortal questId="1" />
-		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
+		<WaitTimer questId="1" stepId="1" waitTime="3000"/>
 	</While>
 	
 	<If condition="Me.IsInTown ">
