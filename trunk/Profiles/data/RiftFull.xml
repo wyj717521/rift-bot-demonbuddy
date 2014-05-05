@@ -63,14 +63,14 @@
 	</If>
 	
 	<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) and
-					  not ActorExistsAt(363744, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
-		<While condition="CurrentWorldId == 288454 or CurrentWorldId == 288685 or CurrentWorldId == 288687 or CurrentWorldId == 288798 or
-						  CurrentWorldId == 288800 or CurrentWorldId == 288802 or CurrentWorldId == 288804 or CurrentWorldId == 288810 or
-						  CurrentWorldId == 288814 or CurrentWorldId == 288816">
-			<MoveToMapMarker questId="312429" stepId="2" isPortal="True" destinationWorldId="-1"/>
-			<WaitTimer questId="312429" stepId="2" waitTime="3000" />
-			<LoadProfile file="RiftExploreFull.xml" />
-		</While>
+					  not Me.IsInTown">
+		<HasQuestAndStep questId="337492" stepId="3">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Boss Spawned" />
+			<ExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
+		</HasQuestAndStep>
+		<MoveToMapMarker questId="312429" stepId="2" isPortal="True" destinationWorldId="-1"/>
+		<WaitTimer questId="312429" stepId="2" waitTime="3000" />
+		<LoadProfile file="RiftExploreFull.xml" />
 		<WaitTimer questId="1" stepId="1" waitTime="3000"/>
 	</While>
 	
@@ -93,6 +93,10 @@
 		</HasQuestAndStep>
 		<HasQuestAndStep questId="337492" stepId="1">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Not able to spawn the boss with first and last levels fully explored" />
+		</HasQuestAndStep>
+		<HasQuestAndStep questId="337492" stepId="3">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Boss Spawned" />
+			<ExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
 		</HasQuestAndStep>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
