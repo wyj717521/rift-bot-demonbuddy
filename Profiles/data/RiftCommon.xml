@@ -49,7 +49,7 @@
 			<UseWaypoint waypointNumber="46" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
-		<TrinityTownRun minFreeBagSlots="40"/>
+		<TownRun minFreeBagSlots="40"/>
 		<WaitTimer questId="312429" stepId="2" waitTime="500" />
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
 		<MoveToActor questId="312429" stepId="2" x="594" y="508" z="3" actorId="364715" interactRange="11" name="x1_OpenWorld_LootRunObelisk_B-596"  pathPrecision="5" pathPointLimit="250" isPortal="True"/> 
@@ -67,7 +67,7 @@
 		<While condition="CurrentWorldId == 288454 or CurrentWorldId == 288685 or CurrentWorldId == 288687 or CurrentWorldId == 288798 or
 						  CurrentWorldId == 288800 or CurrentWorldId == 288802 or CurrentWorldId == 288804 or CurrentWorldId == 288810 or
 						  CurrentWorldId == 288814 or CurrentWorldId == 288816">
-			<RiftQuestAndStep questId="337492" stepId="1">
+			<HasQuestAndStep questId="337492" stepId="1">
 				<If condition="CurrentWorldId == 288454">
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876094" interactRange="15" destinationWorldId="288685"/>
 					<MoveToMapMarker questId="312429" stepId="2" exitNameHash="1938876094" destinationWorldId="288685"/>
@@ -106,33 +106,33 @@
 				</If>
 				<WaitTimer questId="312429" stepId="2" waitTime="3000" />
 				<LoadProfile file="RiftExploreCommon.xml" />
-			</RiftQuestAndStep>
-			<RiftQuestAndStep questId="337492" stepId="3">
+			</HasQuestAndStep>
+			<HasQuestAndStep questId="337492" stepId="3">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Boss Spawned" />
-				<TrinityExploreRift questId="337492" stepId="3" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
-			</RiftQuestAndStep>
-			<RiftQuestAndStep questId="337492" stepId="10">
+				<ExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
+			</HasQuestAndStep>
+			<HasQuestAndStep questId="337492" stepId="10">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Rift boss killed" />
 				<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 				<UseTownPortal questId="1" />
-			</RiftQuestAndStep>
+			</HasQuestAndStep>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 	</While>
 	
 	<While condition="not Me.IsInTown ">
-		<RiftQuestAndStep questId="337492" stepId="1">
+		<HasQuestAndStep questId="337492" stepId="1">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Townstone found" />
 			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE') or CurrentWorldId == 288454">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Explore current level" />
-				<TrinityExploreRift questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
+				<ExploreDungeon questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			</If>
-		</RiftQuestAndStep>
-		<RiftQuestAndStep questId="337492" stepId="1">
+		</HasQuestAndStep>
+		<HasQuestAndStep questId="337492" stepId="1">
 			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Fully explored but no boss spawned. Now go to explore the first level" />
 				<UseTownPortal questId="1" />
@@ -140,22 +140,22 @@
 				<MoveToActor questId="312429" stepId="2" x="594" y="508" z="3" actorId="345935" interactRange="9" name="X1_OpenWorld_LootRunPortal-1589" isPortal="True" pathPrecision="5" pathPointLimit="250"/>  
 				<WaitTimer questId="312429" stepId="2" waitTime="3000" />
 				<LogMessage quest="1" step="2" output="[Rift Bot] Explore current level" />
-				<TrinityExploreRift questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
+				<ExploreDungeon questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			</If>
-		</RiftQuestAndStep>
-		<RiftQuestAndStep questId="337492" stepId="1">
+		</HasQuestAndStep>
+		<HasQuestAndStep questId="337492" stepId="1">
 			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Not able to spawn the boss with first and last levels fully explored" />
 			</If>
-		</RiftQuestAndStep>
-		<RiftQuestAndStep questId="337492" stepId="3">
+		</HasQuestAndStep>
+		<HasQuestAndStep questId="337492" stepId="3">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Boss Spawned" />
-			<TrinityExploreRift questId="337492" stepId="3" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
-		</RiftQuestAndStep>
-		<RiftQuestAndStep questId="337492" stepId="10">
+			<ExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
+		</HasQuestAndStep>
+		<HasQuestAndStep questId="337492" stepId="10">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Rift boss killed" />
-		</RiftQuestAndStep>
+		</HasQuestAndStep>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -165,25 +165,25 @@
 	</While>
 	
 	<If condition="Me.IsInTown ">
-		<RiftQuestAndStep questId="337492" stepId="10">
+		<HasQuestAndStep questId="337492" stepId="10">
 			<MoveToActor questId="312429" stepId="2" x="588" y="518" z="3" actorId="363744" interactRange="9" name="X1_LR_Nephalem-14254"  pathPrecision="5" pathPointLimit="250"/>
-		</RiftQuestAndStep>
+		</HasQuestAndStep>
 	</If>
 
 	<LogMessage quest="1" step="2" output="[Rift Bot] Reset and repeat" />
 	
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
-		<TrinityLoadProfile file="RBCB.xml" />			
+		<LoadProfile file="RBCB.xml" />			
 	</If>
 
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
-		<TrinityLoadProfile file="RBEB.xml" />			
+		<LoadProfile file="RBEB.xml" />			
 	</If>
 	
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-		<TrinityLoadProfile file="RBC.xml" />			
+		<LoadProfile file="RBC.xml" />			
 	</If>
 
-	<TrinityLoadProfile file="RBE.xml" />
+	<LoadProfile file="RBE.xml" />
 </Order>
 </Profile>

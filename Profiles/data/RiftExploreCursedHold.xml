@@ -74,9 +74,9 @@
 			<SafeMoveTo questId="312429" stepId="2" x="1028" y="814" z="-50" pathPrecision="5" statusText="" />
 		</If>
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<TrinityLoadProfile file="RiftCommon.xml" />		
+			<LoadProfile file="RiftCommon.xml" />		
 		</If>
-		<TrinityLoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftFull.xml" />
 	</If>
 	<!-- Medium Cursed Hold-->
 	<If condition="(MarkerExistsAt(1877684886, 303.0258, 600.2885, 1.596355, 100))
@@ -125,9 +125,9 @@
 			<SafeMoveTo questId="312429" stepId="2" x="1028" y="814" z="-50" pathPrecision="5" statusText="" />
 		</If>
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<TrinityLoadProfile file="RiftCommon.xml" />	
+			<LoadProfile file="RiftCommon.xml" />	
 		</If>
-		<TrinityLoadProfile file="RiftFull.xml" />
+		<LoadProfile file="RiftFull.xml" />
 	</If>
 	<!-- Large Cursed Hold-->
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Large Cursed Hold with SafeMoveTo. Bot will not stop when boss spawns/killed." />
@@ -174,13 +174,13 @@
 		<SafeMoveTo questId="312429" stepId="2" x="1201" y="1113" z="0" pathPrecision="5" statusText="" />
 	</If>
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<TrinityLoadProfile file="RiftCommon.xml" />
+		<LoadProfile file="RiftCommon.xml" />
 	</If>
-	<TrinityExploreRift questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
-	<TrinityLoadProfile file="RiftFull.xml" />
+	<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/>
+	<LoadProfile file="RiftFull.xml" />
 </Order>
 </Profile>
-<!--TrinityExploreRift questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/!-->
+<!--ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/!-->
 <!--
 Small entrance:
 [2CA1F120] GizmoType: Portal Name: g_Portal_Arch_Blue-110351 ActorSNO: 176000 Distance: 6.808267 Position: <543.0258, 840.2885, 1.596355> Barracade: False Radius: 20.18645

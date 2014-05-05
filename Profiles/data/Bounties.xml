@@ -45,13 +45,13 @@
 <Order>
 	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="150" killRadius="80" />
 	<If condition="Me.IsInTown">   
-		<TrinityTownRun minFreeBagSlots="40"/>
+		<TownRun minFreeBagSlots="40"/>
 	</If>
 	<!-- Cursed Dais, Kill Khatun, Kill Torchlighter, Kill Veshan the fierce, Kill the aspect of destruction-->
 	<While condition="HasQuest(369900) or HasQuest(349258) or HasQuest(349256) or HasQuest(349260) or HasQuest(357131)">
 		<While condition="CurrentWorldId != 109513">
 			<If condition="not Me.IsInTown">   
-				<TrinityTownPortal questId="1" />
+				<TownPortal questId="1" />
 			</If>
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -87,7 +87,7 @@
 	<While condition="HasQuest(349262)">
 		<While condition="CurrentWorldId != 109513 and CurrentWorldId != 166640">
 			<If condition="not Me.IsInTown">   
-				<TrinityTownPortal questId="1" />
+				<TownPortal questId="1" />
 			</If>
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -112,7 +112,7 @@
 	<While condition="HasQuest(357129) or HasQuest(357127) or HasQuest(349254) or HasQuest(349252)">
 		<While condition="CurrentWorldId != 219659">
 			<If condition="not Me.IsInTown">   
-				<TrinityTownPortal questId="1" />
+				<TownPortal questId="1" />
 			</If>
 			<UseWaypoint waypointNumber="42" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -176,7 +176,7 @@
 	<While condition="HasQuest(364336) or HasQuest(364333) or HasQuest(362140)">
 		<While condition="CurrentWorldId != 109526 and CurrentWorldId != 109525 and CurrentWorldId != 109530">
 			<If condition="not Me.IsInTown">   
-				<TrinityTownPortal questId="1" />
+				<TownPortal questId="1" />
 			</If>
 			<UseWaypoint waypointNumber="43" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -196,11 +196,11 @@
 				<MoveToActor questId="1" stepId="2" actorId="224890" InteractAttempts="5" isPortal="True"/>
 				<WaitTimer questId="1" stepId="2" waitTime="2500" />
 			</If>
-			<TrinityExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="300" actorId="224890" boxSize="15" pathPrecision="30" boxTolerance="0.5" ignoreMarkers="False" stayAfterBounty="False">
+			<ExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="300" actorId="224890" boxSize="15" pathPrecision="30" boxTolerance="0.5" ignoreMarkers="False" stayAfterBounty="False">
 				<PrioritizeScenes>
 					<PriorityScene sceneName="a3dun_Crater_E_Dead_End_02_E01_N01" pathPrecision="40" />          
 				</PrioritizeScenes>
-			</TrinityExploreDungeon >
+			</ExploreDungeon >
 			<MoveToActor questId="1" stepId="2" actorId="224890" InteractAttempts="5" isPortal="True"/>
 			<WaitTimer questId="1" stepId="2" waitTime="2500" />
 		</While>
@@ -223,37 +223,37 @@
 				<SafeMoveTo questId="312429" stepId="2" x="751" y="762" z="0" pathPrecision="5"/> 
 				<SafeMoveTo questId="312429" stepId="2" x="837" y="777" z="0" pathPrecision="5"/> 
 			</If>
-			<TrinityExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="15" pathPrecision="30" boxTolerance="0.5" ignoreMarkers="False" stayAfterBounty="False"/>
+			<ExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="15" pathPrecision="30" boxTolerance="0.5" ignoreMarkers="False" stayAfterBounty="False"/>
 		</While>
 	</While>
 	<!-- Kill aspect of hatred, aspect of lies, slarg the behemoth, kysindra the wretched, pyres the damned-->
 	<While condition="HasQuest(357133) or HasQuest(357135) or HasQuest(349280) or HasQuest(349276) or HasQuest(349278)">
 		<While condition="CurrentWorldId != 121579">
 			<If condition="not Me.IsInTown">   
-				<TrinityTownPortal questId="1" />
+				<TownPortal questId="1" />
 			</If>
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
-		<TrinityExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="40" pathPrecision="30" boxTolerance="0.2" ignoreMarkers="False" stayAfterBounty="False" />
+		<ExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="40" pathPrecision="30" boxTolerance="0.2" ignoreMarkers="False" stayAfterBounty="False" />
 	</While>
 	<!-- Kill izual-->
 	<While condition="HasQuest(361421)">
 		<While condition="CurrentWorldId != 121579 and CurrentWorldId != 214956">
 			<If condition="not Me.IsInTown">   
-				<TrinityTownPortal questId="1" />
+				<TownPortal questId="1" />
 			</If>
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<While condition="CurrentWorldId == 121579">
-			<TrinityExploreDungeon questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="40" pathPrecision="30" boxTolerance="0.15" ignoreMarkers="false" stayAfterBounty="False">
+			<ExploreDungeon questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="40" pathPrecision="30" boxTolerance="0.15" ignoreMarkers="false" stayAfterBounty="False">
 				<PrioritizeScenes>
 					<PriorityScene sceneName="Exit" />
 				</PrioritizeScenes>
-			</TrinityExploreDungeon>
+			</ExploreDungeon>
 			<MoveToActor questId="1" stepId="2" actorId="225195" isPortal="True" destinationWorldId="214956" interactRange="20" />
 			<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		</While>
@@ -270,19 +270,19 @@
 	<While condition="HasQuest(357139) or HasQuest(349272) or HasQuest(349274) or HasQuest(349282) or HasQuest(349270) or HasQuest(357137)">
 		<While condition="CurrentWorldId != 129305">
 			<If condition="not Me.IsInTown">   
-				<TrinityTownPortal questId="1" />
+				<TownPortal questId="1" />
 			</If>
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
-		<TrinityExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="14" pathPrecision="30" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False"/>
+		<ExploreDungeon questId="1" stepId="2" until="BountyComplete" boxSize="14" pathPrecision="30" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False"/>
 	</While>
 	<!-- Cursed chapel-->
 	<While condition="HasQuest(369878)">
         <While condition="CurrentWorldId != 129305">
 			<If condition="not Me.IsInTown">   
-				<TrinityTownPortal questId="1" />
+				<TownPortal questId="1" />
 			</If>
 		    <UseWaypoint waypointNumber="45" questId="1"/>
 		    <WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -292,11 +292,11 @@
 		    <ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="60" killRadius="30" />
 	    </If>
 	    <While condition="CurrentWorldId == 129305 and not (ActorExistsAt(5466, Me.Position.X, Me.Position.Y, Me.Position.Z, 50))">
-		    <TrinityExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="365097" boxSize="14" pathPrecision="20" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False">
+		    <ExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="365097" boxSize="14" pathPrecision="20" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False">
 			    <PrioritizeScenes>
 			        <PriorityScene sceneName="a4dun_spire_corrupt_SE_02" pathPrecision="40" />
 			    </PrioritizeScenes>
-		    </TrinityExploreDungeon>
+		    </ExploreDungeon>
 		    <MoveToActor questId="1" stepId="2" pathPrecision="5" actorId="365097"/>
 	    </While>
 	    <While condition="ActorExistsAt(5466, Me.Position.X, Me.Position.Y, Me.Position.Z, 50)">
@@ -312,18 +312,18 @@
 		<WaitTimer questId="1" stepId="1" waitTime="2500"/>
 		<While condition="CurrentWorldId != 129305 and CurrentWorldId != 153670 and CurrentWorldId != 205399 and CurrentWorldId != 196292 and CurrentWorldId !=109561">
 			<If condition="not Me.IsInTown">   
-				<TrinityTownPortal questId="1" />
+				<TownPortal questId="1" />
 			</If>
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 		<While condition="CurrentWorldId == 129305">
-			<TrinityExploreDungeon questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="210763" boxSize="14" pathPrecision="30" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False">
+			<ExploreDungeon questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="210763" boxSize="14" pathPrecision="30" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False">
 				<PrioritizeScenes>
 					<PriorityScene sceneName="Exit" />
 				</PrioritizeScenes>
-			</TrinityExploreDungeon>
+			</ExploreDungeon>
 			<MoveToActor questId="1" stepId="2" actorId="210763" isPortal="True" interactRange="20"/>
 			<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		</While>
@@ -352,34 +352,34 @@
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="3000"/>
-		<TrinityTownRun minFreeBagSlots="40"/>
+		<TownRun minFreeBagSlots="40"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<MoveToActor questId="1" stepId="1" actorId="114622"/>
 		<WaitTimer questId="1" stepId="1" waitTime="5000"/>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
-			<TrinityLoadProfile file="RBCB.xml" />			
+			<LoadProfile file="RBCB.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
-			<TrinityLoadProfile file="RBEB.xml" />			
+			<LoadProfile file="RBEB.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
-			<TrinityLoadProfile file="RBFB.xml" />			
+			<LoadProfile file="RBFB.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-			<TrinityLoadProfile file="RBC.xml" />			
+			<LoadProfile file="RBC.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<TrinityLoadProfile file="RBE.xml" />			
+			<LoadProfile file="RBE.xml" />			
 		</If>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
-			<TrinityLoadProfile file="RBF.xml" />			
+			<LoadProfile file="RBF.xml" />			
 		</If>
 		
 		<LeaveGame quest="1" step="1" reason="done." stayInParty="False" />	
