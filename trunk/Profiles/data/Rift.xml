@@ -120,15 +120,15 @@
 	</While>
 	
 	<While condition="not Me.IsInTown ">
-		<HasQuestAndStep questId="337492" stepId="1">
+		<If condition="IsActiveQuestAndStep(337492, 1)">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Townstone found" />
 			<If condition="not Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or CurrentWorldId == 288454">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Explore current level" />
 				<ExploreDungeon questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			</If>
-		</HasQuestAndStep>
-		<HasQuestAndStep questId="337492" stepId="1">
+		</If>
+		<If condition="IsActiveQuestAndStep(337492, 1)">
 			<If condition="not Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Fully explored but no boss spawned. Now go to explore the first level" />
 				<UseTownPortal questId="1" />
@@ -139,19 +139,19 @@
 				<ExploreDungeon questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
 				<WaitTimer questId="1" stepId="1" waitTime="1500"/>
 			</If>
-		</HasQuestAndStep>
-		<HasQuestAndStep questId="337492" stepId="1">
+		</If>
+		<If condition="IsActiveQuestAndStep(337492, 1)">
 			<If condition="not Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Not able to spawn the boss with first and last levels fully explored" />
 			</If>
-		</HasQuestAndStep>
-		<HasQuestAndStep questId="337492" stepId="3">
+		</If>
+		<If condition="IsActiveQuestAndStep(337492, 3)">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Boss Spawned" />
 			<ExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="60" boxTolerance="0.01" boxSize="20"/>
-		</HasQuestAndStep>
-		<HasQuestAndStep questId="337492" stepId="10">
+		</If>
+		<If condition="IsActiveQuestAndStep(337492, 10)">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Rift boss killed" />
-		</HasQuestAndStep>
+		</If>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -161,9 +161,9 @@
 	</While>
 	
 	<If condition="Me.IsInTown ">
-		<HasQuestAndStep questId="337492" stepId="10">
+		<If condition="IsActiveQuestAndStep(337492, 10)">
 			<MoveToActor questId="312429" stepId="2" x="588" y="518" z="3" actorId="363744" interactRange="9" name="X1_LR_Nephalem-14254"  pathPrecision="5" pathPointLimit="250"/>
-		</HasQuestAndStep>
+		</If>
 	</If>
 
 	<LogMessage quest="1" step="2" output="[Rift Bot] Reset and repeat" />
