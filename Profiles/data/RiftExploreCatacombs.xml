@@ -64,7 +64,7 @@
 		<SafeMoveTo questId="312429" stepId="2" x="1087" y="1098" z="0" pathPrecision="5"/>
 		<SafeMoveTo questId="312429" stepId="2" x="888" y="1062" z="0" pathPrecision="5"/>
 		<SafeMoveTo questId="312429" stepId="2" x="848" y="921" z="0" pathPrecision="5"/>
-		<LoadProfile file="RiftSwitch.xml" />
+		<LoadProfile file="Rift.xml" />
 	</If>
 	
 	<!-- Unknown version of the Catacombs-->
@@ -72,9 +72,9 @@
 	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs @ 13/15/0.2" />
 	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
 		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="13" pathPrecision="15" boxTolerance="0.2"/>
-		<LoadProfile file="RiftSwitch.xml" />			
+		<LoadProfile file="Rift.xml" />			
 	</If>
 	<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="13" pathPrecision="15" boxTolerance="0.2"/>
-	<LoadProfile file="RiftSwitch.xml" />
+	<LoadProfile file="Rift.xml" />
 </Order>
 </Profile>
