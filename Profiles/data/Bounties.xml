@@ -247,7 +247,6 @@
 			<While condition="Me.IsInBossEncounter">
 				<WaitTimer questId="1" stepId="2" waitTime="1000" />
 			</While>
-			<SafeMoveTo questId="1" stepId="2" pathPrecision="10" x="583" y="558" z="0" />
 		</While>
 	</If>
 	<!-- Kill aspect of terror, grimnight the soulless, Sao'thall, rhau'kye, haures, aspect of sin-->
