@@ -43,7 +43,7 @@
 
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
-	
+
 		<!-- Pandemonium Fortress 1-->
 		<If condition="(MarkerExistsAt(1877684886, 1140.219, 335.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876093, 1140.219, 335.6021, 27.61337, 10))
@@ -120,7 +120,7 @@
 			<SafeMoveTo questId="312429" stepId="2" x="1538" y="791" z="-15" pathPrecision="5" />
 			<LoadProfile file="Rift.xml" />
 		</If>
-		
+
 		<!-- Pandemonium Fortress 3-->
 		<If condition="(MarkerExistsAt(1877684886, 382.0739, 787.3694, 29.86483, 10))
 		or (MarkerExistsAt(1938876093, 382.0739, 787.3694, 29.86483, 10))
@@ -173,7 +173,30 @@
 			<SafeMoveTo questId="312429" stepId="2" x="1772" y="579" z="-13" pathPrecision="5" />
 			<LoadProfile file="Rift.xml" />
 		</If>
-		
+
+		<!-- Pandemonium Fortress 4-->
+		<If condition="(MarkerExistsAt(1877684886, 309.0393, 792.2703, 27.91728, 10))
+		or (MarkerExistsAt(1938876093, 309.0393, 792.2703, 27.91728, 10))
+		or (MarkerExistsAt(1938876094, 309.0393, 792.2703, 27.91728, 10))
+		or (MarkerExistsAt(1938876095, 309.0393, 792.2703, 27.91728, 10))
+		or (MarkerExistsAt(1938876096, 309.0393, 792.2703, 27.91728, 10))
+		or (MarkerExistsAt(1938876097, 309.0393, 792.2703, 27.91728, 10))
+		or (MarkerExistsAt(1938876098, 309.0393, 792.2703, 27.91728, 10))
+		or (MarkerExistsAt(1938876099, 309.0393, 792.2703, 27.91728, 10))
+		or (MarkerExistsAt(1938876100, 309.0393, 792.2703, 27.91728, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 4 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+			<SafeMoveTo questId="312429" stepId="2" x="417" y="750" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="378" y="672" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="522" y="678" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="775" y="652" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="875" y="555" z="-10" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="905" y="678" z="-10" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1044" y="678" z="-10" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1141" y="534" z="-10" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1137" y="368" z="-15" pathPrecision="5" />
+			<LoadProfile file="Rift.xml" />
+		</If>
+
 		<!-- Unknown version of Pandemonium Fortress-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Pandemonium Fortress with ExploreDungeon." />		
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.4" />
