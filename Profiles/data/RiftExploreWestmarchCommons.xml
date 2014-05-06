@@ -54,14 +54,14 @@
 		or (MarkerExistsAt(1938876098, 1029.8, 376.6726, 10.81753, 10))
 		or (MarkerExistsAt(1938876099, 1029.8, 376.6726, 10.81753, 10))
 		or (MarkerExistsAt(1938876100, 1029.8, 376.6726, 10.81753, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 1 with SafeMoveTo." />
-			<SafeMoveTo questId="312429" stepId="2" x="964" y="420" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="779" y="420" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="848" y="550" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="775" y="588" z="10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="835" y="658" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="574" y="660" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="378" y="657" z="10" pathPrecision="5" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 1 with MoveTo." />
+			<MoveTo questId="312429" stepId="2" x="964" y="420" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="779" y="420" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="848" y="550" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="775" y="588" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="835" y="658" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="574" y="660" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="378" y="657" z="10" pathPrecision="5" />
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
