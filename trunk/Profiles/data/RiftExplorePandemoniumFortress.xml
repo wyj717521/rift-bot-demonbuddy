@@ -54,26 +54,26 @@
 		or (MarkerExistsAt(1938876098, 1140.219, 335.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876099, 1140.219, 335.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876100, 1140.219, 335.6021, 27.61337, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 1 with SafeMoveTo." />
-			<SafeMoveTo questId="312429" stepId="2" x="1144" y="509" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1172" y="590" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1108" y="587" z="10" pathPrecision="5" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 1 with MoveTo." />
+			<MoveTo questId="312429" stepId="2" x="1144" y="509" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1172" y="590" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1108" y="587" z="10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-15665" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="1054" y="569" z="10" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="1025" y="647" z="10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1143" y="674" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1139" y="820" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1039" y="919" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="890" y="922" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="797" y="819" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="765" y="820" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="761" y="919" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="661" y="932" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="658" y="1060" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="559" y="1161" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="419" y="1163" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="422" y="1417" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="336" y="1511" z="-16" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1054" y="569" z="10" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="1025" y="647" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1143" y="674" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1139" y="820" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1039" y="919" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="890" y="922" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="797" y="819" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="765" y="820" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="761" y="919" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="661" y="932" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="658" y="1060" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="559" y="1161" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="419" y="1163" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="422" y="1417" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="336" y="1511" z="-16" pathPrecision="5" />
 			<LoadProfile file="Rift.xml" />
 		</If>
 
@@ -87,37 +87,37 @@
 		or (MarkerExistsAt(1938876098, 660.2192, 815.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876099, 660.2192, 815.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876100, 660.2192, 815.6021, 27.61337, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 2 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
-			<SafeMoveTo questId="312429" stepId="2" x="626" y="1048" z="-10" pathPrecision="5" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 2 with MoveTo. Bot will not stop when boss spawns/killed." />
+			<MoveTo questId="312429" stepId="2" x="626" y="1048" z="-10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-13290" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="670" y="1125" z="0" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="811" y="1148" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="670" y="1125" z="0" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="811" y="1148" z="10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-13289" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="812" y="1075" z="20" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="764" y="1035" z="10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="901" y="1016" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="897" y="860" z="10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="807" y="859" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="812" y="1075" z="20" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="764" y="1035" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="901" y="1016" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="897" y="860" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="807" y="859" z="0" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-13546" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="770" y="816" z="-10" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="784" y="760" z="-10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="900" y="760" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="904" y="681" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1054" y="604" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="770" y="816" z="-10" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="784" y="760" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="900" y="760" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="904" y="681" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1054" y="604" z="-10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-17688" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="1122" y="627" z="10" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="1139" y="690" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1243" y="675" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1261" y="539" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1122" y="627" z="10" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="1139" y="690" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1243" y="675" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1261" y="539" z="10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-18282" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="1312" y="550" z="-10" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="1347" y="678" z="-10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1485" y="668" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1549" y="560" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1312" y="550" z="-10" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="1347" y="678" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1485" y="668" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1549" y="560" z="-10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-18313" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="1608" y="598" z="10" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="1622" y="730" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1538" y="791" z="-15" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1608" y="598" z="10" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="1622" y="730" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1538" y="791" z="-15" pathPrecision="5" />
 			<LoadProfile file="Rift.xml" />
 		</If>
 
@@ -131,46 +131,46 @@
 		or (MarkerExistsAt(1938876098, 382.0739, 787.3694, 29.86483, 10))
 		or (MarkerExistsAt(1938876099, 382.0739, 787.3694, 29.86483, 10))
 		or (MarkerExistsAt(1938876100, 382.0739, 787.3694, 29.86483, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 3 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
-			<SafeMoveTo questId="312429" stepId="2" x="382" y="860" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="521" y="912" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="587" y="802" z="-10" pathPrecision="5" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 3 with MoveTo. Bot will not stop when boss spawns/killed." />
+			<MoveTo questId="312429" stepId="2" x="382" y="860" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="521" y="912" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="587" y="802" z="-10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-9984" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="653" y="895" z="0" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="618" y="1046" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="653" y="895" z="0" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="618" y="1046" z="-10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-52818" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="672" y="1139" z="0" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="806" y="1150" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="672" y="1139" z="0" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="806" y="1150" z="10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-53882" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="810" y="1019" z="10" pathPrecision="5" straightLinePathing="true" /> 
-			<SafeMoveTo questId="312429" stepId="2" x="896" y="1013" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="897" y="856" z="10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="810" y="855" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="810" y="1019" z="10" pathPrecision="5" straightLinePathing="true" /> 
+			<MoveTo questId="312429" stepId="2" x="896" y="1013" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="897" y="856" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="810" y="855" z="0" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-54788" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="770" y="810" z="-10" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="899" y="757" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="806" y="690" z="10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="809" y="568" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="770" y="810" z="-10" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="899" y="757" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="806" y="690" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="809" y="568" z="10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-54819" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="873" y="593" z="10" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="904" y="445" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1011" y="417" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1066" y="320" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="873" y="593" z="10" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="904" y="445" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1011" y="417" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1066" y="320" z="-10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-56647" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="1129" y="361" z="10" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="1096" y="569" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1129" y="361" z="10" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="1096" y="569" z="-10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-60105" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="1150" y="650" z="0" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="1238" y="666" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1262" y="541" z="10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1150" y="650" z="0" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="1238" y="666" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1262" y="541" z="10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-60153" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="1313" y="553" z="-10" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="1345" y="679" z="-10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1481" y="668" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1532" y="597" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1313" y="553" z="-10" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="1345" y="679" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1481" y="668" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1532" y="597" z="-10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-61753" interactAttempts="2" />
-			<SafeMoveTo questId="312429" stepId="2" x="1606" y="634" z="10" pathPrecision="5" straightLinePathing="true" />
-			<SafeMoveTo questId="312429" stepId="2" x="1772" y="579" z="-13" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1606" y="634" z="10" pathPrecision="5" straightLinePathing="true" />
+			<MoveTo questId="312429" stepId="2" x="1772" y="579" z="-13" pathPrecision="5" />
 			<LoadProfile file="Rift.xml" />
 		</If>
 
@@ -184,16 +184,16 @@
 		or (MarkerExistsAt(1938876098, 309.0393, 792.2703, 27.91728, 10))
 		or (MarkerExistsAt(1938876099, 309.0393, 792.2703, 27.91728, 10))
 		or (MarkerExistsAt(1938876100, 309.0393, 792.2703, 27.91728, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 4 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
-			<SafeMoveTo questId="312429" stepId="2" x="417" y="750" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="378" y="672" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="522" y="678" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="775" y="652" z="0" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="875" y="555" z="-10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="905" y="678" z="-10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1044" y="678" z="-10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1141" y="534" z="-10" pathPrecision="5" />
-			<SafeMoveTo questId="312429" stepId="2" x="1137" y="368" z="-15" pathPrecision="5" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 4 with MoveTo. Bot will not stop when boss spawns/killed." />
+			<MoveTo questId="312429" stepId="2" x="417" y="750" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="378" y="672" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="522" y="678" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="775" y="652" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="875" y="555" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="905" y="678" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1044" y="678" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1141" y="534" z="-10" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1137" y="368" z="-15" pathPrecision="5" />
 			<LoadProfile file="Rift.xml" />
 		</If>
 
