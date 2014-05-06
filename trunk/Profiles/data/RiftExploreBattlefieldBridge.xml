@@ -76,7 +76,7 @@
 		</If>
 		
 		<!-- Unknown version of Battlefield Bridge-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Battlefield Bridge with ExploreDungeon." />		
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Battlefield Bridge with ExploreDungeon." />		
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge @ 30/30/0.15" />
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="30" boxTolerance="0.15"/>

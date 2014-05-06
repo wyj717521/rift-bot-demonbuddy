@@ -43,39 +43,38 @@
 
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
-		<!-- Catacombs 1-->
-		<If condition="(MarkerExistsAt(1877684886, 342.3823, 371.7244, 2.573257, 10))
-		or (MarkerExistsAt(1938876093, 342.3823, 371.7244, 2.573257, 10))
-		or (MarkerExistsAt(1938876094, 342.3823, 371.7244, 2.573257, 10))
-		or (MarkerExistsAt(1938876095, 342.3823, 371.7244, 2.573257, 10))
-		or (MarkerExistsAt(1938876096, 342.3823, 371.7244, 2.573257, 10))
-		or (MarkerExistsAt(1938876097, 342.3823, 371.7244, 2.573257, 10))
-		or (MarkerExistsAt(1938876098, 342.3823, 371.7244, 2.573257, 10))
-		or (MarkerExistsAt(1938876099, 342.3823, 371.7244, 2.573257, 10))
-		or (MarkerExistsAt(1938876100, 342.3823, 371.7244, 2.573257, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs 1 with MoveTo." />
-			<MoveTo questId="312429" stepId="2" x="583" y="367" z="0" pathPrecision="5"/>
-			<MoveTo questId="312429" stepId="2" x="597" y="543" z="1" pathPrecision="5"/>
-			<MoveTo questId="312429" stepId="2" x="744" y="576" z="0" pathPrecision="5"/>
-			<MoveTo questId="312429" stepId="2" x="854" y="592" z="1" pathPrecision="5"/>
-			<MoveTo questId="312429" stepId="2" x="1022" y="673" z="0" pathPrecision="5"/>
-			<MoveTo questId="312429" stepId="2" x="1080" y="737" z="0" pathPrecision="5"/>
-			<MoveTo questId="312429" stepId="2" x="1009" y="833" z="0" pathPrecision="5"/>
-			<MoveTo questId="312429" stepId="2" x="1072" y="988" z="0" pathPrecision="5"/>
-			<MoveTo questId="312429" stepId="2" x="1087" y="1098" z="0" pathPrecision="5"/>
-			<MoveTo questId="312429" stepId="2" x="888" y="1062" z="0" pathPrecision="5"/>
-			<MoveTo questId="312429" stepId="2" x="848" y="921" z="0" pathPrecision="5"/>
+	
+		<!-- Zoltan Archives 1-->
+		<If condition="(MarkerExistsAt(1877684886, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876093, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876094, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876095, 3379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876096, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876097, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876098, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876099, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876100, 379.736, 880, 1.778106, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltan Archives 1 with MoveTo." />
+			<SafeMoveTo questId="312429" stepId="2" x="444" y="878" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="610" y="870" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="815" y="877" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="945" y="866" z="13" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1081" y="940" z="-13" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1080" y="742" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1077" y="519" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1079" y="391" z="1" pathPrecision="5" pathPointLimit="250" statusText="" />
+			
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
-		<!-- Unknown version of the Catacombs-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Catacombs with ExploreDungeon." />		
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs @ 15/15/0.55" />
+		<!-- Unknown version of Bog Cave-->
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Zoltun Archives with ExploreDungeon." />		
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltun Archives @ 20/10/0.05" />
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.05"/>
 			<LoadProfile file="Rift.xml" />			
 		</If>
-		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
+		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.05"/>
 		<LoadProfile file="Rift.xml" />
 	</While>
 	<LoadProfile file="Rift.xml" />

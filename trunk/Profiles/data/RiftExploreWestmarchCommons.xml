@@ -54,7 +54,7 @@
 		or (MarkerExistsAt(1938876098, 1029.8, 376.6726, 10.81753, 10))
 		or (MarkerExistsAt(1938876099, 1029.8, 376.6726, 10.81753, 10))
 		or (MarkerExistsAt(1938876100, 1029.8, 376.6726, 10.81753, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 1 with MoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 1 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<MoveTo questId="312429" stepId="2" x="964" y="420" z="0" pathPrecision="5" />
 			<MoveTo questId="312429" stepId="2" x="779" y="420" z="0" pathPrecision="5" />
 			<MoveTo questId="312429" stepId="2" x="848" y="550" z="0" pathPrecision="5" />
@@ -75,7 +75,7 @@
 		or (MarkerExistsAt(1938876098, 378.2376, 422.5311, 13.40328, 10))
 		or (MarkerExistsAt(1938876099, 378.2376, 422.5311, 13.40328, 10))
 		or (MarkerExistsAt(1938876100, 378.2376, 422.5311, 13.40328, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 2 with MoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 2 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<MoveTo questId="312429" stepId="2" x="469" y="417" z="0" pathPrecision="5" />
 			<MoveTo questId="312429" stepId="2" x="709" y="419" z="0" pathPrecision="5" />
 			<MoveTo questId="312429" stepId="2" x="776" y="625" z="0" pathPrecision="5" />
@@ -98,7 +98,7 @@
 		or (MarkerExistsAt(1938876098, 789.7996, 373.3321, 10.81753, 10))
 		or (MarkerExistsAt(1938876099, 789.7996, 373.3321, 10.81753, 10))
 		or (MarkerExistsAt(1938876100, 789.7996, 373.3321, 10.81753, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 2 with MoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 3 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="766" y="421" z="11" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="527" y="428" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="624" y="537" z="5" pathPrecision="5" pathPointLimit="250" statusText="" />

@@ -71,7 +71,7 @@
 		
 		<!-- Unknown version of Bog Cave-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Bog Cave with ExploreDungeon." />		
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 20/20/0.05" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave @ 20/10/0.05" />
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.05"/>
 			<LoadProfile file="Rift.xml" />			
