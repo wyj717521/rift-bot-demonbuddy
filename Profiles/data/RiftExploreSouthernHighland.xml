@@ -53,7 +53,7 @@
 		or (MarkerExistsAt(1938876098, 1055.51, 1473.244, 61.84594, 100))
 		or (MarkerExistsAt(1938876099, 1055.51, 1473.244, 61.84594, 100))
 		or (MarkerExistsAt(1938876100, 1055.51, 1473.244, 61.84594, 100))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with MoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with MoveTo. Bot will not stop when boss spawns/killed." />
 			<MoveTo questId="312429" stepId="2" x="1220" y="1438" z="41" pathPrecision="5" statusText="" />
 			<MoveTo questId="312429" stepId="2" x="1258" y="1092" z="38" pathPrecision="5" statusText="" />
 			<MoveTo questId="312429" stepId="2" x="1194" y="722" z="40" pathPrecision="5" statusText="" />
