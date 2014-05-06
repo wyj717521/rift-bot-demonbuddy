@@ -65,6 +65,7 @@
 			<SafeMoveTo questId="312429" stepId="2" x="860" y="1233" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="858" y="971" z="1" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="863" y="796" z="1" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="784" y="752" z="25" pathPrecision="5" />
 			<LoadProfile file="Rift.xml" />
 		</If>
 
