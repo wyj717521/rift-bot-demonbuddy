@@ -65,6 +65,29 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
+		<!-- Westmarch Commons 2-->
+		<If condition="(MarkerExistsAt(1877684886, 378.2376, 422.5311, 13.40328, 10))
+		or (MarkerExistsAt(1938876093, 378.2376, 422.5311, 13.40328, 10))
+		or (MarkerExistsAt(1938876094, 378.2376, 422.5311, 13.40328, 10))
+		or (MarkerExistsAt(1938876095, 378.2376, 422.5311, 13.40328, 10))
+		or (MarkerExistsAt(1938876096, 378.2376, 422.5311, 13.40328, 10))
+		or (MarkerExistsAt(1938876097, 378.2376, 422.5311, 13.40328, 10))
+		or (MarkerExistsAt(1938876098, 378.2376, 422.5311, 13.40328, 10))
+		or (MarkerExistsAt(1938876099, 378.2376, 422.5311, 13.40328, 10))
+		or (MarkerExistsAt(1938876100, 378.2376, 422.5311, 13.40328, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 2 with MoveTo." />
+			<MoveTo questId="312429" stepId="2" x="469" y="417" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="709" y="419" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="776" y="625" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="843" y="663" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="781" y="899" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1013" y="916" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1144" y="1016" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1169" y="1140" z="0" pathPrecision="5" />
+			<MoveTo questId="312429" stepId="2" x="1269" y="1099" z="11" pathPrecision="5" />
+			<LoadProfile file="Rift.xml" />
+		</If>
+		
 		<!-- Unknown version of Westmarch Commons-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Westmarch Commons with ExploreDungeon." />		
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/10/0.3" />
