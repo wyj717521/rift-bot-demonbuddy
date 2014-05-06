@@ -38,7 +38,6 @@
 	<TargetBlacklist actorid="5671"/> <!-- Armor Rack -->
 	<TargetBlacklist actorid="15937"/> <!-- Armor Rack -->
 	<TargetBlacklist actorid="78030"/> <!-- Wilderness Scarecrow -->
-	<TargetBlacklist actorid="260949"/> <!-- Broken well in Garden of Hope -->
 </TargetBlacklists>
 
 <Order>
