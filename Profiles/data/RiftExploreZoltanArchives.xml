@@ -43,27 +43,35 @@
 
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
-		<!-- Southern Highlands-->
-		<If condition="ZetaDia.CurrentWorldDynamicId == 2000486415">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with SafeMoveTo. Bot will not stop when boss spawns/killed." />
-			<SafeMoveTo questId="312429" stepId="2" x="1220" y="1438" z="41" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="1258" y="1092" z="38" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="1194" y="722" z="40" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="970" y="999" z="40" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="774" y="907" z="38" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="759" y="837" z="50" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="604" y="778" z="78" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="499" y="601" z="80" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="302" y="920" z="80" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="191" y="728" z="90" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="288" y="600" z="80" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="421" y="589" z="78" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="420" y="346" z="63" pathPrecision="5" statusText="" />
+	
+		<!-- Zoltan Archives 1-->
+		<If condition="(MarkerExistsAt(1877684886, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876093, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876094, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876095, 3379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876096, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876097, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876098, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876099, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876100, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876101, 379.736, 880, 1.778106, 10))
+		or (MarkerExistsAt(1938876102, 379.736, 880, 1.778106, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltan Archives 1 with MoveTo." />
+			<SafeMoveTo questId="312429" stepId="2" x="444" y="878" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="610" y="870" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="815" y="877" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="945" y="866" z="13" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1081" y="940" z="-13" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1080" y="742" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1077" y="519" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1079" y="391" z="1" pathPrecision="5" pathPointLimit="250" statusText="" />
+			
 			<LoadProfile file="Rift.xml" />
 		</If>
-		<!-- Unknown version-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Southern Highland with ExploreDungeon." />
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands @ 15/20/0.22" />
+		
+		<!-- Unknown version of Bog Cave-->
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Zoltun Archives with ExploreDungeon." />		
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltun Archives @ 20/10/0.05" />
 		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')
 				and not (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
 				and not (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
@@ -74,10 +82,10 @@
 				and not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
 				and not (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
 				and not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="20" boxTolerance="0.22"/>
-			<LoadProfile file="Rift.xml" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.05"/>
+			<LoadProfile file="Rift.xml" />			
 		</While>
-		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="15" pathPrecision="20" boxTolerance="0.22"/>
+		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.05"/>
 		<LoadProfile file="Rift.xml" />
 	</While>
 	<LoadProfile file="Rift.xml" />
