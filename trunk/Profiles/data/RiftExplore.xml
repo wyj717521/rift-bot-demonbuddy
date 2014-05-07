@@ -55,7 +55,9 @@
 					  not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
 					  not (not Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not (IsActiveQuestAndStep(337492, 1) or IsActiveQuestAndStep(337492, 3)))">
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort-->
-			<LoadProfile file="RiftExploreStonefort.xml" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort @ 40/30/0.2" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="30" boxTolerance="0.2"/>
+			<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 20/30/0.3" />
@@ -74,16 +76,24 @@
 			<LoadProfile file="RiftExploreCursedTower.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons-->
-			<LoadProfile file="RiftExploreWestmarchCommons.xml" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/10/0.2" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="10" boxTolerance="0.2"/>
+		<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacomb-->
-			<LoadProfile file="RiftExploreCatacombs.xml" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs @ 15/15/0.55" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
+		<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
-			<LoadProfile file="RiftExplorePandemoniumFortress.xml" />
+	<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.35" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.35"/>
+		<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 323580"> <!-- Arreat Crater-->
-			<LoadProfile file="RiftExploreAreatCrater.xml" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Areat Crater @ 15/15/0.2" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.2"/>
+		<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352652"> <!-- Plague Tunnel-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Plague Tunnel @ 15/15/0.3" />
@@ -99,7 +109,9 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 312606"> <!-- Archives of Zoltun Kulle-->
-			<LoadProfile file="RiftExploreZoltanArchives.xml" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltun Archives @ 20/10/0.05" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.05"/>
+			<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 275923"> <!-- Cathedral-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 15/15/0.2" />
@@ -130,7 +142,9 @@
 			<LoadProfile file="RiftExploreSouthernHighland.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 349181"> <!-- Boneyards--> 
-			<LoadProfile file="RiftExploreBoneYards.xml" /> 
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bone Yards @ 20/15/0.05" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="15" boxTolerance="0.05"/>
+			<LoadProfile file="Rift.xml" />
 		</If> 
 		<If condition="CurrentLevelAreaId == 276150"> <!-- Crypts--> 
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 15/15/0.35" /> 
@@ -158,7 +172,9 @@
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		<If condition="CurrentLevelAreaId == 349048"> <!-- Battlefield Bridge--> 
-			<LoadProfile file="RiftExploreBattlefieldBridge.xml" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge @ 30/30/0.15" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="30" boxTolerance="0.15"/>
+			<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 276215"> <!-- Worm Caves--> 
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Worm Caves @ 14/15/0.25" /> 
@@ -171,7 +187,9 @@
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		<If condition="CurrentLevelAreaId == 352690"> <!--Bog Cave-->
-			<LoadProfile file="RiftExploreBogCave.xml" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave @ 20/10/0.05" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.05"/>
+			<LoadProfile file="Rift.xml" />
 		</If>
 		
 		<!-- Default 20/0.01 -->
