@@ -1,0 +1,140 @@
+<Profile>
+<Name>Rift Bot Optimized Explore</Name>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+<GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
+
+<TargetBlacklists>
+    <TargetBlacklist actorId="114622" name="Tyrael" />
+	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
+	<TargetBlacklist actorId="103919"/> <!-- Demonic Vessels -->
+	<TargetBlacklist actorId="58317"/> <!-- Tool/Weapon Rack -->
+	<TargetBlacklist actorId="289794"/> <!-- X1_PandExt_ArmorRack-7385 -->
+	<TargetBlacklist actorId="212491"/> <!-- Pony Clouds -->
+	<TargetBlacklist actorId="289756"/> <!-- Armor Racks -->
+	<TargetBlacklist actorId="5758"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="464"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="357299"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357297"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357295"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357306"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357301"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="362323"/> <!-- A buged NPC in A5 -->
+	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
+	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
+	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="341124"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192466"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192463"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167519"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289244"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289246"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="77354"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="340114"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="340113"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="5671"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="15937"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="78030"/> <!-- Wilderness Scarecrow -->
+</TargetBlacklists>
+
+<Order>
+	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
+	
+		<!-- Westmarch Commons 1-->
+		<If condition="(MarkerExistsAt(1877684886, 1029.8, 376.6726, 10.81753, 1))
+		or (MarkerExistsAt(1938876093, 1029.8, 376.6726, 10.81753, 1))
+		or (MarkerExistsAt(1938876094, 1029.8, 376.6726, 10.81753, 1))
+		or (MarkerExistsAt(1938876095, 1029.8, 376.6726, 10.81753, 1))
+		or (MarkerExistsAt(1938876096, 1029.8, 376.6726, 10.81753, 1))
+		or (MarkerExistsAt(1938876097, 1029.8, 376.6726, 10.81753, 1))
+		or (MarkerExistsAt(1938876098, 1029.8, 376.6726, 10.81753, 1))
+		or (MarkerExistsAt(1938876099, 1029.8, 376.6726, 10.81753, 1))
+		or (MarkerExistsAt(1938876100, 1029.8, 376.6726, 10.81753, 1))
+		or (MarkerExistsAt(1938876101, 1029.8, 376.6726, 10.81753, 1))
+		or (MarkerExistsAt(1938876102, 1029.8, 376.6726, 10.81753, 1))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 1 with MoveTo. Bot will not stop when boss spawns/killed." />
+			<SafeMoveTo questId="312429" stepId="2" x="964" y="420" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="779" y="420" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="848" y="550" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="775" y="588" z="10" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="835" y="658" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="574" y="660" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="378" y="657" z="10" pathPrecision="5" />
+			<LoadProfile file="Rift.xml" />
+		</If>
+		
+		<!-- Westmarch Commons 2-->
+		<If condition="(MarkerExistsAt(1877684886, 378.2376, 422.5311, 13.40328, 1))
+		or (MarkerExistsAt(1938876093, 378.2376, 422.5311, 13.40328, 1))
+		or (MarkerExistsAt(1938876094, 378.2376, 422.5311, 13.40328, 1))
+		or (MarkerExistsAt(1938876095, 378.2376, 422.5311, 13.40328, 1))
+		or (MarkerExistsAt(1938876096, 378.2376, 422.5311, 13.40328, 1))
+		or (MarkerExistsAt(1938876097, 378.2376, 422.5311, 13.40328, 1))
+		or (MarkerExistsAt(1938876098, 378.2376, 422.5311, 13.40328, 1))
+		or (MarkerExistsAt(1938876099, 378.2376, 422.5311, 13.40328, 1))
+		or (MarkerExistsAt(1938876100, 378.2376, 422.5311, 13.40328, 1))
+		or (MarkerExistsAt(1938876101, 378.2376, 422.5311, 13.40328, 1))
+		or (MarkerExistsAt(1938876102, 378.2376, 422.5311, 13.40328, 1))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 2 with MoveTo. Bot will not stop when boss spawns/killed." />
+			<SafeMoveTo questId="312429" stepId="2" x="469" y="417" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="709" y="419" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="776" y="625" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="843" y="663" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="781" y="899" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1013" y="916" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1144" y="1016" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1169" y="1140" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1269" y="1099" z="11" pathPrecision="5" />
+			<LoadProfile file="Rift.xml" />
+		</If>
+		
+		<!-- Westmarch Commons 3-->
+		<If condition="(MarkerExistsAt(1877684886, 789.7996, 373.3321, 10.81753, 1))
+		or (MarkerExistsAt(1938876093, 789.7996, 373.3321, 10.81753, 1))
+		or (MarkerExistsAt(1938876094, 789.7996, 373.3321, 10.81753, 1))
+		or (MarkerExistsAt(1938876095, 789.7996, 373.3321, 10.81753, 1))
+		or (MarkerExistsAt(1938876096, 789.7996, 373.3321, 10.81753, 1))
+		or (MarkerExistsAt(1938876097, 789.7996, 373.3321, 10.81753, 1))
+		or (MarkerExistsAt(1938876098, 789.7996, 373.3321, 10.81753, 1))
+		or (MarkerExistsAt(1938876099, 789.7996, 373.3321, 10.81753, 1))
+		or (MarkerExistsAt(1938876100, 789.7996, 373.3321, 10.81753, 1))
+		or (MarkerExistsAt(1938876101, 789.7996, 373.3321, 10.81753, 1))
+		or (MarkerExistsAt(1938876102, 789.7996, 373.3321, 10.81753, 1))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 3 with MoveTo. Bot will not stop when boss spawns/killed." />
+			<SafeMoveTo questId="312429" stepId="2" x="766" y="421" z="11" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="527" y="428" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="624" y="537" z="5" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="664" y="672" z="5" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="541" y="682" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="519" y="821" z="10" pathPrecision="5" />
+			<MoveToMapMarker questId="312429" stepId="3" markerNameHash="1938876094" actorId="176002" interactRange="20"
+                   pathPrecision="5" isPortal="True" destinationWorldId="288685" statusText="" />
+			<LoadProfile file="Rift.xml" />
+		</If>
+		
+		<!-- Unknown version of Westmarch Commons-->
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Westmarch Commons with ExploreDungeon." />		
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/10/0.3" />
+		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')
+				and not (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="10" boxTolerance="0.2"/>
+			<LoadProfile file="Rift.xml" />			
+		</While>
+		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="15" pathPrecision="10" boxTolerance="0.2"/>
+		<LoadProfile file="Rift.xml" />
+	</While>
+	<LoadProfile file="Rift.xml" />
+</Order>
+</Profile>
