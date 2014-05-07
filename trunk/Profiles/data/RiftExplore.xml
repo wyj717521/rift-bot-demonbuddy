@@ -102,9 +102,7 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 312606"> <!-- Archives of Zoltun Kulle-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Archives of Zoltun Kulle @ 15/15/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.2"/>
-			<LoadProfile file="Rift.xml" />
+			<LoadProfile file="RiftExploreZoltanArchives.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 275923"> <!-- Cathedral-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 15/15/0.2" />
