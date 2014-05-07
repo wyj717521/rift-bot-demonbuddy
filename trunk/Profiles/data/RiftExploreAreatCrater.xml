@@ -46,7 +46,7 @@
 	
 		<!-- Areat Crater 1-->
 		<If condition="ZetaDia.Me.CurrentScene.SceneInfo.SNOId == 142387">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Areat Crater 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Areat Crater 1 with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="1643" y="722" z="0" pathPrecision="5" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="1387" y="712" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="1180" y="729" z="-10" pathPrecision="5" />

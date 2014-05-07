@@ -46,7 +46,7 @@
 	
 		<!-- Southern Highlands-->
 		<If condition="ZetaDia.Me.CurrentScene.SceneInfo.SNOId == 74856">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="1220" y="1438" z="41" pathPrecision="5" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="1258" y="1092" z="38" pathPrecision="5" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="1194" y="722" z="40" pathPrecision="5" statusText="" />
