@@ -84,9 +84,7 @@
 			<LoadProfile file="RiftExplorePandemoniumFortress.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 323580"> <!-- Arreat Crater-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Arreat Crater @ 15/15/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.2"/>
-			<LoadProfile file="Rift.xml" />
+			<LoadProfile file="RiftExploreAreatCrater.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 352652"> <!-- Plague Tunnel-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Plague Tunnel @ 15/15/0.3" />
