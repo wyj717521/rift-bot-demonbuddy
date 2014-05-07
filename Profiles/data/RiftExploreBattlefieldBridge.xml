@@ -53,7 +53,7 @@
 		or (MarkerExistsAt(1938876098, 2977.963, 832.7666, -11.55366, 10))
 		or (MarkerExistsAt(1938876099, 2977.963, 832.7666, -11.55366, 10))
 		or (MarkerExistsAt(1938876100, 2977.963, 832.7666, -11.55366, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge 1 with MoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge 1 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<MoveTo questId="312429" stepId="2" x="3022" y="834" z="-2" pathPrecision="5" />
 			<MoveTo questId="312429" stepId="2" x="2875" y="882" z="0" pathPrecision="5" />
 			<MoveTo questId="312429" stepId="2" x="2910" y="671" z="0" pathPrecision="5" />

@@ -53,7 +53,7 @@
 		or (MarkerExistsAt(1938876098, 543.0258, 840.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876099, 543.0258, 840.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876100, 543.0258, 840.2885, 1.596355, 100))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Small Cursed Hold with MoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Small Cursed Hold with MoveTo. Bot will not stop when boss spawns/killed." />
 			<MoveTo questId="312429" stepId="2" x="967" y="817" z="0" pathPrecision="5" statusText="" />
 			<MoveTo questId="312429" stepId="2" x="954" y="959" z="0" pathPrecision="5" statusText="" />
 			<MoveTo questId="312429" stepId="2" x="732" y="961" z="0" pathPrecision="5" statusText="" />

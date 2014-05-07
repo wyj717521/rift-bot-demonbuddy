@@ -53,7 +53,7 @@
 		or (MarkerExistsAt(1938876098, 342.3823, 371.7244, 2.573257, 10))
 		or (MarkerExistsAt(1938876099, 342.3823, 371.7244, 2.573257, 10))
 		or (MarkerExistsAt(1938876100, 342.3823, 371.7244, 2.573257, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs 1 with MoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs 1 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<MoveTo questId="312429" stepId="2" x="583" y="367" z="0" pathPrecision="5"/>
 			<MoveTo questId="312429" stepId="2" x="597" y="543" z="1" pathPrecision="5"/>
 			<MoveTo questId="312429" stepId="2" x="744" y="576" z="0" pathPrecision="5"/>

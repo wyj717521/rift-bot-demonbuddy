@@ -54,7 +54,7 @@
 		or (MarkerExistsAt(1938876098, 358.9134, 824.5953, 1.086531, 10))
 		or (MarkerExistsAt(1938876099, 358.9134, 824.5953, 1.086531, 10))
 		or (MarkerExistsAt(1938876100, 358.9134, 824.5953, 1.086531, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave 1 with MoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave 1 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<MoveTo questId="312429" stepId="2" x="415" y="793" z="0" pathPrecision="5" />
 			<MoveTo questId="312429" stepId="2" x="323" y="648" z="0" pathPrecision="5" />
 			<MoveTo questId="312429" stepId="2" x="452" y="611" z="0" pathPrecision="5" />
