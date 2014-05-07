@@ -91,9 +91,7 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 275927"> <!-- Halls of Agony-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Halls of Agony @ 15/15/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.2"/>
-			<LoadProfile file="Rift.xml" />
+			<LoadProfile file="RiftExploreHallsofAgony.xml" />
 		</If>
 		<If condition="CurrentLevelAreaId == 332323"> <!-- Dahlgur Oasis-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis @ 15/30/0.2" />
