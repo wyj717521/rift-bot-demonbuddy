@@ -170,7 +170,7 @@
 		or (MarkerExistsAt(1938876098, 680.1924, 719.7283, 33.9541, 1))
 		or (MarkerExistsAt(1938876099, 680.1924, 719.7283, 33.9541, 1))
 		or (MarkerExistsAt(1938876100, 680.1924, 719.7283, 33.9541, 1))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Damned version B with MoveTo." />		
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Damned version B with MoveTo. Bot will not stop when boss spawns/killed." />		
 			<MoveTo questId="312429" stepId="2" x="723" y="783" z="2" pathPrecision="5" statusText="" /> 
 			<MoveTo questId="312429" stepId="2" x="783" y="720" z="0" pathPrecision="5" statusText="" /> 
 			<MoveTo questId="312429" stepId="2" x="741" y="660" z="0" pathPrecision="5" statusText="" /> 
