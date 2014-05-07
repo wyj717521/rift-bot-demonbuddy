@@ -43,6 +43,7 @@
 
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
+	
 		<!-- Small Cursed Hold-->
 		<If condition="(MarkerExistsAt(1877684886, 543.0258, 840.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876093, 543.0258, 840.2885, 1.596355, 100))
@@ -55,7 +56,7 @@
 		or (MarkerExistsAt(1938876100, 543.0258, 840.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876101, 543.0258, 840.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876102, 543.0258, 840.2885, 1.596355, 100))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Small Cursed Hold with MoveTo. Bot will not stop when boss spawns/killed." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Small Cursed Hold with SafeMoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="967" y="817" z="0" pathPrecision="5" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="954" y="959" z="0" pathPrecision="5" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="732" y="961" z="0" pathPrecision="5" statusText="" />
@@ -78,6 +79,7 @@
 			</If>
 			<LoadProfile file="Rift.xml" />
 		</If>
+		
 		<!-- Medium Cursed Hold-->
 		<If condition="(MarkerExistsAt(1877684886, 303.0258, 600.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876093, 303.0258, 600.2885, 1.596355, 100))
@@ -90,7 +92,7 @@
 		or (MarkerExistsAt(1938876100, 303.0258, 600.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876101, 303.0258, 600.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876102, 303.0258, 600.2885, 1.596355, 100))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Medium Cursed Hold with MoveTo. Bot will not stop when boss spawns/killed." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Medium Cursed Hold with SafeMoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="727" y="817" z="0" pathPrecision="5" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="714" y="959" z="0" pathPrecision="5" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="492" y="961" z="0" pathPrecision="5" statusText="" />
@@ -128,8 +130,9 @@
 			</If>
 			<LoadProfile file="Rift.xml" />
 		</If>
+		
 		<!-- Large Cursed Hold-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Large Cursed Hold with MoveTo. Bot will not stop when boss spawns/killed." />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Large Cursed Hold with SafeMoveTo. Bot will not stop when boss spawns/killed." />
 		<SafeMoveTo questId="312429" stepId="2" x="727" y="817" z="0" pathPrecision="5" statusText="" />
 		<SafeMoveTo questId="312429" stepId="2" x="714" y="959" z="0" pathPrecision="5" statusText="" />
 		<SafeMoveTo questId="312429" stepId="2" x="492" y="961" z="0" pathPrecision="5" statusText="" />
