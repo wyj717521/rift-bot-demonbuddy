@@ -54,24 +54,24 @@
 		or (MarkerExistsAt(1938876099, 2977.963, 832.7666, -11.55366, 10))
 		or (MarkerExistsAt(1938876100, 2977.963, 832.7666, -11.55366, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge 1 with MoveTo. Bot will not stop when boss spawns/killed." />
-			<MoveTo questId="312429" stepId="2" x="3022" y="834" z="-2" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="2875" y="882" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="2910" y="671" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="3149" y="702" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="3241" y="887" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="2993" y="1015" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="2699" y="980" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="2533" y="851" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="2359" y="832" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="2267" y="761" z="-12" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="2177" y="852" z="-25" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="2010" y="826" z="-24" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="1891" y="873" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="1755" y="810" z="-25" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="1650" y="895" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="1507" y="867" z="-25" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="1342" y="849" z="0" pathPrecision="5" />
-			<MoveTo questId="312429" stepId="2" x="1010" y="838" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="3022" y="834" z="-2" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2875" y="882" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2910" y="671" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="3149" y="702" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="3241" y="887" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2993" y="1015" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2699" y="980" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2533" y="851" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2359" y="832" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2267" y="761" z="-12" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2177" y="852" z="-25" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2010" y="826" z="-24" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1891" y="873" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1755" y="810" z="-25" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1650" y="895" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1507" y="867" z="-25" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1342" y="849" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1010" y="838" z="0" pathPrecision="5" />
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
