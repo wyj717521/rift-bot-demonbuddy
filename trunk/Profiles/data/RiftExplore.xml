@@ -53,7 +53,6 @@
 					  not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
 					  not (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
 					  not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
-					  not (CurrentWorldId == 288816 and MarkerExistsAt(1938876103, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
 					  not (not Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not (IsActiveQuestAndStep(337492, 1) or IsActiveQuestAndStep(337492, 3)))">
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort-->
 			<LoadProfile file="RiftExploreStonefort.xml" />

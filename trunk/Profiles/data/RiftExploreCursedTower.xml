@@ -52,7 +52,9 @@
 		or (MarkerExistsAt(1938876097, 488.2521, 767.5283, 82.0196, 10))
 		or (MarkerExistsAt(1938876098, 488.2521, 767.5283, 82.0196, 10))
 		or (MarkerExistsAt(1938876099, 488.2521, 767.5283, 82.0196, 10))
-		or (MarkerExistsAt(1938876100, 488.2521, 767.5283, 82.0196, 10))">
+		or (MarkerExistsAt(1938876100, 488.2521, 767.5283, 82.0196, 10))
+		or (MarkerExistsAt(1938876101, 488.2521, 767.5283, 82.0196, 10))
+		or (MarkerExistsAt(1938876102, 488.2521, 767.5283, 82.0196, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed 1-A with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="574" y="838" z="50" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="664" y="903" z="50" pathPrecision="5" statusText="" /> 
@@ -79,7 +81,9 @@
 		or (MarkerExistsAt(1938876097, 399.2324, 721.925, 44.40216, 10))
 		or (MarkerExistsAt(1938876098, 399.2324, 721.925, 44.40216, 10))
 		or (MarkerExistsAt(1938876099, 399.2324, 721.925, 44.40216, 10))
-		or (MarkerExistsAt(1938876100, 399.2324, 721.925, 44.40216, 10))">
+		or (MarkerExistsAt(1938876100, 399.2324, 721.925, 44.40216, 10))
+		or (MarkerExistsAt(1938876101, 399.2324, 721.925, 44.40216, 10))
+		or (MarkerExistsAt(1938876102, 399.2324, 721.925, 44.40216, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed 1-B with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="569" y="724" z="-10" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="656" y="612" z="-10" pathPrecision="5" statusText="" /> 
@@ -110,7 +114,9 @@
 		or (MarkerExistsAt(1938876097, 720.8195, 407.845, 41.87429, 10))
 		or (MarkerExistsAt(1938876098, 720.8195, 407.845, 41.87429, 10))
 		or (MarkerExistsAt(1938876099, 720.8195, 407.845, 41.87429, 10))
-		or (MarkerExistsAt(1938876100, 720.8195, 407.845, 41.87429, 10))">
+		or (MarkerExistsAt(1938876100, 720.8195, 407.845, 41.87429, 10))
+		or (MarkerExistsAt(1938876101, 720.8195, 407.845, 41.87429, 10))
+		or (MarkerExistsAt(1938876102, 720.8195, 407.845, 41.87429, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Damned version A with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="721" y="597" z="-10" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="627" y="634" z="-19" pathPrecision="5" statusText="" />
@@ -131,7 +137,9 @@
 		or (MarkerExistsAt(1938876097, 678.8602, 717.8599, 34.98107, 1))
 		or (MarkerExistsAt(1938876098, 678.8602, 717.8599, 34.98107, 1))
 		or (MarkerExistsAt(1938876099, 678.8602, 717.8599, 34.98107, 1))
-		or (MarkerExistsAt(1938876100, 678.8602, 717.8599, 34.98107, 1))">
+		or (MarkerExistsAt(1938876100, 678.8602, 717.8599, 34.98107, 1))
+		or (MarkerExistsAt(1938876101, 678.8602, 717.8599, 34.98107, 1))
+		or (MarkerExistsAt(1938876102, 678.8602, 717.8599, 34.98107, 1))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed version B with MoveTo. Bot will not stop when boss spawns/killed." />		
 			<SafeMoveTo questId="312429" stepId="2" x="729" y="783" z="0" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="772" y="755" z="0" pathPrecision="5" statusText="" /> 
@@ -169,7 +177,9 @@
 		or (MarkerExistsAt(1938876097, 680.1924, 719.7283, 33.9541, 1))
 		or (MarkerExistsAt(1938876098, 680.1924, 719.7283, 33.9541, 1))
 		or (MarkerExistsAt(1938876099, 680.1924, 719.7283, 33.9541, 1))
-		or (MarkerExistsAt(1938876100, 680.1924, 719.7283, 33.9541, 1))">
+		or (MarkerExistsAt(1938876100, 680.1924, 719.7283, 33.9541, 1))
+		or (MarkerExistsAt(1938876101, 680.1924, 719.7283, 33.9541, 1))
+		or (MarkerExistsAt(1938876102, 680.1924, 719.7283, 33.9541, 1))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Damned version B with MoveTo. Bot will not stop when boss spawns/killed." />		
 			<SafeMoveTo questId="312429" stepId="2" x="723" y="783" z="2" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="783" y="720" z="0" pathPrecision="5" statusText="" /> 
@@ -202,7 +212,9 @@
 		or (MarkerExistsAt(1938876097, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876098, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876099, 484.4771, 767.3116, 39.86788, 1))
-		or (MarkerExistsAt(1938876100, 484.4771, 767.3116, 39.86788, 1))">
+		or (MarkerExistsAt(1938876100, 484.4771, 767.3116, 39.86788, 1))
+		or (MarkerExistsAt(1938876101, 484.4771, 767.3116, 39.86788, 1))
+		or (MarkerExistsAt(1938876102, 484.4771, 767.3116, 39.86788, 1))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown Tower with MoveTo. Bot will not stop when boss spawns/killed." />		
 			<SafeMoveTo questId="312429" stepId="2" x="589" y="839" z="10" pathPrecision="5"/>
 			<SafeMoveTo questId="312429" stepId="2" x="658" y="765" z="10" pathPrecision="5"/>
@@ -219,10 +231,19 @@
 		<!-- Unknown version of the tower-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the tower with ExploreDungeon." />		
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 15/15/0.55" />
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
+		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')
+				and not (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="30" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
 			<LoadProfile file="Rift.xml" />			
-		</If>
+		</While>
 		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="30" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
 		<LoadProfile file="Rift.xml" />
 	</While>

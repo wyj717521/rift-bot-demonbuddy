@@ -52,7 +52,9 @@
 		or (MarkerExistsAt(1938876097, 342.3823, 371.7244, 2.573257, 10))
 		or (MarkerExistsAt(1938876098, 342.3823, 371.7244, 2.573257, 10))
 		or (MarkerExistsAt(1938876099, 342.3823, 371.7244, 2.573257, 10))
-		or (MarkerExistsAt(1938876100, 342.3823, 371.7244, 2.573257, 10))">
+		or (MarkerExistsAt(1938876100, 342.3823, 371.7244, 2.573257, 10))
+		or (MarkerExistsAt(1938876101, 342.3823, 371.7244, 2.573257, 10))
+		or (MarkerExistsAt(1938876102, 342.3823, 371.7244, 2.573257, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs 1 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="583" y="367" z="0" pathPrecision="5"/>
 			<SafeMoveTo questId="312429" stepId="2" x="597" y="543" z="1" pathPrecision="5"/>
@@ -71,10 +73,19 @@
 		<!-- Unknown version of the Catacombs-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Catacombs with ExploreDungeon." />		
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs @ 15/15/0.55" />
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
+		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')
+				and not (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
 			<LoadProfile file="Rift.xml" />			
-		</If>
+		</While>
 		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
 		<LoadProfile file="Rift.xml" />
 	</While>

@@ -53,7 +53,9 @@
 		or (MarkerExistsAt(1938876097, 1140.219, 335.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876098, 1140.219, 335.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876099, 1140.219, 335.6021, 27.61337, 10))
-		or (MarkerExistsAt(1938876100, 1140.219, 335.6021, 27.61337, 10))">
+		or (MarkerExistsAt(1938876100, 1140.219, 335.6021, 27.61337, 10))
+		or (MarkerExistsAt(1938876101, 1140.219, 335.6021, 27.61337, 10))
+		or (MarkerExistsAt(1938876102, 1140.219, 335.6021, 27.61337, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 1 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="1144" y="509" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="1172" y="590" z="0" pathPrecision="5" />
@@ -86,7 +88,9 @@
 		or (MarkerExistsAt(1938876097, 660.2192, 815.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876098, 660.2192, 815.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876099, 660.2192, 815.6021, 27.61337, 10))
-		or (MarkerExistsAt(1938876100, 660.2192, 815.6021, 27.61337, 10))">
+		or (MarkerExistsAt(1938876100, 660.2192, 815.6021, 27.61337, 10))
+		or (MarkerExistsAt(1938876101, 660.2192, 815.6021, 27.61337, 10))
+		or (MarkerExistsAt(1938876102, 660.2192, 815.6021, 27.61337, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 2 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="626" y="1048" z="-10" pathPrecision="5" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-13290" interactAttempts="2" />
@@ -130,7 +134,9 @@
 		or (MarkerExistsAt(1938876097, 382.0739, 787.3694, 29.86483, 10))
 		or (MarkerExistsAt(1938876098, 382.0739, 787.3694, 29.86483, 10))
 		or (MarkerExistsAt(1938876099, 382.0739, 787.3694, 29.86483, 10))
-		or (MarkerExistsAt(1938876100, 382.0739, 787.3694, 29.86483, 10))">
+		or (MarkerExistsAt(1938876100, 382.0739, 787.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876101, 382.0739, 787.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876102, 382.0739, 787.3694, 29.86483, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 3 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="382" y="860" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="521" y="912" z="0" pathPrecision="5" />
@@ -183,7 +189,9 @@
 		or (MarkerExistsAt(1938876097, 309.0393, 792.2703, 27.91728, 10))
 		or (MarkerExistsAt(1938876098, 309.0393, 792.2703, 27.91728, 10))
 		or (MarkerExistsAt(1938876099, 309.0393, 792.2703, 27.91728, 10))
-		or (MarkerExistsAt(1938876100, 309.0393, 792.2703, 27.91728, 10))">
+		or (MarkerExistsAt(1938876100, 309.0393, 792.2703, 27.91728, 10))
+		or (MarkerExistsAt(1938876101, 309.0393, 792.2703, 27.91728, 10))
+		or (MarkerExistsAt(1938876102, 309.0393, 792.2703, 27.91728, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 4 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="417" y="750" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="378" y="672" z="0" pathPrecision="5" />
@@ -206,7 +214,9 @@
 		or (MarkerExistsAt(1938876097, 1053.56, 567.8285, -18.27939, 10))
 		or (MarkerExistsAt(1938876098, 1053.56, 567.8285, -18.27939, 10))
 		or (MarkerExistsAt(1938876099, 1053.56, 567.8285, -18.27939, 10))
-		or (MarkerExistsAt(1938876100, 1053.56, 567.8285, -18.27939, 10))">
+		or (MarkerExistsAt(1938876100, 1053.56, 567.8285, -18.27939, 10))
+		or (MarkerExistsAt(1938876101, 1053.56, 567.8285, -18.27939, 10))
+		or (MarkerExistsAt(1938876102, 1053.56, 567.8285, -18.27939, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 5 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="424" y="678" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="517" y="674" z="0" pathPrecision="5" />
@@ -229,7 +239,9 @@
 		or (MarkerExistsAt(1938876097, 420.2192, 335.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876098, 420.2192, 335.6021, 27.61337, 10))
 		or (MarkerExistsAt(1938876099, 420.2192, 335.6021, 27.61337, 10))
-		or (MarkerExistsAt(1938876100, 420.2192, 335.6021, 27.61337, 10))">
+		or (MarkerExistsAt(1938876100, 420.2192, 335.6021, 27.61337, 10))
+		or (MarkerExistsAt(1938876101, 420.2192, 335.6021, 27.61337, 10))
+		or (MarkerExistsAt(1938876102, 420.2192, 335.6021, 27.61337, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 6 with MoveTo. Bot will not stop when boss spawns/killed." />
 			<SafeMoveTo questId="312429" stepId="2" x="421" y="472" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="421" y="677" z="0" pathPrecision="5" />
@@ -257,10 +269,19 @@
 		<!-- Unknown version of Pandemonium Fortress-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Pandemonium Fortress with ExploreDungeon." />		
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.4" />
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
+		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')
+				and not (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.4"/>
 			<LoadProfile file="Rift.xml" />
-		</If>
+		</While>
 		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.4"/>
 		<LoadProfile file="Rift.xml" />
 	</While>
