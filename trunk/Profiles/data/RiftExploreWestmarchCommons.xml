@@ -105,12 +105,14 @@
 		or (MarkerExistsAt(1938876101, 789.7996, 373.3321, 10.81753, 10))
 		or (MarkerExistsAt(1938876102, 789.7996, 373.3321, 10.81753, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons 3 with MoveTo. Bot will not stop when boss spawns/killed." />
-			<SafeMoveTo questId="312429" stepId="2" x="766" y="421" z="11" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="527" y="428" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="624" y="537" z="5" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="664" y="672" z="5" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="541" y="682" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="519" y="821" z="10" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="766" y="421" z="11" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="527" y="428" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="624" y="537" z="5" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="664" y="672" z="5" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="541" y="682" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="519" y="821" z="10" pathPrecision="5" />
+			<MoveToMapMarker questId="312429" stepId="3" markerNameHash="1938876094" actorId="176002" interactRange="20"
+                   pathPrecision="5" isPortal="True" destinationWorldId="288685" statusText="" />
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
