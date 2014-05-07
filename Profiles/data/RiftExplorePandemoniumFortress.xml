@@ -46,7 +46,7 @@
 
 		<!-- Pandemonium Fortress 1-->
 		<If condition="ZetaDia.Me.CurrentScene.SceneInfo.SNOId == 270859">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 1 with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="419" y="646" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="398" y="800" z="-10" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-4799" interactAttempts="2" />

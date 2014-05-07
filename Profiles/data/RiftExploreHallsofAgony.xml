@@ -46,7 +46,7 @@
 	
 		<!-- Halls of Agony 1-->
 		<If condition="ZetaDia.Me.CurrentScene.SceneInfo.SNOId == 30953">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Halls of Agony 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Halls of Agony 1 with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="436" y="340" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="634" y="340" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="816" y="337" z="0" pathPrecision="5" />

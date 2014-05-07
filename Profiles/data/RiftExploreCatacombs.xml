@@ -46,7 +46,7 @@
 	
 		<!-- Catacombs 1-->
 		<If condition="ZetaDia.Me.CurrentScene.SceneInfo.SNOId == 256851">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs 1 with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="851" y="410" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="828" y="544" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="913" y="622" z="1" pathPrecision="5" />
