@@ -70,6 +70,33 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
+		<!-- Areat Crater 2-->
+		<If condition="(MarkerExistsAt(1877684886, 2624.976, 642.554, 11.04736, 10))
+		or (MarkerExistsAt(1938876093, 2624.976, 642.554, 11.04736, 10))
+		or (MarkerExistsAt(1938876094, 2624.976, 642.554, 11.04736, 10))
+		or (MarkerExistsAt(1938876095, 2624.976, 642.554, 11.04736, 10))
+		or (MarkerExistsAt(1938876096, 2624.976, 642.554, 11.04736, 10))
+		or (MarkerExistsAt(1938876097, 2624.976, 642.554, 11.04736, 10))
+		or (MarkerExistsAt(1938876098, 2624.976, 642.554, 11.04736, 10))
+		or (MarkerExistsAt(1938876099, 2624.976, 642.554, 11.04736, 10))
+		or (MarkerExistsAt(1938876100, 2624.976, 642.554, 11.04736, 10))
+		or (MarkerExistsAt(1938876101, 2624.976, 642.554, 11.04736, 10))
+		or (MarkerExistsAt(1938876102, 2624.976, 642.554, 11.04736, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Areat Crater 2 with MoveTo. Bot will not stop when boss spawns/killed." />
+			<SafeMoveTo questId="312429" stepId="2" x="2607" y="721" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2407" y="725" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="2119" y="662" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1888" y="722" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1629" y="717" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1401" y="723" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1184" y="675" z="-20" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1009" y="667" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="875" y="715" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="814" y="756" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="686" y="745" z="2" pathPrecision="5" />
+			<LoadProfile file="Rift.xml" />
+		</If>
+		
 		<!-- Unknown version of Areat Crater-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Areat Crater with ExploreDungeon." />		
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Areat Crater @ 15/15/0.2" />
