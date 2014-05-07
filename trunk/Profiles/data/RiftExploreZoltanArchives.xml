@@ -55,14 +55,14 @@
 		or (MarkerExistsAt(1938876099, 379.736, 880, 1.778106, 10))
 		or (MarkerExistsAt(1938876100, 379.736, 880, 1.778106, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltan Archives 1 with MoveTo." />
-			<MoveTo questId="312429" stepId="2" x="444" y="878" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<MoveTo questId="312429" stepId="2" x="610" y="870" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<MoveTo questId="312429" stepId="2" x="815" y="877" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<MoveTo questId="312429" stepId="2" x="945" y="866" z="13" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<MoveTo questId="312429" stepId="2" x="1081" y="940" z="-13" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<MoveTo questId="312429" stepId="2" x="1080" y="742" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<MoveTo questId="312429" stepId="2" x="1077" y="519" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<MoveTo questId="312429" stepId="2" x="1079" y="391" z="1" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="444" y="878" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="610" y="870" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="815" y="877" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="945" y="866" z="13" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1081" y="940" z="-13" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1080" y="742" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1077" y="519" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1079" y="391" z="1" pathPrecision="5" pathPointLimit="250" statusText="" />
 			
 			<LoadProfile file="Rift.xml" />
 		</If>
