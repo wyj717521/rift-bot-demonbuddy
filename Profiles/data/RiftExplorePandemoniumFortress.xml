@@ -266,6 +266,50 @@
 			<LoadProfile file="Rift.xml" />
 			</If>
 			
+		<!-- Pandemonium Fortress 7-->
+		<If condition="(MarkerExistsAt(1877684886, 382.0739, 307.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876093, 382.0739, 307.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876094, 382.0739, 307.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876095, 382.0739, 307.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876096, 382.0739, 307.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876097, 382.0739, 307.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876098, 382.0739, 307.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876099, 382.0739, 307.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876100, 382.0739, 307.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876101, 382.0739, 307.3694, 29.86483, 10))
+		or (MarkerExistsAt(1938876102, 382.0739, 307.3694, 29.86483, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress 7 with MoveTo. Bot will not stop when boss spawns/killed." />
+			<SafeMoveTo questId="312429" stepId="2" x="383" y="380" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="442" y="442" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="527" y="435" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="582" y="346" z="-10" pathPrecision="5" />
+			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-16837" interactAttempts="2" />
+			<SafeMoveTo questId="312429" stepId="2" x="651" y="391" z="0" pathPrecision="5" straightLinePathing="true" /> 
+			<SafeMoveTo questId="312429" stepId="2" x="638" y="552" z="-10" pathPrecision="5" />
+			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-18030 " interactAttempts="2" />
+			<SafeMoveTo questId="312429" stepId="2" x="670" y="664" z="0" pathPrecision="5" straightLinePathing="true" />
+			<SafeMoveTo questId="312429" stepId="2" x="759" y="669" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="774" y="565" z="10" pathPrecision="5" />
+			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-18075" interactAttempts="2" />
+			<SafeMoveTo questId="312429" stepId="2" x="835" y="560" z="-10" pathPrecision="5" straightLinePathing="true" />
+			<SafeMoveTo questId="312429" stepId="2" x="862" y="682" z="-10" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="998" y="668" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1038" y="585" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1140" y="691" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="1138" y="921" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="902" y="921" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="895" y="1005" z="0" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="774" y="1035" z="-10" pathPrecision="5" />
+			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-19020" interactAttempts="2" />
+			<SafeMoveTo questId="312429" stepId="2" x="823" y="1098" z="2" pathPrecision="5" straightLinePathing="true" />
+			<SafeMoveTo questId="312429" stepId="2" x="896" y="1099" z="10" pathPrecision="5" />
+			<SafeMoveTo questId="312429" stepId="2" x="882" y="1275" z="-10" pathPrecision="5" />
+			<MoveToActor questId="1" actorId="328830" name="x1_Fortress_Portal_Switch-20471" interactAttempts="2" />
+			<SafeMoveTo questId="312429" stepId="2" x="928" y="1388" z="0" pathPrecision="5" straightLinePathing="true" />
+			<SafeMoveTo questId="312429" stepId="2" x="1049" y="1293" z="-16" pathPrecision="5" />
+			<LoadProfile file="Rift.xml" />
+			</If>
+			
 		<!-- Unknown version of Pandemonium Fortress-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Pandemonium Fortress with ExploreDungeon." />		
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.4" />
