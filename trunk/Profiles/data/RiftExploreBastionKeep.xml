@@ -1,0 +1,89 @@
+<Profile>
+<Name>Rift Bot Optimized Explore</Name>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+<GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
+
+<TargetBlacklists>
+    <TargetBlacklist actorId="114622" name="Tyrael" />
+	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
+	<TargetBlacklist actorId="103919"/> <!-- Demonic Vessels -->
+	<TargetBlacklist actorId="58317"/> <!-- Tool/Weapon Rack -->
+	<TargetBlacklist actorId="289794"/> <!-- X1_PandExt_ArmorRack-7385 -->
+	<TargetBlacklist actorId="212491"/> <!-- Pony Clouds -->
+	<TargetBlacklist actorId="289756"/> <!-- Armor Racks -->
+	<TargetBlacklist actorId="5758"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="464"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="357299"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357297"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357295"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357306"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357301"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="362323"/> <!-- A buged NPC in A5 -->
+	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
+	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
+	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="341124"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192466"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192463"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167519"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289244"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289246"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="77354"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="340114"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="340113"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="5671"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="15937"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="78030"/> <!-- Wilderness Scarecrow -->
+</TargetBlacklists>
+
+<Order>
+	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
+			
+		<!-- Bastion Keep 1-->
+		<If condition="ZetaDia.Me.CurrentScene.SceneInfo.SNOId == 74014">
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />		
+		<SafeMoveTo questId="312429" stepId="2" x="393" y="476" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="362" y="634" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="342" y="789" z="1" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="340" y="870" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="345" y="994" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="392" y="1117" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="540" y="1065" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="587" y="1199" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="606" y="1352" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="535" y="1465" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="584" y="1573" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="628" y="1690" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="602" y="1842" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="573" y="1980" z="1" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<LoadProfile file="Rift.xml" />
+		</If>
+
+		
+		<!-- Unknown version of Bastion Keep-->
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Bastion Keep with ExploreDungeon." />		
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep @ 20/15/0.25" />
+		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')
+				and not (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="15" boxTolerance="0.25"/>
+			<LoadProfile file="Rift.xml" />			
+		</While>
+		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="20" pathPrecision="15" boxTolerance="0.25"/>
+		<LoadProfile file="Rift.xml" />
+	</While>
+	<LoadProfile file="Rift.xml" />
+</Order>
+</Profile>
