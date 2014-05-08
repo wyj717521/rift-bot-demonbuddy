@@ -46,7 +46,7 @@
 			
 		<!-- Bastion Keep 1-->
 		<If condition="ZetaDia.Me.CurrentScene.SceneInfo.SNOId == 74014">
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep 1 with SafeMoveTo. Bot will not stop when boss spawns/killed." />		
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep 1 with SafeMoveTo." />		
 		<SafeMoveTo questId="312429" stepId="2" x="393" y="476" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 		<SafeMoveTo questId="312429" stepId="2" x="362" y="634" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 		<SafeMoveTo questId="312429" stepId="2" x="342" y="789" z="1" pathPrecision="5" pathPointLimit="250" statusText="" />
