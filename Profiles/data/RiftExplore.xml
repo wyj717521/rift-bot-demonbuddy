@@ -61,9 +61,7 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion's Keep @ 20/30/0.3" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="80" boxSize="20" pathPrecision="30" boxTolerance="0.2"/>
-			<LoadProfile file="Rift.xml" />
+			<LoadProfile file="RiftExploreBastionKeep.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae-->
@@ -81,8 +79,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/10/0.2" />
-		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="10" boxTolerance="0.2"/>
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/15/0.2" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.2"/>
 		<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -115,8 +113,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 312606"> <!-- Archives of Zoltun Kulle-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltun Archives @ 20/10/0.05" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.05"/>
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltun Archives @ 20/10/0.15" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.15"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -155,8 +153,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 349181"> <!-- Boneyards--> 
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bone Yards @ 20/15/0.05" />
-		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="15" boxTolerance="0.05"/>
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bone Yards @ 20/15/0.2" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="15" boxTolerance="0.2"/>
 			<LoadProfile file="Rift.xml" />
 		</If> 
 		
@@ -173,8 +171,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 348617"> <!-- Wortham--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Wortham @ 20/20/0.05" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="20" boxTolerance="0.05"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Wortham @ 20/20/0.2" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="20" boxTolerance="0.2"/> 
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
@@ -209,8 +207,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 352690"> <!--Bog Cave-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave @ 20/10/0.05" />
-		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.05"/>
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave @ 20/10/0.2" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="10" boxTolerance="0.2"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
