@@ -61,7 +61,9 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
-			<LoadProfile file="RiftExploreBastionKeep.xml" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep @ 20/15/0.25" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="15" boxTolerance="0.25"/>
+			<LoadProfile file="Rift.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae-->
@@ -85,15 +87,21 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacombs-->
-			<LoadProfile file="RiftExploreCatacombs.xml" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs @ 15/15/0.55" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
+			<LoadProfile file="Rift.xml" />	
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
-			<LoadProfile file="RiftExplorePandemoniumFortress.xml" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.35" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.35"/>
+			<LoadProfile file="Rift.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 323580"> <!-- Arreat Crater-->
-			<LoadProfile file="RiftExploreAreatCrater.xml" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Areat Crater @ 15/15/0.2" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.2"/>
+			<LoadProfile file="Rift.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 352652"> <!-- Plague Tunnel-->
@@ -103,7 +111,9 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 275927"> <!-- Halls of Agony-->
-			<LoadProfile file="RiftExploreHallsofAgony.xml" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Halls of Agony @ 15/15/0.2" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="15" boxTolerance="0.2"/>
+			<LoadProfile file="Rift.xml" />	
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 332323"> <!-- Dahlgur Oasis-->
