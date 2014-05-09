@@ -55,9 +55,7 @@
 					  not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) and
 					  not (not Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not (IsActiveQuestAndStep(337492, 1) or IsActiveQuestAndStep(337492, 3)))">
 		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort @ 30/15/0.3" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="15" boxTolerance="0.3"/>
-			<LoadProfile file="Rift.xml" />
+			<LoadProfile file="RiftExploreStonefort.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
