@@ -1,0 +1,102 @@
+<Profile>
+<Name>Rift Bot Optimized Explore</Name>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+<GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
+
+<TargetBlacklists>
+    <TargetBlacklist actorId="114622" name="Tyrael" />
+	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
+	<TargetBlacklist actorId="103919"/> <!-- Demonic Vessels -->
+	<TargetBlacklist actorId="58317"/> <!-- Tool/Weapon Rack -->
+	<TargetBlacklist actorId="289794"/> <!-- X1_PandExt_ArmorRack-7385 -->
+	<TargetBlacklist actorId="212491"/> <!-- Pony Clouds -->
+	<TargetBlacklist actorId="289756"/> <!-- Armor Racks -->
+	<TargetBlacklist actorId="5758"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="464"/> <!-- some buged chest -->
+	<TargetBlacklist actorId="357299"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357297"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357295"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357306"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="357301"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="291743"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorId="362323"/> <!-- A buged NPC in A5 -->
+	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
+	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
+	<TargetBlacklist actorid="198012"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="223275"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289763"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="341124"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167520"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192466"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="192463"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="167519"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289244"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="289246"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="77354"/> <!-- Weapon Rack -->
+	<TargetBlacklist actorid="340114"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="340113"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="5671"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="15937"/> <!-- Armor Rack -->
+	<TargetBlacklist actorid="78030"/> <!-- Wilderness Scarecrow -->
+</TargetBlacklists>
+
+<Order>
+	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
+	
+		<!-- An extremely bad layout-->
+		<If condition="(MarkerExistsAt(1877684886, 381.8362, 669.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876093, 381.8362, 669.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876094, 381.8362, 669.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876095, 381.8362, 669.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876096, 381.8362, 669.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876097, 381.8362, 669.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876098, 381.8362, 669.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876099, 381.8362, 669.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876100, 381.8362, 669.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876101, 381.8362, 669.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876102, 381.8362, 669.2993, 0.7836709, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep with SafeMoveTo." />
+			<SafeMoveTo questId="312429" stepId="2" x="347" y="754" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="473" y="859" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="589" y="816" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="787" y="830" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="988" y="848" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="1102" y="910" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="1082" y="790" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="1156" y="610" z="1" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="1111" y="395" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="977" y="382" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="808" y="352" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="550" y="360" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="605" y="514" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="624" y="361" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="929" y="328" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="1115" y="443" z="0" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="1081" y="559" z="1" pathPrecision="5"/> 
+			<SafeMoveTo questId="312429" stepId="2" x="922" y="601" z="1" pathPrecision="5"/> 
+			<LoadProfile file="Rift.xml" />
+		</If>
+		
+		<!-- Unknown version-->
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Bastion Keep with ExploreDungeon." />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep @ 20/15/0.25" />
+		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')
+				and not (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+				and not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="15" boxTolerance="0.25"/>
+			<LoadProfile file="Rift.xml" />
+		</While>
+		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="20" pathPrecision="15" boxTolerance="0.25"/>
+		<LoadProfile file="Rift.xml" />
+	</While>
+	<LoadProfile file="Rift.xml" />
+</Order>
+</Profile>
