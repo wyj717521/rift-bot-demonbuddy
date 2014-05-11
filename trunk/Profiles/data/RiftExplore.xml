@@ -59,9 +59,7 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep @ 20/15/0.25" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="15" boxTolerance="0.25"/>
-			<LoadProfile file="Rift.xml" />
+			<LoadProfile file="RiftExploreBastionKeep.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae-->
