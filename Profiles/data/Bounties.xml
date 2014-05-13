@@ -159,7 +159,7 @@
 			</If>
 		</If>
 		<If condition="(CurrentWorldId == 109530) and HasQuest(362140)">	
-			<TrinityExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="10" boxTolerance="0.2" pathPrecision="25" />
+			<TrinityExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.3" pathPrecision="30" />
 		</If>
 	</If>	
 	
