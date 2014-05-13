@@ -242,10 +242,10 @@
 		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<If condition="ZetaDia.ActInfo.ActiveBounty and not ActorExistsAt(5466, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">			
+		<If condition="ZetaDia.ActInfo.ActiveBounty and not ActorExistsAt(365097, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">			
 			<TrinityExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
 		</If>
-		<While condition="ActorExistsAt(5466, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">
+		<While condition="ActorExistsAt(365097, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">
 			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="365097"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000"/>
 		</While>
