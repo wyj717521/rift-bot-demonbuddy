@@ -307,6 +307,10 @@
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<MoveToActor questId="1" stepId="1" actorId="114622" x="379" y="422" z="0"  />
+		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
+		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
+		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
+		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
 			<LoadProfile file="RBCB.xml" />			
