@@ -172,7 +172,12 @@
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="ZetaDia.ActInfo.ActiveBounty">			
-			<TrinityExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
+			<TrinityExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40">
+				<IgnoreScenes>
+					<IgnoreScene sceneName="Entrance" />
+					<IgnoreScene sceneName="Exit" />
+				</IgnoreScenes>
+			</TrinityExploreDungeon>
 		</If>
 	</If>
 	
@@ -197,6 +202,10 @@
 					<PrioritizeScenes>
 						<PriorityScene sceneName="Exit" />
 					</PrioritizeScenes>
+					<IgnoreScenes>
+						<IgnoreScene sceneName="Entrance" />
+					</IgnoreScenes>
+			</TrinityExploreDungeon>
 				</ExploreDungeon>
 				<MoveToActor questId="1" stepId="2" actorId="225195" isPortal="True" destinationWorldId="214956" interactRange="20" />
 				<WaitTimer questId="1" stepId="2" waitTime="1000" />
@@ -222,7 +231,12 @@
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="ZetaDia.ActInfo.ActiveBounty">			
-			<TrinityExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
+			<TrinityExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40">
+				<IgnoreScenes>
+					<IgnoreScene sceneName="Entrance" />
+					<IgnoreScene sceneName="Exit" />
+				</IgnoreScenes>
+			</TrinityExploreDungeon>
 		</If>
 	</If>
 	
@@ -240,7 +254,12 @@
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="ZetaDia.ActInfo.ActiveBounty and not ActorExistsAt(365097, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">			
-			<TrinityExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
+			<TrinityExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40">
+				<IgnoreScenes>
+					<IgnoreScene sceneName="Entrance" />
+					<IgnoreScene sceneName="Exit" />
+				</IgnoreScenes>
+			</TrinityExploreDungeon>
 		</If>
 		<While condition="ActorExistsAt(365097, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">
 			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="365097"/>
@@ -265,10 +284,13 @@
 				<WaitTimer questId="1" stepId="2" waitTime="1000" />
 			</If>
 			<If condition="CurrentWorldId == 129305">
-				<ExploreDungeon questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="210763" boxSize="14" pathPrecision="30" boxTolerance="0.4" ignoreMarkers="False" stayAfterBounty="False">
+				<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="210763" boxSize="15" boxTolerance="0.4" pathPrecision="40">
 					<PrioritizeScenes>
 						<PriorityScene sceneName="Exit" />
 					</PrioritizeScenes>
+					<IgnoreScenes>
+						<IgnoreScene sceneName="Entrance" />
+					</IgnoreScenes>
 				</ExploreDungeon>
 				<MoveToActor questId="1" stepId="2" actorId="210763" isPortal="True" interactRange="20"/>
 				<WaitTimer questId="1" stepId="2" waitTime="1000" />
