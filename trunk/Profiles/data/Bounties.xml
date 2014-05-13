@@ -46,8 +46,8 @@
 		<TownRun minFreeBagSlots="40"/>
 	</If>
 	
-	<!-- Cursed Dais, Kill Khatun, Kill Torchlighter, Kill Veshan the fierce, Kill the aspect of destruction-->
-	<If condition="HasQuest(369900) or HasQuest(349258) or HasQuest(349256) or HasQuest(349260) or HasQuest(357131)">
+	<!-- Kill Khatun, Kill Torchlighter, Kill Veshan the fierce, Kill the aspect of destruction-->
+	<If condition="HasQuest(349258) or HasQuest(349256) or HasQuest(349260) or HasQuest(357131)">
 		<While condition="CurrentWorldId != 109513">
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
@@ -55,8 +55,25 @@
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
 			<ToggleTargeting questId="1" combat="False" />
 		</If>
+		<WaitTimer questId="1" stepId="2" waitTime="1000" />		
+		<ToggleTargeting questId="1" combat="True" killRadius="45" />
+		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />			
+		<If condition="ZetaDia.ActInfo.ActiveBounty">			
+			<TrinityExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="20" boxTolerance="0.3" pathPrecision="40" />
+		</If>
+	</If>
+	<!-- Cursed Dais-->
+	<If condition="HasQuest(369900)">
+		<While condition="CurrentWorldId != 109513">
+			<UseWaypoint waypointNumber="41" questId="1"/>
+			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
+		</While>
+		<WaitTimer questId="1" stepId="2" waitTime="1000" />
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
+			<ToggleTargeting questId="1" combat="False" />
+			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
+		</If>		
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="ZetaDia.ActInfo.ActiveBounty and not ActorExistsAt(368169, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">			
@@ -159,11 +176,11 @@
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
 			<ToggleTargeting questId="1" combat="False" />
+			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 		</If>
-		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="ZetaDia.ActInfo.ActiveBounty">			
@@ -173,7 +190,7 @@
 	
 	<!-- Kill Izual-->
 	<If condition="HasQuest(361421)">
-		<While condition="CurrentWorldId != 121579">
+		<While condition="CurrentWorldId != 121579 or CurrentWorldId != 214956">
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
@@ -214,11 +231,11 @@
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
 			<ToggleTargeting questId="1" combat="False" />
+			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 		</If>
-		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="ZetaDia.ActInfo.ActiveBounty">			
@@ -232,11 +249,11 @@
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
 			<ToggleTargeting questId="1" combat="False" />
+			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 		</If>
-		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="ZetaDia.ActInfo.ActiveBounty and not ActorExistsAt(365097, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">			
