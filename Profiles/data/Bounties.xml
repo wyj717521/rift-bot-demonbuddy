@@ -52,9 +52,6 @@
 			<UseWaypoint waypointNumber="41" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
-			<ToggleTargeting questId="1" combat="False" />
-		</If>
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />		
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<If condition="ZetaDia.ActInfo.ActiveBounty">			
@@ -172,11 +169,6 @@
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
-		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
-			<ToggleTargeting questId="1" combat="False" />
-			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
-		</If>
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="ZetaDia.ActInfo.ActiveBounty">			
@@ -227,11 +219,6 @@
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
-		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
-			<ToggleTargeting questId="1" combat="False" />
-			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
-		</If>
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="ZetaDia.ActInfo.ActiveBounty">			
