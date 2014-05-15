@@ -143,8 +143,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 347961"> <!-- Forgotten Battlefield-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Forgotten Battlefield @ 25/15/0.35" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="25" pathPrecision="15" boxTolerance="0.35"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Forgotten Battlefield @ 15/25/0.35" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="25" boxTolerance="0.35"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
