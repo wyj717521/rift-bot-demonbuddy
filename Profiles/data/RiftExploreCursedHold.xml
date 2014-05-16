@@ -45,7 +45,7 @@
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
 	
 		<!-- Small Cursed Hold-->
-		<If condition="(MarkerExistsAt(1877684886, 543.0258, 840.2885, 1.596355, 100))
+		<If condition="(MarkerExistsAt(732643260, 543.0258, 840.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876093, 543.0258, 840.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876094, 543.0258, 840.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876095, 543.0258, 840.2885, 1.596355, 100))
@@ -81,7 +81,7 @@
 		</If>
 		
 		<!-- Medium Cursed Hold-->
-		<If condition="(MarkerExistsAt(1877684886, 303.0258, 600.2885, 1.596355, 100))
+		<If condition="(MarkerExistsAt(732643260, 303.0258, 600.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876093, 303.0258, 600.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876094, 303.0258, 600.2885, 1.596355, 100))
 		or (MarkerExistsAt(1938876095, 303.0258, 600.2885, 1.596355, 100))

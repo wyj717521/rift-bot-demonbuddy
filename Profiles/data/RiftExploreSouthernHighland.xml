@@ -45,7 +45,7 @@
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
 	
 		<!-- Southern Highlands-->
-		<If condition="(MarkerExistsAt(1877684886, 1055.51, 1473.244, 61.84594, 100))
+		<If condition="(MarkerExistsAt(732643260, 1055.51, 1473.244, 61.84594, 100))
 		or (MarkerExistsAt(1938876093, 1055.51, 1473.244, 61.84594, 100))
 		or (MarkerExistsAt(1938876094, 1055.51, 1473.244, 61.84594, 100))
 		or (MarkerExistsAt(1938876095, 1055.51, 1473.244, 61.84594, 100))

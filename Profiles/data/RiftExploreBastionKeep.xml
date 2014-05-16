@@ -45,7 +45,7 @@
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
 	
 		<!-- An extremely bad layout-->
-		<If condition="(MarkerExistsAt(1877684886, 381.8362, 669.2993, 0.7836709, 10))
+		<If condition="(MarkerExistsAt(732643260, 381.8362, 669.2993, 0.7836709, 10))
 		or (MarkerExistsAt(1938876093, 381.8362, 669.2993, 0.7836709, 10))
 		or (MarkerExistsAt(1938876094, 381.8362, 669.2993, 0.7836709, 10))
 		or (MarkerExistsAt(1938876095, 381.8362, 669.2993, 0.7836709, 10))

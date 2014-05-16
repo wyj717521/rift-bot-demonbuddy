@@ -44,7 +44,7 @@
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
 		<!-- Stonefort 1-->
-		<If condition="(MarkerExistsAt(1877684886, 1890.154, 1759.493, -22.55594, 10))
+		<If condition="(MarkerExistsAt(732643260, 1890.154, 1759.493, -22.55594, 10))
 		or (MarkerExistsAt(1938876093, 1890.154, 1759.493, -22.55594, 10))
 		or (MarkerExistsAt(1938876094, 1890.154, 1759.493, -22.55594, 10))
 		or (MarkerExistsAt(1938876095, 1890.154, 1759.493, -22.55594, 10))
@@ -72,7 +72,7 @@
 		</If>
 
 		<!-- Stonefort 2-->
-		<If condition="(MarkerExistsAt(1877684886, 1861.255, 2265.319, -23.04723, 10))
+		<If condition="(MarkerExistsAt(732643260, 1861.255, 2265.319, -23.04723, 10))
 		or (MarkerExistsAt(1938876093, 1861.255, 2265.319, -23.04723, 10))
 		or (MarkerExistsAt(1938876094, 1861.255, 2265.319, -23.04723, 10))
 		or (MarkerExistsAt(1938876095, 1861.255, 2265.319, -23.04723, 10))
