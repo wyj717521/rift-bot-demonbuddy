@@ -4,6 +4,6 @@
 <PickupLoot>True</PickupLoot>
 <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
 <Order>
-	<LoadProfile file="../RBC.xml" />
+	<LoadProfile file="../RiftLoaderA.xml" />
 </Order>
 </Profile>

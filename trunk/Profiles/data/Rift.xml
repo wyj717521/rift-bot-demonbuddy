@@ -50,6 +50,12 @@
 			<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		</While>
 		<WaitTimer questId="312429" stepId="2" waitTime="500" />
+		<If condition="ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 1000)">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Wait for portal close" />
+		</If>
+		<While condition="ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 1000)">
+			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
+		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
 		<MoveToActor questId="312429" stepId="2" x="468" y="387" z="1"  actorId="364715" interactRange="11" name="x1_OpenWorld_LootRunObelisk_B-483"  pathPrecision="5" pathPointLimit="250" statusText="" /> 
 		<While condition="not ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
@@ -165,26 +171,12 @@
 
 	<LogMessage quest="1" step="2" output="[Rift Bot] Reset and repeat" />
 	
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
-		<LoadProfile file="RBCB.xml" />			
+	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB') or 
+				   Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB') or 
+				   Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
+		<LoadProfile file="RiftLoaderB.xml" />			
 	</If>
 
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
-		<LoadProfile file="RBEB.xml" />			
-	</If>
-
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
-		<LoadProfile file="RBFB.xml" />			
-	</If>
-	
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-		<LoadProfile file="RBC.xml" />			
-	</If>
-	
-	<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-		<LoadProfile file="RBE.xml" />			
-	</If>
-
-	<LoadProfile file="RBF.xml" />
+	<LoadProfile file="RiftLoaderA.xml" />
 </Order>
 </Profile>

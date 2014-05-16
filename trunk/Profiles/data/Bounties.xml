@@ -314,28 +314,10 @@
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB')">
-			<LoadProfile file="RBCB.xml" />			
-		</If>
-
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB')">
-			<LoadProfile file="RBEB.xml" />			
-		</If>
-
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
-			<LoadProfile file="RBFB.xml" />			
-		</If>
-
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-			<LoadProfile file="RBC.xml" />			
-		</If>
-
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBE')">
-			<LoadProfile file="RBE.xml" />			
-		</If>
-
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
-			<LoadProfile file="RBF.xml" />			
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBCB') or 
+					   Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBEB') or 
+					   Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBFB')">
+			<LoadProfile file="RiftLoaderB.xml" />			
 		</If>
 		
 		<LeaveGame quest="1" step="1" reason="done." stayInParty="False" />	
