@@ -1,9 +1,9 @@
 <Profile>
-<Name>Rift Bot Full</Name>
+<Name>Rift Bot</Name>
 <KillMonsters>True</KillMonsters>
 <PickupLoot>True</PickupLoot>
 <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
 <Order>
-	<LoadProfile file="../RiftLoaderA.xml" />
+	<LoadProfile file="../Rift.xml" />
 </Order>
 </Profile>
