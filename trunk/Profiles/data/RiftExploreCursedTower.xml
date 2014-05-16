@@ -45,7 +45,7 @@
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
 	
 		<!-- Cursed of Tower 1-->
-		<If condition="(MarkerExistsAt(1877684886, 488.2521, 767.5283, 82.0196, 10))
+		<If condition="(MarkerExistsAt(732643260, 488.2521, 767.5283, 82.0196, 10))
 		or (MarkerExistsAt(1938876093, 488.2521, 767.5283, 82.0196, 10))
 		or (MarkerExistsAt(1938876094, 488.2521, 767.5283, 82.0196, 10))
 		or (MarkerExistsAt(1938876095, 488.2521, 767.5283, 82.0196, 10))
@@ -73,7 +73,7 @@
 		</If>
 				
 			<!-- Cursed of Tower 1-B-->
-		<If condition="(MarkerExistsAt(1877684886, 399.2324, 721.925, 44.40216, 10))
+		<If condition="(MarkerExistsAt(732643260, 399.2324, 721.925, 44.40216, 10))
 		or (MarkerExistsAt(1938876093, 399.2324, 721.925, 44.40216, 10))
 		or (MarkerExistsAt(1938876094, 399.2324, 721.925, 44.40216, 10))
 		or (MarkerExistsAt(1938876095, 399.2324, 721.925, 44.40216, 10))
@@ -106,7 +106,7 @@
 		</If>
 		
 		<!-- Tower of Damned 1-->
-		<If condition="(MarkerExistsAt(1877684886, 720.8195, 407.845, 41.87429, 10))
+		<If condition="(MarkerExistsAt(732643260, 720.8195, 407.845, 41.87429, 10))
 		or (MarkerExistsAt(1938876093, 720.8195, 407.845, 41.87429, 10))
 		or (MarkerExistsAt(1938876094, 720.8195, 407.845, 41.87429, 10))
 		or (MarkerExistsAt(1938876095, 720.8195, 407.845, 41.87429, 10))
@@ -129,7 +129,7 @@
 		</If>
 
 		<!-- Tower of Cursed 2-->
-		<If condition="(MarkerExistsAt(1877684886, 678.8602, 717.8599, 34.98107, 1))
+		<If condition="(MarkerExistsAt(732643260, 678.8602, 717.8599, 34.98107, 1))
 		or (MarkerExistsAt(1938876093, 678.8602, 717.8599, 34.98107, 1))
 		or (MarkerExistsAt(1938876094, 678.8602, 717.8599, 34.98107, 1))
 		or (MarkerExistsAt(1938876095, 678.8602, 717.8599, 34.98107, 1))
@@ -168,7 +168,7 @@
 		</If>
 				
 			<!-- Tower of Damned 2-->
-		<If condition="(MarkerExistsAt(1877684886, 680.1924, 719.7283, 33.9541, 1))
+		<If condition="(MarkerExistsAt(732643260, 680.1924, 719.7283, 33.9541, 1))
 		or (MarkerExistsAt(1938876093, 680.1924, 719.7283, 33.9541, 1))
 		or (MarkerExistsAt(1938876094, 680.1924, 719.7283, 33.9541, 1))
 		or (MarkerExistsAt(1938876095, 680.1924, 719.7283, 33.9541, 1))
@@ -203,7 +203,7 @@
 		</If>
 
 		<!-- Unknown Tower-->
-		<If condition="(MarkerExistsAt(1877684886, 484.4771, 767.3116, 39.86788, 1))
+		<If condition="(MarkerExistsAt(732643260, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876093, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876094, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876095, 484.4771, 767.3116, 39.86788, 1))
