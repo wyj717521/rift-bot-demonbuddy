@@ -226,7 +226,13 @@
 		
 		<If condition="CurrentLevelAreaId == 347870"> <!--Exterior Graveyard-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Exterior Graveyard @ 25/30/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="25" pathPrecision="20" boxTolerance="0.2"/>
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="25" pathPrecision="30" boxTolerance="0.2"/>
+			<LoadProfile file="Rift.xml" />
+		</If>
+		
+		<If condition="CurrentLevelAreaId == 276212"> <!--Flooded Cave-->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Flooded Cave @ 20/30/0.2" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="30" boxTolerance="0.2"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
