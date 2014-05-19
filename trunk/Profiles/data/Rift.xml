@@ -139,7 +139,7 @@
 			<LogMessage quest="1" step="2" output="[Rift Bot] Fully explored but no boss spawned. Now go to explore the first level" />
 			<UseTownPortal questId="1" />
 			<WaitTimer questId="1" stepId="1" waitTime="500"/>
-			<MoveToActor questId="312429" stepId="2" x="594" y="508" z="3" actorId="345935" interactRange="9" name="X1_OpenWorld_LootRunPortal-1589" isPortal="True" pathPrecision="5" pathPointLimit="250"/>  
+			<MoveToActor questId="312429" stepId="2" x="468" y="387" z="1"  actorId="345935" interactRange="9" name="X1_OpenWorld_LootRunPortal-817"  isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" /> 
 			<WaitTimer questId="312429" stepId="2" waitTime="500" />
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore current level" />
 			<ExploreDungeon questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxSize="5" pathPrecision="30" boxTolerance="0.5"/>
