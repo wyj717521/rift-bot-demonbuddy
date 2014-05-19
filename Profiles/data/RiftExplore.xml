@@ -57,27 +57,40 @@
 						    not (IsActiveQuestAndStep(337492, 1) or IsActiveQuestAndStep(337492, 3))
 						   )
 						  )">
-		<If condition="CurrentLevelAreaId == 346527"> <!-- Stonefort-->
+
+		<!-- Stonefort-->
+		<If condition="CurrentLevelAreaId == 346527"> 
 			<LoadProfile file="RiftExploreStonefort.xml" />
 		</If>
-		
-		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
+		<!-- Bastion's Keep-->
+		<If condition="CurrentLevelAreaId == 276226">
 			<LoadProfile file="RiftExploreBastionKeep.xml" />
 		</If>
-		
-		<If condition="CurrentLevelAreaId == 334821"> <!-- The Cursed Hold (Warden)-->
+		<!-- The Cursed Hold-->
+		<If condition="CurrentLevelAreaId == 334821">
 			<LoadProfile file="RiftExploreCursedHold.xml" />
 		</If>
-		
-		<If condition="CurrentLevelAreaId == 342477"> <!-- Tower of the Damned-->
+		<!-- Tower of the Damned-->
+		<If condition="CurrentLevelAreaId == 342477"> 
 			<LoadProfile file="RiftExploreCursedTower.xml" />
 		</If>
-		
-		<If condition="CurrentLevelAreaId == 347562"> <!-- Southern Highlands-->
+		<!-- Southern Highlands-->
+		<If condition="CurrentLevelAreaId == 347562"> 
 			<LoadProfile file="RiftExploreSouthernHighland.xml" />
 		</If>
-		
-		<!-- Default-->
+		<!-- Battlefield Bridge-->
+		<!-- Exterior Bog-->
+		<!-- Exterior Graveyard-->
+		<!-- This setting works well in open area maps-->
+		<If condition="CurrentLevelAreaId == 349048 or 
+					   CurrentLevelAreaId == 332335 or
+					   CurrentLevelAreaId == 347870">  
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Open Area @ 30/30/0.15" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="30" boxTolerance="0.15"/>
+			<LoadProfile file="Rift.xml" />
+		</If>
+		<!-- Default small area explore-->
+		<!-- This default setting works very well in narrow dungeons-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 5/30/0.5" />
 		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="5" pathPrecision="30" boxTolerance="0.5"/>
 		<LoadProfile file="Rift.xml" />
