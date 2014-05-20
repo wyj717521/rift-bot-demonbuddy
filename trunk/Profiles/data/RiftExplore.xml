@@ -94,7 +94,7 @@
 		<!-- Default small area explore-->
 		<!-- This default setting works very well in narrow dungeons-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 5/30/0.5" />
-		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="5" pathPrecision="30" boxTolerance="0.5"/>
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxsize="7" pathPrecision="30" boxTolerance="0.5"/>
 		<LoadProfile file="Rift.xml" />
 	</While>
 	<LoadProfile file="Rift.xml" />
