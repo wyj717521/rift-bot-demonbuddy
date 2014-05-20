@@ -202,7 +202,7 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 
-		<!-- Unknown Tower-->
+		<!-- Tower of Cursed version C-->
 		<If condition="(MarkerExistsAt(732643260, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876093, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876094, 484.4771, 767.3116, 39.86788, 1))
@@ -214,7 +214,7 @@
 		or (MarkerExistsAt(1938876100, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876101, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876102, 484.4771, 767.3116, 39.86788, 1))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown Tower with SafeMoveTo." />		
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed version C with SafeMoveTo." />		
 			<SafeMoveTo questId="312429" stepId="2" x="589" y="839" z="10" pathPrecision="5"/>
 			<SafeMoveTo questId="312429" stepId="2" x="658" y="765" z="10" pathPrecision="5"/>
 			<SafeMoveTo questId="312429" stepId="2" x="536" y="699" z="10" pathPrecision="5"/>
