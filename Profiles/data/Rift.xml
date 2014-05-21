@@ -51,7 +51,8 @@
 		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
 		<MoveToActor questId="312429" stepId="2" actorId="364715" interactRange="11" pathPrecision="5" pathPointLimit="250" statusText="" /> 
-		<While condition="not ActorExistsAt(345935, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
+		<While condition="not ActorExistsAt(345935, 467.5924, 387.4542, 0.7756958, 10)">
+			<SafeMoveTo questId="312429" stepId="2" x="467.5924" y="387.4542" z="0.7756958" pathPrecision="5" statusText="" />
 			<MoveToActor questId="312429" stepId="2" actorId="364715" interactRange="11" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<WaitTimer questId="312429" stepId="2" waitTime="500" />
 		</While>
