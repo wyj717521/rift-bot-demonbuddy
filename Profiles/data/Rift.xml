@@ -50,9 +50,8 @@
 			<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
-		<MoveToActor questId="312429" stepId="2" actorId="364715" interactRange="11" pathPrecision="5" pathPointLimit="250" statusText="" /> 
-		<While condition="not ActorExistsAt(345935, 467.5924, 387.4542, 0.7756958, 10)">
-			<SafeMoveTo questId="312429" stepId="2" x="467.5924" y="387.4542" z="0.7756958" pathPrecision="5" statusText="" />
+		<While condition="not ActorExistsAt(345935, 468, 387, 1, 10)">
+			<SafeMoveTo questId="312429" stepId="2" x="468" y="387" z="1" pathPrecision="5" statusText="" />
 			<MoveToActor questId="312429" stepId="2" actorId="364715" interactRange="11" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<WaitTimer questId="312429" stepId="2" waitTime="500" />
 		</While>
@@ -131,7 +130,8 @@
 			<LogMessage quest="1" step="2" output="[Rift Bot] Fully explored but no boss spawned. Now go to explore the first level" />
 			<UseTownPortal questId="1" />
 			<WaitTimer questId="1" stepId="1" waitTime="500"/>
-			<MoveToActor questId="312429" stepId="2" x="468" y="387" z="1"  actorId="345935" interactRange="9" name="X1_OpenWorld_LootRunPortal-817"  isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" /> 
+			<SafeMoveTo questId="312429" stepId="2" x="468" y="387" z="1" pathPrecision="5" statusText="" />
+			<MoveToActor questId="312429" stepId="2" actorId="345935" interactRange="9" name="X1_OpenWorld_LootRunPortal-817"  isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" /> 
 			<WaitTimer questId="312429" stepId="2" waitTime="500" />
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore current level" />
 			<ExploreDungeon questId="337492" stepId="1" until="FullyExplored" markerDistance="60" boxSize="7" pathPrecision="30" boxTolerance="0.5"/>
@@ -158,6 +158,7 @@
 	<If condition="Me.IsInTown ">
 		<If condition="IsActiveQuestAndStep(337492, 10)">
 			<TownRun minFreeBagSlots="40"/>
+			<SafeMoveTo questId="312429" stepId="2" x="449" y="404" z="1" pathPrecision="5" statusText="" />
 			<MoveToActor questId="312429" stepId="2" actorId="363744" interactRange="9" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</If>
