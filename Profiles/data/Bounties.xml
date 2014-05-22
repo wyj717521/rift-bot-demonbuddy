@@ -79,6 +79,10 @@
 			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="368169"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 	</If>
 	<!-- Kill Rakanoth -->
 	<If condition="HasQuest(349262)">
@@ -104,6 +108,10 @@
 			<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		</While>  
 		<SafeMoveTo questId="1" stepId="2" pathPrecision="10" x="358" y="352" z="0" />
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 	</If>
 	
 	<!-- Kill the aspect of pain, Kill the aspect of anguish, Kill kao'ahn, Kill oah'tash-->
@@ -117,6 +125,10 @@
 		<If condition="ZetaDia.ActInfo.ActiveBounty">			
 			<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="20" boxTolerance="0.3" pathPrecision="40" />
 		</If>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 	</If>
 	
 	<!-- Kill sledge, hammermash, clear hell rift-->
@@ -162,6 +174,10 @@
 		<If condition="(CurrentWorldId == 109530) and HasQuest(362140)">	
 			<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.3" pathPrecision="30" />
 		</If>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 	</If>	
 	
 	<!-- Kill aspect of hatred, aspect of lies, slarg the behemoth, kysindra the wretched, pyres the damned-->
@@ -175,6 +191,10 @@
 		<If condition="ZetaDia.ActInfo.ActiveBounty">			
 			<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
 		</If>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 	</If>
 	
 	<!-- Kill Izual-->
@@ -212,6 +232,10 @@
 			</While>
 			<SafeMoveTo questId="1" stepId="2" pathPrecision="10" x="583" y="558" z="0" />
 		</If>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 	</If>
 	
 	<!-- Kill aspect of terror, grimnight the soulless, Sao'thall, rhau'kye, haures, aspect of sin-->
@@ -225,6 +249,10 @@
 		<If condition="ZetaDia.ActInfo.ActiveBounty">			
 			<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
 		</If>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 	</If>
 	
 	<!-- Cursed chapel-->
@@ -248,6 +276,10 @@
 			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="365097"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000"/>
 		</While>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 	</If>
 
 	<!-- kill diablo -->
@@ -292,6 +324,10 @@
 				</If>
 			</While>
 		</If>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
+		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 	</If>
 
 	<ActBountiesComplete act="A4">
