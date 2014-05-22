@@ -302,6 +302,7 @@
 		</While>
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
+		<SafeMoveTo questId="312429" stepId="2" x="385" y="419" z="1" pathPrecision="5" statusText="" />
 		<MoveToActor questId="1" stepId="1" actorId="114622" />
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		<WaitTimer questId="1" stepId="1" waitTime="1000"/>
