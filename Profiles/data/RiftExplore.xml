@@ -77,10 +77,10 @@
 		<If condition="CurrentLevelAreaId == 347562"> 
 			<LoadProfile file="RiftExploreSouthernHighland.xml" />
 		</If>
-		<!-- Battlefield Bridge-->
-		<!-- Exterior Bog-->
-		<!-- Exterior Graveyard-->
-		<!-- Exterior Boneyards-->
+		<!-- Battlefield Bridge 349048-->
+		<!-- Exterior Bog 332335-->
+		<!-- Exterior Graveyard 347870-->
+		<!-- Exterior Boneyards 349181-->
 		<!-- This setting works well in open area maps-->
 		<If condition="CurrentLevelAreaId == 349048 or 
 					   CurrentLevelAreaId == 332335 or 
@@ -88,10 +88,10 @@
 					   CurrentLevelAreaId == 349181">  
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Open Area @ 30/30/0.15" />
 			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
-				<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="100" boxSize="30" pathPrecision="30" boxTolerance="0.15"/>
+				<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="100" boxSize="50" pathPrecision="30" boxTolerance="0.05"/>
 				<LoadProfile file="Rift.xml" />
 			</If>
-			<ExploreDungeon questId="1" stepId="2" until="RiftComplete" markerDistance="100" boxSize="30" pathPrecision="30" boxTolerance="0.15"/>
+			<ExploreDungeon questId="1" stepId="2" until="RiftComplete" markerDistance="100" boxSize="50" pathPrecision="30" boxTolerance="0.05"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		<!-- Default small area explore-->
