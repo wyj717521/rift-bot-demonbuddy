@@ -121,8 +121,8 @@
 		</While>
 		<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
 			<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="30" pathPrecision="15" boxTolerance="0.3"/>
+			<LoadProfile file="Rift.xml" />
 		</While>
-		<LoadProfile file="Rift.xml" />
 	</While>
 	<LoadProfile file="Rift.xml" />
 </Order>
