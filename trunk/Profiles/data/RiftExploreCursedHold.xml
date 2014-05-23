@@ -179,10 +179,3 @@
 	<LoadProfile file="Rift.xml" />
 </Order>
 </Profile>
-<!--ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/!-->
-<!--
-Small entrance:
-[2CA1F120] GizmoType: Portal Name: g_Portal_Arch_Blue-110351 ActorSNO: 176000 Distance: 6.808267 Position: <543.0258, 840.2885, 1.596355> Barracade: False Radius: 20.18645
-Medium entrance:
-[2A4CFBD0] GizmoType: Portal Name: g_Portal_Arch_Blue-140924 ActorSNO: 176000 Distance: 13.79857 Position: <303.0258, 600.2885, 1.596355> Barracade: False Radius: 20.18645
--->
