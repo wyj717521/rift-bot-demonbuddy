@@ -229,42 +229,26 @@
 		<!-- Unknown version of the tower-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the tower with ExploreDungeon." />		
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 15/15/0.55" />
-		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')
-				and not (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
-				and not (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
-				and not (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
-				and not (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
-				and not (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
-				and not (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
-				and not (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
-				and not (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
-				and not (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
+		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not 
+						  (ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) or 
+						   (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+						  )">
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="30" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
 			<LoadProfile file="Rift.xml" />			
 		</While>
-		<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="30" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
+		<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
+			<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="30" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>		
+		</While>
 		<LoadProfile file="Rift.xml" />
 	</While>
 	<LoadProfile file="Rift.xml" />
 </Order>
 </Profile>
-<!--ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="80" boxSize="35" pathPrecision="20" boxTolerance="0.2"/!-->
-<!--
-Tower of Cursed 1-A
-[C724540] GizmoType: Portal Name: g_Portal_Arch_Blue-133489 ActorSNO: 5502 Distance: 0.2984543 Position: <488.2521, 767.5283, 82.0196> Barracade: False Radius: 6.631498
-Marker Hash: 1938876095, Distance: 22.29168, Position: <488.2521, 767.5283, 82.0196>, Closest Portal Loc: <488.2521, 767.5283, 82.0196> [g_Portal_ArchTall_Orange-133493]
-Tower of Cursed 1-B
-[27054540] GizmoType: Portal Name: g_Portal_ArchTall_Orange_LargeRadius-26171 ActorSNO: 204747 Distance: 59.20114 Position: <399.2324, 721.925, 44.40216> Barracade: False Radius: 18.55357
-Marker Hash: 1938876093, Distance: 27.28651, Position: <399.2324, 721.925, 44.40216>, Closest Portal Loc: <399.2324, 721.925, 44.40216> [g_Portal_ArchTall_Orange_LargeRadius-26036]
-Tower of Damned 1
-entrance
-[C7240F4] GizmoType: Portal Name: g_Portal_ArchTall_Orange_LargeRadius-38023 ActorSNO: 204747 Distance: 34.80035 Position: <720.8195, 407.845, 41.87429> Barracade: False Radius: 24.65643
-Marker Hash: 1938876093, Distance: 34.41404, Position: <720.8195, 407.845, 41.87429>, Closest Portal Loc: <720.8195, 407.845, 41.87429> [g_Portal_ArchTall_Orange_LargeRadius-38023]
-Tower of Damned 2
-[12EF4DD8] GizmoType: Portal Name: g_Portal_ArchTall_Orange-13875 ActorSNO: 176001 Distance: 16.95548 Position: <680.1924, 719.7283, 33.9541> Barracade: False Radius: 24.65643
-Marker Hash: 1938876095, Distance: 14.67645, Position: <680.1924, 719.7283, 33.9541>, Closest Portal Loc: <680.1924, 719.7283, 33.9541> [g_Portal_ArchTall_Orange-13875]
-Tower of Cursed 2
-entrance
-[12EF40F4] GizmoType: Portal Name: g_Portal_ArchTall_Orange-7878 ActorSNO: 176001 Distance: 30.88516 Position: <678.8602, 717.8599, 34.98107> Barracade: False Radius: 24.65643
-Marker Hash: 1938876093, Distance: 27.7629, Position: <678.8602, 717.8599, 34.98107>, Closest Portal Loc: <678.8602, 717.8599, 34.98107> [g_Portal_ArchTall_Orange-7878]
--->
