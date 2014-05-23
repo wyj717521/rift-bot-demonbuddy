@@ -42,10 +42,7 @@
 
 <Order>
 	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="150" killRadius="80" />
-	<If condition="Me.IsInTown">   
-		<TownRun minFreeBagSlots="40"/>
-	</If>
-	
+
 	<!-- Kill Khatun, Kill Torchlighter, Kill Veshan the fierce, Kill the aspect of destruction-->
 	<If condition="HasQuest(349258) or HasQuest(349256) or HasQuest(349260) or HasQuest(357131)">
 		<While condition="CurrentWorldId != 109513">

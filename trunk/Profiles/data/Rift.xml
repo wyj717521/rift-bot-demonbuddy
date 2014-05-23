@@ -155,7 +155,6 @@
 	
 	<If condition="Me.IsInTown ">
 		<If condition="IsActiveQuestAndStep(337492, 10)">
-			<TownRun minFreeBagSlots="40"/>
 			<SafeMoveTo questId="312429" stepId="2" x="449" y="404" z="1" pathPrecision="5" statusText="" />
 			<MoveToActor questId="312429" stepId="2" actorId="363744" interactRange="9" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
