@@ -47,12 +47,12 @@
 		<If condition="CurrentLevelAreaId == 347562"> 
 			<LoadProfile file="RiftExploreSouthernHighland.xml" />
 		</If>
-		<!-- Battlefield Bridge 349048-->
-		<!-- Exterior Bog 332335-->
-		<!-- Exterior Graveyard 347870-->
-		<!-- Exterior Boneyards 349181-->
-		<!-- Dahlgur Oasis 332323-->
-		<!-- Forgotten Battlefield 347961-->
+		<!-- 349048 Battlefield Bridge-->
+		<!-- 332335 Exterior Bog-->
+		<!-- 347870 Exterior Graveyard-->
+		<!-- 349181 Exterior Boneyards-->
+		<!-- 332323 Dahlgur Oasis-->
+		<!-- 347961 Forgotten Battlefield-->
 		<!-- This setting works well in open area maps-->
 		<If condition="CurrentLevelAreaId == 349048 or 
 					   CurrentLevelAreaId == 332335 or 
