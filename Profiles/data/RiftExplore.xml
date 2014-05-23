@@ -86,7 +86,7 @@
 					   CurrentLevelAreaId == 332335 or 
 					   CurrentLevelAreaId == 347870 or
 					   CurrentLevelAreaId == 349181">  
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Open Area @ 30/30/0.15" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Open Area @ 50/30/0.05" />
 			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
 				<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="100" boxSize="50" pathPrecision="30" boxTolerance="0.05"/>
 				<LoadProfile file="Rift.xml" />
@@ -96,12 +96,12 @@
 		</If>
 		<!-- Default small area explore-->
 		<!-- This default setting works very well in narrow dungeons-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Narrow Area @ 7/30/0.5" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Narrow Area @ 10/50/0.4" />
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="100" boxSize="7" pathPrecision="30" boxTolerance="0.5"/>
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="100" boxSize="10" pathPrecision="50" boxTolerance="0.4"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
-		<ExploreDungeon questId="1" stepId="2" until="RiftComplete" markerDistance="100" boxSize="7" pathPrecision="30" boxTolerance="0.5"/>
+		<ExploreDungeon questId="1" stepId="2" until="RiftComplete" markerDistance="100" boxSize="10" pathPrecision="50" boxTolerance="0.4"/>
 		<LoadProfile file="Rift.xml" />
 	</While>
 	<LoadProfile file="Rift.xml" />
