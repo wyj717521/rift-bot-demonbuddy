@@ -54,9 +54,8 @@
 		</While>
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />		
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
-		<If condition="ZetaDia.ActInfo.ActiveBounty">			
-			<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="20" boxTolerance="0.3" pathPrecision="40" />
-		</If>
+		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
+		<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="20" boxTolerance="0.3" pathPrecision="40" />
 	</If>
 	<!-- Cursed Dais-->
 	<If condition="HasQuest(369900)">
@@ -67,8 +66,8 @@
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
 			<ToggleTargeting questId="1" combat="False" />
-			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
-		</If>		
+		</If>
+		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<While condition="HasQuest(369900) and not ActorExistsAt(368169, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">			
@@ -122,9 +121,8 @@
 		</While>
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />		
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
-		<If condition="ZetaDia.ActInfo.ActiveBounty">			
-			<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="20" boxTolerance="0.3" pathPrecision="40" />
-		</If>
+		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
+		<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="20" boxTolerance="0.3" pathPrecision="40" />
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
@@ -188,9 +186,8 @@
 		</While>
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<If condition="ZetaDia.ActInfo.ActiveBounty">			
-			<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
-		</If>
+		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />		
+		<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
@@ -246,9 +243,8 @@
 		</While>
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<If condition="ZetaDia.ActInfo.ActiveBounty">			
-			<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
-		</If>
+		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
+		<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
@@ -264,8 +260,8 @@
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
 			<ToggleTargeting questId="1" combat="False" />
-			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 		</If>
+		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<While condition="HasQuest(369878) and not ActorExistsAt(365097, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">			
