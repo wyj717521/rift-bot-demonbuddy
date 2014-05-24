@@ -136,7 +136,8 @@
 				<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="20" boxTolerance="0.3" pathPrecision="40" />
 			</If>
 		</If>
-		<If condition="(CurrentWorldId == 109530) and HasQuest(362140)">	
+		<If condition="(CurrentWorldId == 109530) and HasQuest(362140)">
+			<SetQuesting/>
 			<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.3" pathPrecision="30" />
 		</If>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
