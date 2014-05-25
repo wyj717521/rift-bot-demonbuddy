@@ -264,9 +264,9 @@
 			</If>
 			<If condition="CurrentWorldId == 129305">
 				<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="210763" boxSize="15" boxTolerance="0.4" pathPrecision="40">
-					<PrioritizeScenes>
-						<PriorityScene sceneName="Exit" />
-					</PrioritizeScenes>
+					<Objectives>
+						<Objective markerNameHash="-72895048"/>
+					</Objectives>
 				</ExploreDungeon>
 				<MoveToActor questId="1" stepId="2" actorId="210763" isPortal="True" interactRange="20"/>
 				<WaitTimer questId="1" stepId="2" waitTime="1000" />
