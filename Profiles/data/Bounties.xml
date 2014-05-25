@@ -21,7 +21,6 @@
 		</While>
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />		
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
-		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 		<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="20" boxTolerance="0.3" pathPrecision="40" />
 	</If>
 	<!-- Cursed Dais-->
@@ -34,12 +33,11 @@
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
 			<ToggleTargeting questId="1" combat="False" />
 		</If>
-		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
-		<ToggleTargeting questId="1" combat="True" killRadius="45" />
-		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<While condition="HasQuest(369900) and not ActorExistsAt(368169, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">			
 			<ExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="368169" boxSize="20" boxTolerance="0.3" pathPrecision="40" />
 		</While>
+		<ToggleTargeting questId="1" combat="True" killRadius="45" />
+		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<While condition="HasQuest(369900)">
 			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
 			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="368169"/>
@@ -88,7 +86,6 @@
 		</While>
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />		
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
-		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
 		<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="20" boxTolerance="0.3" pathPrecision="40" />
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
@@ -154,7 +151,6 @@
 		</While>
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />		
 		<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
@@ -172,17 +168,11 @@
 			<ToggleTargeting questId="1" combat="False" />
 		</If>
 		<If condition="CurrentWorldId == 121579">
-			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
-			<WaitTimer questId="1" stepId="2" waitTime="1000" />
-			<If condition="CurrentWorldId == 121579">
-				<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
-				<WaitTimer questId="1" stepId="2" waitTime="1000" />
-			</If>
 			<If condition="CurrentWorldId == 121579">
 				<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="15" boxTolerance="0.4" pathPrecision="30">
-					<PrioritizeScenes>
-						<PriorityScene sceneName="Exit" />
-					</PrioritizeScenes>
+					<Objectives>
+						<Objective markerNameHash="1038619951"/>
+					</Objectives>
 				</ExploreDungeon>
 				<MoveToActor questId="1" stepId="2" actorId="225195" isPortal="True" destinationWorldId="214956" interactRange="20" />
 				<WaitTimer questId="1" stepId="2" waitTime="1000" />
@@ -211,7 +201,6 @@
 		</While>
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
 		<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="BountyComplete" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
@@ -229,12 +218,11 @@
 		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
 			<ToggleTargeting questId="1" combat="False" />
 		</If>
-		<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
-		<ToggleTargeting questId="1" combat="True" killRadius="45" />
-		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<While condition="HasQuest(369878) and not ActorExistsAt(365097, Me.Position.X, Me.Position.Y, Me.Position.Z, 100)">			
 			<ExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="365097" boxSize="15" boxTolerance="0.4" pathPrecision="40" />
 		</While>
+		<ToggleTargeting questId="1" combat="True" killRadius="45" />
+		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<While condition="HasQuest(369878)">
 			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
 			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="365097"/>
@@ -256,12 +244,6 @@
 			<ToggleTargeting questId="1" combat="False" />
 		</If>
 		<If condition="CurrentWorldId == 129305">
-			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
-			<WaitTimer questId="1" stepId="2" waitTime="1000" />
-			<If condition="CurrentWorldId == 129305">
-				<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
-				<WaitTimer questId="1" stepId="2" waitTime="1000" />
-			</If>
 			<If condition="CurrentWorldId == 129305">
 				<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="210763" boxSize="15" boxTolerance="0.4" pathPrecision="40">
 					<Objectives>
