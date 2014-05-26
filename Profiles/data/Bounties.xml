@@ -170,7 +170,7 @@
 				<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 			</If>
 			<If condition="CurrentWorldId == 121579">
-				<ExploreDungeon findExits="true" questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="15" boxTolerance="0.4" pathPrecision="30">
+				<ExploreDungeon questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="15" boxTolerance="0.4" pathPrecision="30">
 					<Objectives>
 						<Objective markerNameHash="1038619951"/>
 					</Objectives>
@@ -247,7 +247,7 @@
 				<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 			</If>
 			<If condition="CurrentWorldId == 129305">
-				<ExploreDungeon findExits="true" questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="210763" boxSize="15" boxTolerance="0.4" pathPrecision="40">
+				<ExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="210763" boxSize="15" boxTolerance="0.4" pathPrecision="40">
 					<Objectives>
 						<Objective markerNameHash="-72895048"/>
 					</Objectives>
