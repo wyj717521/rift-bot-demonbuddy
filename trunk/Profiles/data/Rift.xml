@@ -6,6 +6,7 @@
 
 <TargetBlacklists>
 	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
+	<TargetBlacklist actorId="103919"/> <!-- Demonic Vessels -->
 	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
 	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
 </TargetBlacklists>
