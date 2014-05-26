@@ -39,7 +39,7 @@
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<While condition="HasQuest(369900)">
-			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
+			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="368169"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000"/>
 		</While>
@@ -164,10 +164,11 @@
 			<UseWaypoint waypointNumber="44" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
-			<ToggleTargeting questId="1" combat="False" />
-		</If>
 		<If condition="CurrentWorldId == 121579">
+			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
+				<ToggleTargeting questId="1" combat="False" />
+				<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
+			</If>
 			<If condition="CurrentWorldId == 121579">
 				<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="15" boxTolerance="0.4" pathPrecision="30">
 					<Objectives>
@@ -240,10 +241,11 @@
 			<UseWaypoint waypointNumber="45" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
-			<ToggleTargeting questId="1" combat="False" />
-		</If>
 		<If condition="CurrentWorldId == 129305">
+			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
+				<ToggleTargeting questId="1" combat="False" />
+				<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
+			</If>
 			<If condition="CurrentWorldId == 129305">
 				<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="210763" boxSize="15" boxTolerance="0.4" pathPrecision="40">
 					<Objectives>
