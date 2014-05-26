@@ -170,7 +170,7 @@
 				<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 			</If>
 			<If condition="CurrentWorldId == 121579">
-				<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="15" boxTolerance="0.4" pathPrecision="30">
+				<ExploreDungeon findExits="true" questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="15" boxTolerance="0.4" pathPrecision="30">
 					<Objectives>
 						<Objective markerNameHash="1038619951"/>
 					</Objectives>
@@ -247,7 +247,7 @@
 				<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
 			</If>
 			<If condition="CurrentWorldId == 129305">
-				<ExploreDungeon stayAfterBounty="False" questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="210763" boxSize="15" boxTolerance="0.4" pathPrecision="40">
+				<ExploreDungeon findExits="true" questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="210763" boxSize="15" boxTolerance="0.4" pathPrecision="40">
 					<Objectives>
 						<Objective markerNameHash="-72895048"/>
 					</Objectives>
@@ -265,13 +265,13 @@
 			</While>
 			<MoveTo questId="1" stepId="2" x="356" y="355" z="41" />
 			<WaitTimer questId="1" stepId="2" waitTime="1000" />
-			<While condition="HasQuest(349288) and (CurrentWorldId == 109561 or CurrentWorldId == 153670 or CurrentWorldId == 196292)">
-				<WaitTimer questId="1" stepId="2" waitTime="1000" />
-				<If condition="CurrentWorldId == 196292">
-					<MoveTo questId="1" stepId="2" pathPrecision="10" x="360" y="358" z="40"/>
-				</If>
-			</While>
 		</If>
+		<While condition="HasQuest(349288) and (CurrentWorldId == 109561 or CurrentWorldId == 153670 or CurrentWorldId == 196292)">
+			<WaitTimer questId="1" stepId="2" waitTime="1000" />
+			<If condition="CurrentWorldId == 196292">
+				<MoveTo questId="1" stepId="2" pathPrecision="10" x="360" y="358" z="40"/>
+			</If>
+		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
