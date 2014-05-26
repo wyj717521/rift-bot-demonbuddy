@@ -31,10 +31,6 @@
 		<If condition="CurrentLevelAreaId == 346527"> 
 			<LoadProfile file="RiftExploreStonefort.xml" />
 		</If>
-		<!-- Bastion's Keep-->
-		<If condition="CurrentLevelAreaId == 276226">
-			<LoadProfile file="RiftExploreBastionKeep.xml" />
-		</If>
 		<!-- The Cursed Hold-->
 		<If condition="CurrentLevelAreaId == 334821">
 			<LoadProfile file="RiftExploreCursedHold.xml" />
