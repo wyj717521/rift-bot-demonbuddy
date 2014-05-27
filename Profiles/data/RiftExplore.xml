@@ -50,13 +50,15 @@
 		<!-- 349181 Exterior Boneyards-->
 		<!-- 332323 Dahlgur Oasis-->
 		<!-- 347961 Forgotten Battlefield-->
+		<!-- 347196 Exterior Wilderness-->
 		<!-- This setting works well in open area maps-->
 		<If condition="CurrentLevelAreaId == 349048 or 
 					   CurrentLevelAreaId == 332335 or 
 					   CurrentLevelAreaId == 347870 or
 					   CurrentLevelAreaId == 349181 or
 					   CurrentLevelAreaId == 332323 or
-					   CurrentLevelAreaId == 347961">  
+					   CurrentLevelAreaId == 347961 or
+					   CurrentLevelAreaId == 347196">  
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Open Area @ 50/30/0.05" />
 			<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF')">
 				<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="100" boxSize="50" pathPrecision="30" boxTolerance="0.05">
