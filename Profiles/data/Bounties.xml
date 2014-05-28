@@ -35,7 +35,7 @@
 			<ToggleTargeting questId="1" combat="False" />
 		</If>
 		<While condition="HasQuest(369900) and not ActorExistsAt(368169, Me.Position.X, Me.Position.Y, Me.Position.Z, 50)">			
-			<ExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="368169" boxSize="40" boxTolerance="0.05" pathPrecision="30" />
+			<ExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="50" actorId="368169" boxSize="40" boxTolerance="0.05" pathPrecision="30" />
 		</While>
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
@@ -222,7 +222,7 @@
 		</If>
 		<While condition="HasQuest(369878) and not (ActorExistsAt(365097, Me.Position.X, Me.Position.Y, Me.Position.Z, 50) or
 													ActorExistsAt(364559, Me.Position.X, Me.Position.Y, Me.Position.Z, 50))">			
-			<ExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="365097" boxSize="40" boxTolerance="0.05" pathPrecision="30" />
+			<ExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="50" actorId="365097" boxSize="40" boxTolerance="0.05" pathPrecision="30" />
 		</While>
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
