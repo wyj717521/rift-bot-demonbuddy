@@ -64,6 +64,7 @@
 			<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="15" pathPrecision="20" boxTolerance="0.22"/>
 			<LoadProfile file="Rift.xml" />
 		</While>
+		<LoadProfile file="Rift.xml" />
 	</While>
 	<LoadProfile file="Rift.xml" />
 </Order>
