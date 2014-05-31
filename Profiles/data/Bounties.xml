@@ -31,7 +31,8 @@
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</While>
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
-		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB')">
+		<If condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('ZB') and 
+					   not MarkerExistsAt(2912417, 384.9789, 1163.684, 15.21959, 10)">
 			<ToggleTargeting questId="1" combat="False" />
 		</If>
 		<While condition="HasQuest(369900) and not ActorExistsAt(368169, Me.Position.X, Me.Position.Y, Me.Position.Z, 50)">			
