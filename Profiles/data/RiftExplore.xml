@@ -108,8 +108,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 343965"> <!-- Whimsyshire-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Whimsyshire @ 15/30/0.5" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="30" boxTolerance="0.5"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Whimsyshire @ 10/40/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -166,8 +166,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 275929"> <!-- Corrupt Spire--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Corrupt Spire @ 14/15/0.4" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="14" pathPrecision="15" boxTolerance="0.4"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Corrupt Spire @ 10/40/0.1" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/> 
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
