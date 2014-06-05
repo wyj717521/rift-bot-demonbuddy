@@ -102,8 +102,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 275923"> <!-- Cathedral-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 10/15/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="15" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 10/40/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
