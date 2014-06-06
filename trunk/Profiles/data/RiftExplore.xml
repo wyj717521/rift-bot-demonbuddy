@@ -33,8 +33,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep @ 10/40/0.05" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.05"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep @ 10/30/0.05" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="30" boxTolerance="0.05"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -141,8 +141,8 @@
 		</If> 
 		
 		<If condition="CurrentLevelAreaId == 276150"> <!-- Crypts--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 10/40/0.1" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 9/20/0.05" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="20" boxTolerance="0.05"/> 
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
