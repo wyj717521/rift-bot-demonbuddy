@@ -223,6 +223,12 @@
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
+
+		<If condition="CurrentLevelAreaId == 276128"> <!-- Rot Cave-->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Rot Cave @ 10/40/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
+			<LoadProfile file="Rift.xml" />
+		</If>
 		
 		<!-- Default 20/15/0.05 -->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/15/0.05" />
