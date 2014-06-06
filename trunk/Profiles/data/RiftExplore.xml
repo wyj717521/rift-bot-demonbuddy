@@ -141,8 +141,8 @@
 		</If> 
 		
 		<If condition="CurrentLevelAreaId == 276150"> <!-- Crypts--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 10/12/0.05" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="12" boxTolerance="0.05"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 10/40/0.1" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/> 
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
