@@ -9,7 +9,6 @@
 	<TargetBlacklist actorId="362323"/> <!-- A buged NPC in A5 -->
 	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
 	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
-	<TargetBlacklist actorId="95481"/> <!-- Cursed Hold Breakable Door -->
 </TargetBlacklists>
 
 <Order>
