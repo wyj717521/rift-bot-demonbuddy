@@ -147,8 +147,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 353527"> <!-- Aquaducts--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Aquaducts @ 12/15/0.1" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="15" boxTolerance="0.1"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Aquaducts @ 10/40/0.1" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/> 
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
@@ -159,8 +159,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 290245"> <!-- Sewers--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Sewers @ 12/15/0.1" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="15" boxTolerance="0.1"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Sewers @ 10/40/0.1" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/> 
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
@@ -177,8 +177,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 276215"> <!-- Worm Caves--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Worm Caves @ 12/10/0.2" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="10" boxTolerance="0.2"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Worm Caves @ 10/40/0.1" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/> 
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
@@ -189,8 +189,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 352690"> <!-- Bog Cave-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave @ 15/10/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="10" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave @ 10/40/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -201,8 +201,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 276212"> <!-- Flooded Cave-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Flooded Cave @ 20/30/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="30" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Flooded Cave @ 10/40/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 
