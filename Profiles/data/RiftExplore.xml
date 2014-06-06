@@ -213,8 +213,8 @@
 		</If>
 
 		<If condition="CurrentLevelAreaId == 330531"> <!-- Tristram Fields-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tristram Fields @ 50/20/0.05" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="50" pathPrecision="20" boxTolerance="0.05"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tristram Fields @ 30/15/0.05" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="15" boxTolerance="0.05"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 
