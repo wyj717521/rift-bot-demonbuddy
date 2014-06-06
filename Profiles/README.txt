@@ -3,13 +3,13 @@
 *Bounties profiles are not supported by us. Use at your own risks.
 
 ====>Rift Bot Common
-Create games and do rifts. Leave rift once boss is killed or town stone found. Will not explore the current level if town stone found unless it is the first level.
+Leave rift once boss is killed or town stone found. Will not explore the current level if town stone found unless it is the first level.
 
 ====>Rift Bot Explore
-Create games and do rifts. Leave rift once boss is killed. Will explore the current level if town stone found. Set gold inactivity timer!
+Leave rift once boss is killed. Will explore the last level if town stone found before boss spawns. Set gold inactivity timer!
 
 ====>Rift Bot Full
-Create games and do rifts. Leave rift once town stone found no matter boss killed or not!
+Keeps exploring the rift after boss is killed until town stone is found.
 
 ====>Rift Bot Common/Explore/Full with Bounties
 Create games and do A4 bounties then rifts. Credits to sychotix and his wonderful team!
