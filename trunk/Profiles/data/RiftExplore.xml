@@ -53,7 +53,7 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 10/40/0.01" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 10/40/0.1" />
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
@@ -101,8 +101,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 275923"> <!-- Cathedral-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 10/40/0.1" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 10/30/0.05" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="30" boxTolerance="0.05"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -207,14 +207,20 @@
 		</If>
 
 		<If condition="CurrentLevelAreaId == 352719"> <!-- Hex Maze-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Hex Maze @ 12/10/0.05" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="10" boxTolerance="0.05"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Hex Maze @ 10/30/0.05" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="30" boxTolerance="0.05"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 
 		<If condition="CurrentLevelAreaId == 330531"> <!-- Tristram Fields-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tristram Fields @ 50/20/0.05" />
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="50" pathPrecision="20" boxTolerance="0.05"/>
+			<LoadProfile file="Rift.xml" />
+		</If>
+
+		<If condition="CurrentLevelAreaId == 276230"> <!-- Ice Cave-->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Ice Cave @ 10/40/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
