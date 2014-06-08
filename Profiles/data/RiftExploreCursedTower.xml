@@ -196,9 +196,32 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
+		<!-- Tower of Cursed version D-->
+		<If condition="(MarkerExistsAt(732643260, 678.2551, 720.005, 34.83162, 5))
+		or (MarkerExistsAt(1938876093, 678.2551, 720.005, 34.83162, 5))
+		or (MarkerExistsAt(1938876094, 678.2551, 720.005, 34.83162, 5))
+		or (MarkerExistsAt(1938876095, 678.2551, 720.005, 34.83162, 5))
+		or (MarkerExistsAt(1938876096, 678.2551, 720.005, 34.83162, 5))
+		or (MarkerExistsAt(1938876097, 678.2551, 720.005, 34.83162, 5))
+		or (MarkerExistsAt(1938876098, 678.2551, 720.005, 34.83162, 5))
+		or (MarkerExistsAt(1938876099, 678.2551, 720.005, 34.83162, 5))
+		or (MarkerExistsAt(1938876100, 678.2551, 720.005, 34.83162, 5))
+		or (MarkerExistsAt(1938876101, 678.2551, 720.005, 34.83162, 5))
+		or (MarkerExistsAt(1938876102, 678.2551, 720.005, 34.83162, 5))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed version D with SafeMoveTo." />		
+			<SafeMoveTo questId="312429" stepId="2" x="744" y="789" z="1" pathPrecision="5"/>
+			<SafeMoveTo questId="312429" stepId="2" x="784" y="910" z="-10" pathPrecision="5"/>
+			<SafeMoveTo questId="312429" stepId="2" x="584" y="747" z="-10" pathPrecision="5"/>
+			<SafeMoveTo questId="312429" stepId="2" x="602" y="566" z="-30" pathPrecision="5"/>
+			<SafeMoveTo questId="312429" stepId="2" x="744" y="669" z="-30" pathPrecision="5"/>
+			<SafeMoveTo questId="312429" stepId="2" x="887" y="615" z="-50" pathPrecision="5"/>
+			<SafeMoveTo questId="312429" stepId="2" x="730" y="524" z="-89" pathPrecision="5"/>
+			<LoadProfile file="Rift.xml" />
+		</If>
+		
 		<!-- Unknown version of the tower-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the tower with ExploreDungeon." />		
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 15/15/0.55" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 10/40/0.2" />
 		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not 
 						  (ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) or 
 						   (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
@@ -211,11 +234,11 @@
 						   (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
 						   (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
 						  )">
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="30" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="30" boxSize="10" pathPrecision="40" boxTolerance="0.2"/>
 			<LoadProfile file="Rift.xml" />			
 		</While>
 		<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
-			<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="30" boxSize="15" pathPrecision="15" boxTolerance="0.55"/>		
+			<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="30" boxSize="10" pathPrecision="40" boxTolerance="0.2"/>		
 			<LoadProfile file="Rift.xml" />
 		</While>
 	    <LoadProfile file="Rift.xml" />
