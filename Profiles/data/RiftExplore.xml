@@ -83,8 +83,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 332323"> <!-- Dahlgur Oasis-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis @ 30/15/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="30" pathPrecision="15" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis @ 30/10/0.15" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="30" pathPrecision="10" boxTolerance="0.15"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -113,8 +113,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 347961"> <!-- Forgotten Battlefield-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Forgotten Battlefield @ 40/10/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Forgotten Battlefield @ 40/10/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -171,8 +171,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 349048"> <!-- Battlefield Bridge--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge @ 30/30/0.15" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="30" pathPrecision="30" boxTolerance="0.15"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge @ 40/10/0.2" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="40" pathPrecision="10" boxTolerance="0.2"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -218,6 +218,12 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 
+		<If condition="CurrentLevelAreaId == 347196"> <!-- Tristram Wilderness-->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tristram Wilderness @ 30/15/0.05" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="30" pathPrecision="15" boxTolerance="0.05"/>
+			<LoadProfile file="Rift.xml" />
+		</If>
+
 		<If condition="CurrentLevelAreaId == 276230"> <!-- Ice Cave-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Ice Cave @ 10/40/0.2" />
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="10" pathPrecision="40" boxTolerance="0.2"/>
@@ -231,8 +237,8 @@
 		</If>
 		
 		<!-- Default 20/15/0.05 -->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 20/15/0.05" />
-		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="20" pathPrecision="15" boxTolerance="0.05"/>
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 30/15/0.05" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="30" pathPrecision="15" boxTolerance="0.05"/>
 		<LoadProfile file="Rift.xml" />
 	</While>
 	<LoadProfile file="Rift.xml" />
