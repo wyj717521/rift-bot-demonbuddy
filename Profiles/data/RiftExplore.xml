@@ -165,8 +165,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 275929"> <!-- Corrupt Spire--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Corrupt Spire @ 10/30/0.05" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="10" pathPrecision="30" boxTolerance="0.05"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Corrupt Spire @ 15/40/0.2" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="15" pathPrecision="40" boxTolerance="0.2"/> 
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
