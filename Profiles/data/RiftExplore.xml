@@ -135,8 +135,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 349181"> <!-- Boneyards--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bone Yards @ 20/15/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="20" pathPrecision="15" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bone Yards @ 40/10/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="40" pathPrecision="10" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If> 
 		
@@ -171,9 +171,7 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 349048"> <!-- Battlefield Bridge--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge @ 40/10/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="40" pathPrecision="10" boxTolerance="0.2"/>
-			<LoadProfile file="Rift.xml" />
+			<LoadProfile file="RiftExploreBattlefieldBridge.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 276215"> <!-- Worm Caves--> 
