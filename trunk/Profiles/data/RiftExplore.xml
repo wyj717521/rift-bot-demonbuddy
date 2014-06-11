@@ -83,8 +83,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 332323"> <!-- Dahlgur Oasis-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis @ 30/10/0.15" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="30" pathPrecision="10" boxTolerance="0.15"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis @ 30/10/0.05" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="30" pathPrecision="10" boxTolerance="0.05"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
