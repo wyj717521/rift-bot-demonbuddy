@@ -26,19 +26,30 @@
 		or (MarkerExistsAt(1938876101, 1055.51, 1473.244, 61.84594, 100))
 		or (MarkerExistsAt(1938876102, 1055.51, 1473.244, 61.84594, 100))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with SafeMoveTo." />
-			<SafeMoveTo questId="312429" stepId="2" x="1220" y="1438" z="41" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="1258" y="1092" z="38" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="1194" y="722" z="40" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="970" y="999" z="40" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="774" y="907" z="38" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="759" y="837" z="50" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="604" y="778" z="78" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="499" y="601" z="80" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="302" y="920" z="80" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="191" y="728" z="90" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="288" y="600" z="80" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="421" y="589" z="78" pathPrecision="5" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="420" y="346" z="63" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1215" y="1453" z="41" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1171" y="1328" z="41" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1301" y="1337" z="32" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1252" y="1135" z="38" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1384" y="944" z="40" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1328" y="679" z="40" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1198" y="718" z="40" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1199" y="1057" z="40" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1073" y="1060" z="40" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1094" y="722" z="40" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="989" y="738" z="41" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="954" y="1027" z="40" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="748" y="975" z="40" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="966" y="727" z="40" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="817" y="708" z="40" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="764" y="897" z="38" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="610" y="781" z="78" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="585" y="603" z="80" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="506" y="605" z="80" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="513" y="785" z="78" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="526" y="954" z="80" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="353" y="918" z="80" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="422" y="588" z="78" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="420" y="297" z="63" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
