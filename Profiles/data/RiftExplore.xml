@@ -87,14 +87,14 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 312606"> <!-- Archives of Zoltun Kulle-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltun Archives @ 10/25/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="10" pathPrecision="25" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltun Archives @ 10/35/0.2" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="10" pathPrecision="35" boxTolerance="0.2"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 
 		<If condition="CurrentLevelAreaId == 312607"> <!-- Archives of Zoltun Kulle-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltun Archives @ 10/25/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="10" pathPrecision="25" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Zoltun Archives @ 10/35/0.2" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="200" boxSize="10" pathPrecision="35" boxTolerance="0.2"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
