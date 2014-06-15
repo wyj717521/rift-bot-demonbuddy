@@ -65,8 +65,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 323580"> <!-- Arreat Crater-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Areat Crater @ 10/40/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Areat Crater @ 10/30/0.15" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="30" boxTolerance="0.15	"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -111,8 +111,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 347961"> <!-- Forgotten Battlefield-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Forgotten Battlefield @ 40/10/0.1" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.1"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Forgotten Battlefield @ 35/10/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="35" pathPrecision="10" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
