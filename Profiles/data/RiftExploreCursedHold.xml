@@ -131,6 +131,16 @@
 		<SafeMoveTo questId="312429" stepId="2" x="839" y="729" z="0" pathPrecision="5" statusText="" />
 		<SafeMoveTo questId="312429" stepId="2" x="837" y="840" z="0" pathPrecision="5" statusText="" />
 		<SafeMoveTo questId="312429" stepId="2" x="968" y="822" z="0" pathPrecision="5" statusText="" />
+		
+		<SafeMoveTo questId="312429" stepId="2" x="1201" y="481" z="0" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="1080" y="482" z="0" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="1079" y="1033" z="0" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="842" y="1029" z="0" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="835" y="1438" z="0" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="716" y="1436" z="0" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="720" y="1198" z="0" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="1199" y="1198" z="0" pathPrecision="5" statusText="" />
+		<SafeMoveTo questId="312429" stepId="2" x="1202" y="1101" z="0" pathPrecision="5" statusText="" />
 		<If condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
 			<SafeMoveTo questId="312429" stepId="2" x="1010" y="890" z="0" pathPrecision="5" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="1165" y="877" z="0" pathPrecision="5" statusText="" />
