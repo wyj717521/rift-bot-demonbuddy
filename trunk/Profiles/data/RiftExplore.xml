@@ -139,8 +139,8 @@
 		</If> 
 		
 		<If condition="CurrentLevelAreaId == 276150"> <!-- Crypts--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 10/30/0.2" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="30" boxTolerance="0.2"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 10/30/0.15" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="30" boxTolerance="0.15"/> 
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
@@ -221,8 +221,8 @@
 		</If>
 
 		<If condition="CurrentLevelAreaId == 276230"> <!-- Ice Cave-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Ice Cave @ 10/40/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.2"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Ice Cave @ 10/30/0.15" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="30" boxTolerance="0.15"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 
