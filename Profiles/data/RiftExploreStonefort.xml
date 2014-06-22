@@ -12,6 +12,7 @@
 
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
+
 		<!-- Stonefort 1-->
 		<If condition="(MarkerExistsAt(732643260, 1890.154, 1759.493, -22.55594, 10))
 		or (MarkerExistsAt(1938876093, 1890.154, 1759.493, -22.55594, 10))
@@ -24,7 +25,7 @@
 		or (MarkerExistsAt(1938876100, 1890.154, 1759.493, -22.55594, 10))
 		or (MarkerExistsAt(1938876101, 1890.154, 1759.493, -22.55594, 10))
 		or (MarkerExistsAt(1938876102, 1890.154, 1759.493, -22.55594, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 1 with MoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 1 with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="1886" y="1870" z="-25" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="1857" y="1811" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="1526" y="1776" z="0" pathPrecision="5" />
@@ -52,7 +53,7 @@
 		or (MarkerExistsAt(1938876100, 1861.255, 2265.319, -23.04723, 10))
 		or (MarkerExistsAt(1938876101, 1861.255, 2265.319, -23.04723, 10))
 		or (MarkerExistsAt(1938876102, 1861.255, 2265.319, -23.04723, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 2 with MoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Stonefort 2 with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="1857" y="2330" z="-25" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="1799" y="2115" z="0" pathPrecision="5" />
 			<SafeMoveTo questId="312429" stepId="2" x="1618" y="2113" z="0" pathPrecision="5" />
