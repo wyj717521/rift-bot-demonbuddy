@@ -13,7 +13,7 @@
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
 	
-		<!-- Battlefield Bridge-->
+		<!-- Battlefield Bridge Large-->
 		<If condition="(MarkerExistsAt(732643260, 3937.963, 592.7666, -11.55366, 100))
 		or (MarkerExistsAt(1938876093, 3937.963, 592.7666, -11.55366, 100))
 		or (MarkerExistsAt(1938876094, 3937.963, 592.7666, -11.55366, 100))
@@ -25,7 +25,7 @@
 		or (MarkerExistsAt(1938876100, 3937.963, 592.7666, -11.55366, 100))
 		or (MarkerExistsAt(1938876101, 3937.963, 592.7666, -11.55366, 100))
 		or (MarkerExistsAt(1938876102, 3937.963, 592.7666, -11.55366, 100))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge with SafeMoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge Large with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="4070" y="595" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="4223" y="553" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="4095" y="713" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
@@ -62,7 +62,7 @@
 		</If>
 		
 		<!-- Unknown version-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Battlefield Bridge with ExploreDungeon." />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Battlefield Bridge with ExploreDungeon." />
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge @ 40/10/0.2" />
 		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not 
 						  (ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) or 

@@ -13,7 +13,7 @@
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
 	
-		<!-- Oasis Large 1-->
+		<!-- Dahlgur Oasis Large 1-->
 		<If condition="(MarkerExistsAt(732643260, 1104.761, 1496.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876093, 1104.761, 1496.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876094, 1104.761, 1496.833, 2.363693, 100))
@@ -25,7 +25,7 @@
 		or (MarkerExistsAt(1938876100, 1104.761, 1496.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876101, 1104.761, 1496.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876102, 1104.761, 1496.833, 2.363693, 100))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Oasis Large 1 with SafeMoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis Large 1 with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="1032" y="1629" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="946" y="1755" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="919" y="1588" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
@@ -73,7 +73,7 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 
-		<!-- Oasis Large 2-->
+		<!-- Dahlgur Oasis Large 2-->
 		<If condition="(MarkerExistsAt(732643260, 624.7612, 1016.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876093, 624.7612, 1016.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876094, 624.7612, 1016.833, 2.363693, 100))
@@ -85,7 +85,7 @@
 		or (MarkerExistsAt(1938876100, 624.7612, 1016.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876101, 624.7612, 1016.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876102, 624.7612, 1016.833, 2.363693, 100))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Oasis Large 2 with SafeMoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis Large 2 with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="549" y="1154" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="439" y="1099" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="416" y="1144" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
@@ -149,7 +149,7 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 
-		<!-- Oasis Large 3-->
+		<!-- Dahlgur Oasis Large 3-->
 		<If condition="(MarkerExistsAt(732643260, 624.7612, 296.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876093, 624.7612, 296.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876094, 624.7612, 296.833, 2.363693, 100))
@@ -161,7 +161,7 @@
 		or (MarkerExistsAt(1938876100, 624.7612, 296.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876101, 624.7612, 296.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876102, 624.7612, 296.833, 2.363693, 100))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Oasis Large 3 with SafeMoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis Large 3 with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="540" y="428" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="447" y="397" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="408" y="440" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
@@ -213,7 +213,7 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
-		<!-- Unknown version-->
+		<!-- Unknown version of Dahlgur Oasis-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Dahlgur Oasis with ExploreDungeon." />
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis @ 28/10/0.05" />
 		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not 

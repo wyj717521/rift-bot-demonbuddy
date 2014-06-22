@@ -13,7 +13,7 @@
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
 	
-		<!-- Cursed of Tower 1-->
+		<!-- Tower of Cursed 1-A-->
 		<If condition="(MarkerExistsAt(732643260, 488.2521, 767.5283, 82.0196, 10))
 		or (MarkerExistsAt(1938876093, 488.2521, 767.5283, 82.0196, 10))
 		or (MarkerExistsAt(1938876094, 488.2521, 767.5283, 82.0196, 10))
@@ -24,7 +24,8 @@
 		or (MarkerExistsAt(1938876099, 488.2521, 767.5283, 82.0196, 10))
 		or (MarkerExistsAt(1938876100, 488.2521, 767.5283, 82.0196, 10))
 		or (MarkerExistsAt(1938876101, 488.2521, 767.5283, 82.0196, 10))
-		or (MarkerExistsAt(1938876102, 488.2521, 767.5283, 82.0196, 10))">
+		or (MarkerExistsAt(1938876102, 488.2521, 767.5283, 82.0196, 10))
+		or (MarkerExistsAt(-1464312746, 488.2521, 767.5283, 82.0196, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed 1-A with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="574" y="838" z="50" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="664" y="903" z="50" pathPrecision="5" statusText="" /> 
@@ -41,7 +42,7 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 				
-			<!-- Cursed of Tower 1-B-->
+			<!-- Tower of Cursed of 1-B-->
 		<If condition="(MarkerExistsAt(732643260, 399.2324, 721.925, 44.40216, 10))
 		or (MarkerExistsAt(1938876093, 399.2324, 721.925, 44.40216, 10))
 		or (MarkerExistsAt(1938876094, 399.2324, 721.925, 44.40216, 10))
@@ -86,7 +87,7 @@
 		or (MarkerExistsAt(1938876100, 720.8195, 407.845, 41.87429, 10))
 		or (MarkerExistsAt(1938876101, 720.8195, 407.845, 41.87429, 10))
 		or (MarkerExistsAt(1938876102, 720.8195, 407.845, 41.87429, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Damned version A with SafeMoveTo." />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Damned 1 with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="721" y="597" z="-10" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="627" y="634" z="-19" pathPrecision="5" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="593" y="695" z="-30" pathPrecision="5" statusText="" /> 
@@ -109,7 +110,7 @@
 		or (MarkerExistsAt(1938876100, 678.8602, 717.8599, 34.98107, 1))
 		or (MarkerExistsAt(1938876101, 678.8602, 717.8599, 34.98107, 1))
 		or (MarkerExistsAt(1938876102, 678.8602, 717.8599, 34.98107, 1))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed version B with SafeMoveTo." />		
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed 2 with SafeMoveTo." />		
 			<SafeMoveTo questId="312429" stepId="2" x="729" y="783" z="0" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="772" y="755" z="0" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="771" y="713" z="0" pathPrecision="5" statusText="" /> 
@@ -148,7 +149,7 @@
 		or (MarkerExistsAt(1938876100, 680.1924, 719.7283, 33.9541, 1))
 		or (MarkerExistsAt(1938876101, 680.1924, 719.7283, 33.9541, 1))
 		or (MarkerExistsAt(1938876102, 680.1924, 719.7283, 33.9541, 1))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Damned version B with SafeMoveTo." />		
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Damned 2 with SafeMoveTo." />		
 			<SafeMoveTo questId="312429" stepId="2" x="723" y="783" z="2" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="783" y="720" z="0" pathPrecision="5" statusText="" /> 
 			<SafeMoveTo questId="312429" stepId="2" x="741" y="660" z="0" pathPrecision="5" statusText="" /> 
@@ -171,7 +172,7 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 
-		<!-- Tower of Cursed version C-->
+		<!-- Tower of Cursed 3-->
 		<If condition="(MarkerExistsAt(732643260, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876093, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876094, 484.4771, 767.3116, 39.86788, 1))
@@ -183,7 +184,7 @@
 		or (MarkerExistsAt(1938876100, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876101, 484.4771, 767.3116, 39.86788, 1))
 		or (MarkerExistsAt(1938876102, 484.4771, 767.3116, 39.86788, 1))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed version C with SafeMoveTo." />		
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed 3 with SafeMoveTo." />		
 			<SafeMoveTo questId="312429" stepId="2" x="589" y="839" z="10" pathPrecision="5"/>
 			<SafeMoveTo questId="312429" stepId="2" x="658" y="765" z="10" pathPrecision="5"/>
 			<SafeMoveTo questId="312429" stepId="2" x="536" y="699" z="10" pathPrecision="5"/>
@@ -196,7 +197,7 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
-		<!-- Tower of Cursed version D-->
+		<!-- Tower of Cursed 4-->
 		<If condition="(MarkerExistsAt(732643260, 678.2551, 720.005, 34.83162, 5))
 		or (MarkerExistsAt(1938876093, 678.2551, 720.005, 34.83162, 5))
 		or (MarkerExistsAt(1938876094, 678.2551, 720.005, 34.83162, 5))
@@ -208,7 +209,7 @@
 		or (MarkerExistsAt(1938876100, 678.2551, 720.005, 34.83162, 5))
 		or (MarkerExistsAt(1938876101, 678.2551, 720.005, 34.83162, 5))
 		or (MarkerExistsAt(1938876102, 678.2551, 720.005, 34.83162, 5))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed version D with SafeMoveTo." />		
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of Cursed 4 with SafeMoveTo." />		
 			<SafeMoveTo questId="312429" stepId="2" x="744" y="789" z="1" pathPrecision="5"/>
 			<SafeMoveTo questId="312429" stepId="2" x="784" y="910" z="-10" pathPrecision="5"/>
 			<SafeMoveTo questId="312429" stepId="2" x="584" y="747" z="-10" pathPrecision="5"/>
@@ -220,8 +221,8 @@
 		</If>
 		
 		<!-- Unknown version of the tower-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the tower with ExploreDungeon." />		
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned @ 10/40/0.2" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of The Tower with ExploreDungeon." />		
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Tower of the Damned/Cursed @ 10/40/0.2" />
 		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not 
 						  (ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) or 
 						   (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
