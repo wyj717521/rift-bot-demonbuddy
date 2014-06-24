@@ -212,6 +212,32 @@
 			<SafeMoveTo questId="312429" stepId="2" x="388" y="1056" z="9" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<LoadProfile file="Rift.xml" />
 		</If>
+
+		<!-- Dahlgur Oasis 1-B-->
+		<If condition="(MarkerExistsAt(732643260, 1344.761, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876093, 1344.761, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876094, 1344.761, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876095, 1344.761, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876096, 1344.761, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876097, 1344.761, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876098, 1344.761, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876099, 1344.761, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876100, 1344.761, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876101, 1344.761, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876102, 1344.761, 536.833, 2.363693, 100))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis 1-B with SafeMoveTo." />
+			<SafeMoveTo questId="312429" stepId="2" x="1270" y="670" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1183" y="732" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="929" y="642" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="892" y="711" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="989" y="816" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="994" y="970" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="633" y="976" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="391" y="953" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="391" y="797" z="9" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<MoveToActor questId="312429" stepId="2" actorId="176007" interactRange="14" isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<LoadProfile file="Rift.xml" />
+		</If>
 		
 		<!-- Unknown version of Dahlgur Oasis-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Dahlgur Oasis with ExploreDungeon." />
