@@ -12,7 +12,7 @@
 
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
-	
+
 		<!-- Southern Highlands-->
 		<If condition="(MarkerExistsAt(732643260, 1055.51, 1473.244, 61.84594, 100))
 		or (MarkerExistsAt(1938876093, 1055.51, 1473.244, 61.84594, 100))
@@ -52,7 +52,7 @@
 			<SafeMoveTo questId="312429" stepId="2" x="420" y="297" z="63" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<LoadProfile file="Rift.xml" />
 		</If>
-		
+
 		<!-- Unknown version-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Southern Highland with ExploreDungeon." />
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands @ 15/20/0.22" />

@@ -45,7 +45,7 @@
 		</If>
 
 		<!-- Unknown version of the Cathedral-->
-		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Cathedral with ExploreDungeon." />		
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of the Cathedral with ExploreDungeon." />
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 10/30/0.2" />
 		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not 
 						  (ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) or 

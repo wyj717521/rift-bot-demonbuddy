@@ -37,25 +37,26 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 
-		<!-- Bastion Keep 2-->
-		<If condition="(MarkerExistsAt(732643260, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(1938876093, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(1938876094, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(1938876095, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(1938876096, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(1938876097, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(1938876098, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(1938876099, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(1938876100, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(1938876101, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(1938876102, 443.084, 328.654, 2.885807, 10))
-		or (MarkerExistsAt(-1464312746, 443.084, 328.654, 2.885807, 10))">
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep 2 with SafeMoveTo." />
-			<SafeMoveTo questId="312429" stepId="2" x="613" y="352" z="1" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="722" y="395" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="881" y="305" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="1057" y="428" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<SafeMoveTo questId="312429" stepId="2" x="1068" y="521" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+		<!-- Bastion Keep 3-->
+		<If condition="(MarkerExistsAt(732643260, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876093, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876094, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876095, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876096, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876097, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876098, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876099, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876100, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876101, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(1938876102, 381.8362, 429.2993, 0.7836709, 10))
+		or (MarkerExistsAt(-1464312746, 381.8362, 429.2993, 0.7836709, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep 3 with SafeMoveTo." />
+			<SafeMoveTo questId="312429" stepId="2" x="482" y="592" z="0" pathPrecision="5" pathPointLimit="250" statusText="" /> 
+			<SafeMoveTo questId="312429" stepId="2" x="599" y="729" z="0" pathPrecision="5" pathPointLimit="250" statusText="" /> 
+			<SafeMoveTo questId="312429" stepId="2" x="611" y="968" z="0" pathPrecision="5" pathPointLimit="250" statusText="" /> 
+			<SafeMoveTo questId="312429" stepId="2" x="732" y="1063" z="0" pathPrecision="5" pathPointLimit="250" statusText="" /> 
+			<SafeMoveTo questId="312429" stepId="2" x="987" y="1080" z="1" pathPrecision="5" pathPointLimit="250" statusText="" /> 
+			<SafeMoveTo questId="312429" stepId="2" x="1066" y="1257" z="1" pathPrecision="5" pathPointLimit="250" statusText="" /> 
 			<LoadProfile file="Rift.xml" />
 		</If>
 
@@ -86,3 +87,26 @@
 	<LoadProfile file="Rift.xml" />
 </Order>
 </Profile>
+
+<!-- 		Bastion Keep 2
+		<If condition="(MarkerExistsAt(732643260, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(1938876093, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(1938876094, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(1938876095, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(1938876096, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(1938876097, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(1938876098, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(1938876099, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(1938876100, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(1938876101, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(1938876102, 443.084, 328.654, 2.885807, 10))
+		or (MarkerExistsAt(-1464312746, 443.084, 328.654, 2.885807, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep 2 with SafeMoveTo." />
+			<SafeMoveTo questId="312429" stepId="2" x="613" y="352" z="1" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="722" y="395" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="881" y="305" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1057" y="428" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1068" y="521" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<LoadProfile file="Rift.xml" />
+		</If>
+-->
