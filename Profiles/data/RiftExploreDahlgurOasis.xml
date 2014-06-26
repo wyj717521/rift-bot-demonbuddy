@@ -213,6 +213,47 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 
+		<!-- Dahlgur Oasis Large 4-->
+		<If condition="(MarkerExistsAt(732643260, 1824.761, 296.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876093, 1824.761, 296.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876094, 1824.761, 296.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876095, 1824.761, 296.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876096, 1824.761, 296.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876097, 1824.761, 296.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876098, 1824.761, 296.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876099, 1824.761, 296.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876100, 1824.761, 296.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876101, 1824.761, 296.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876102, 1824.761, 296.833, 2.363693, 100))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis Large 4 with SafeMoveTo." />
+			<SafeMoveTo questId="312429" stepId="2" x="1749" y="435" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1681" y="490" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1508" y="458" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1463" y="570" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1335" y="565" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1271" y="452" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1106" y="503" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1022" y="472" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="940" y="494" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="785" y="454" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="681" y="396" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="718" y="553" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="709" y="703" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="559" y="718" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+
+			<SafeMoveTo questId="312429" stepId="2" x="431" y="613" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="456" y="743" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="723" y="917" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="711" y="1076" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="633" y="1081" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="764" y="1254" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="819" y="1325" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="648" y="1448" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="393" y="1432" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="393" y="1297" z="9" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<LoadProfile file="Rift.xml" />
+		</If>
+
 		<!-- Dahlgur Oasis 1-B-->
 		<If condition="(MarkerExistsAt(732643260, 1344.761, 536.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876093, 1344.761, 536.833, 2.363693, 100))
@@ -226,10 +267,10 @@
 		or (MarkerExistsAt(1938876101, 1344.761, 536.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876102, 1344.761, 536.833, 2.363693, 100))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis 1-B with ExploreDungeon." />
-			<ExploreDungeon questId="1" stepId="2" until="ObjectFound" actorId="135248" markerDistance="50" boxSize="28" pathPrecision="10" boxTolerance="0.05"/>
+			<SafeMoveTo questId="312429" stepId="2" x="387" y="794" z="10" pathPrecision="5" pathPointLimit="250" statusText="" /> 
+			<MoveToActor questId="312429" stepId="2" actorId="176007" interactRange="60" isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<LoadProfile file="Rift.xml" />	
-				<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
-					<MoveToActor questId="312429" stepId="2" actorId="176007" interactRange="14" isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" />
+				<While condition="ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
 					<LoadProfile file="Rift.xml" />	
 				</While>
 		</If>

@@ -12,7 +12,7 @@
 
 <Order>
 	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
-	
+
 		<!-- Battlefield Bridge Large-->
 		<If condition="(MarkerExistsAt(732643260, 3937.963, 592.7666, -11.55366, 100))
 		or (MarkerExistsAt(1938876093, 3937.963, 592.7666, -11.55366, 100))
@@ -60,7 +60,7 @@
 			<SafeMoveTo questId="312429" stepId="2" x="1194" y="842" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<LoadProfile file="Rift.xml" />
 		</If>
-		
+
 		<!-- Unknown version-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Battlefield Bridge with ExploreDungeon." />
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge @ 40/10/0.2" />
