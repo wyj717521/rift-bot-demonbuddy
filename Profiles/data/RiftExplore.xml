@@ -39,7 +39,9 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 322727"> <!-- Caverns of Araneae-->
-			<LoadProfile file="RiftExploreCavernsOfAraneae.xml" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Caverns of Araneae @ 10/20/0.1" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="20" boxTolerance="0.1"/>
+			<LoadProfile file="Rift.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 334821"> <!-- The Cursed Hold (Warden)-->
@@ -133,8 +135,8 @@
 		</If> 
 		
 		<If condition="CurrentLevelAreaId == 276150"> <!-- Crypts--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 10/30/0.15" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="30" boxTolerance="0.15"/> 
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Crypts @ 10/30/0.15" />
+		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="30" boxTolerance="0.15"/>
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
@@ -179,8 +181,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 352690"> <!-- Bog Cave-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave @ 28/10/0.1" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="28" pathPrecision="10" boxTolerance="0.1"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave @ 10/30/0.15" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="30" boxTolerance="0.15"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		

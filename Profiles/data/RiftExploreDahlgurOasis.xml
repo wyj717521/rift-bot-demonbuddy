@@ -275,6 +275,29 @@
 				</While>
 		</If>
 
+		<!-- Dahlgur Oasis 2-B-->
+		<If condition="(MarkerExistsAt(732643260, 864.7612, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876093, 864.7612, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876094, 864.7612, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876095, 864.7612, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876096, 864.7612, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876097, 864.7612, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876098, 864.7612, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876099, 864.7612, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876100, 864.7612, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876101, 864.7612, 536.833, 2.363693, 100))
+		or (MarkerExistsAt(1938876102, 864.7612, 536.833, 2.363693, 100))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis 2-B with SafeMoveTo." />
+			<SafeMoveTo questId="312429" stepId="2" x="791" y="670" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="961" y="1287" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="390" y="1274" z="10" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<MoveToActor questId="312429" stepId="2" actorId="176007" interactRange="60" isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<LoadProfile file="Rift.xml" />	
+				<While condition="ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
+					<LoadProfile file="Rift.xml" />	
+				</While>
+		</If>
+
 		<!-- Unknown version of Dahlgur Oasis-->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Dahlgur Oasis with ExploreDungeon." />
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis @ 28/10/0.05" />
