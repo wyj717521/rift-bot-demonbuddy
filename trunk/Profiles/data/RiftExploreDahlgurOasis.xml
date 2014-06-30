@@ -267,7 +267,9 @@
 		or (MarkerExistsAt(1938876101, 1344.761, 536.833, 2.363693, 100))
 		or (MarkerExistsAt(1938876102, 1344.761, 536.833, 2.363693, 100))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Dahlgur Oasis 1-B with SafeMoveTo." />
-			<SafeMoveTo questId="312429" stepId="2" x="387" y="794" z="10" pathPrecision="5" pathPointLimit="250" statusText="" /> 
+			<SafeMoveTo questId="312429" stepId="2" x="516" y="522" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="387" y="794" z="10" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="386" y="314" z="10" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<MoveToActor questId="312429" stepId="2" actorId="176007" interactRange="60" isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<LoadProfile file="Rift.xml" />	
 				<While condition="ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
