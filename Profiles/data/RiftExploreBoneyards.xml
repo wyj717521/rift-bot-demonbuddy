@@ -1,0 +1,75 @@
+<Profile>
+<Name>Rift Bot Optimized Explore</Name>
+<KillMonsters>True</KillMonsters>
+<PickupLoot>True</PickupLoot>
+<GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
+
+<TargetBlacklists>
+	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
+	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
+	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
+</TargetBlacklists>
+
+<Order>
+	<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') or IsActiveQuestAndStep(337492, 1)">
+
+		<!-- Boneyards 1-->
+		<If condition="(MarkerExistsAt(732643260, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(1938876093, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(1938876094, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(1938876095, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(1938876096, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(1938876097, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(1938876098, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(1938876099, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(1938876100, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(1938876101, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(1938876102, 513.4948, 720.4829, 148.9881, 10))
+		or (MarkerExistsAt(-1464312746, 513.4948, 720.4829, 148.9881, 10))">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Boneyards 1 with SafeMoveTo." />
+			<SafeMoveTo questId="312429" stepId="2" x="514" y="895" z="145" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="466" y="1217" z="145" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="567" y="1186" z="145" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="599" y="917" z="145" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="740" y="932" z="146" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="740" y="1244" z="145" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="971" y="1220" z="145" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1232" y="1246" z="145" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="1167" y="1165" z="145" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="941" y="1049" z="145" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="823" y="1107" z="165" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<MoveToActor questId="312429" stepId="2" actorId="185067" interactRange="60" isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" />
+			<LoadProfile file="Rift.xml" />
+				<While condition="not ActorExistsAt(185067, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
+				<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.1"/>
+				</While>
+			<LoadProfile file="Rift.xml" />
+		</If>
+
+		<!-- Unknown version of Boneyards-->
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Unknown version of Boneyards with ExploreDungeon." />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Boneyards @ 40/10/0.1" />
+		<While condition="Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBF') and not 
+						  (ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100) or 
+						   (CurrentWorldId == 288454 and MarkerExistsAt(1938876094, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288685 and MarkerExistsAt(1938876095, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288687 and MarkerExistsAt(1938876096, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288798 and MarkerExistsAt(1938876097, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288800 and MarkerExistsAt(1938876098, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288802 and MarkerExistsAt(1938876099, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
+						   (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
+						  )">
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.1"/>
+			<LoadProfile file="Rift.xml" />
+		</While>
+		<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
+			<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.1"/>
+			<LoadProfile file="Rift.xml" />
+		</While>
+		<LoadProfile file="Rift.xml" />
+	</While>
+	<LoadProfile file="Rift.xml" />
+</Order>
+</Profile>
