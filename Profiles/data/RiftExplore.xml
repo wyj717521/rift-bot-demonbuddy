@@ -131,8 +131,9 @@
 		</If> 
 		
 		<If condition="CurrentLevelAreaId == 347562"> <!-- Southern Highlands-->
-			<WaitTimer questId="1" stepId="1" waitTime="2000"/>
-			<LoadProfile file="RiftExploreSouthernHighland.xml" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Boneyards @ 40/10/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.1"/>
+			<LoadProfile file="Rift.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 349181"> <!-- Boneyards-->
@@ -183,8 +184,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 332335"> <!-- Exterior Bog--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Exterior Bog @ 35/10/0.1" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="35" pathPrecision="10" boxTolerance="0.1"/> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Exterior Bog @ 30/10/0.1" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="10" boxTolerance="0.1"/> 
 			<LoadProfile file="Rift.xml" /> 
 		</If>
 		
