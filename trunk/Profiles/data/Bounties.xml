@@ -14,6 +14,12 @@
 <Order>
 	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="150" killRadius="80" />
 
+	<!-- Leave Games for Diablo or Kill Izual -->
+	<If condition="HasQuest(349288) or HasQuest(361421)">
+		<WaitTimer questId="1" stepId="2" waitTime="3000" />
+	<LeaveGame quest="1" step="1" reason="Diablo or Kill Izual" stayInParty="False" />		
+	</If>
+	
 	<!-- Kill Khatun, Kill Torchlighter, Kill Veshan the fierce, Kill the aspect of destruction-->
 	<If condition="HasQuest(349258) or HasQuest(349256) or HasQuest(349260) or HasQuest(357131)">
 		<While condition="CurrentWorldId != 109513">
