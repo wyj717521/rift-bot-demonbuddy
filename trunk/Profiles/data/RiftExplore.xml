@@ -196,8 +196,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 347870"> <!-- Exterior Graveyard-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Exterior Graveyard @ 35/10/0.1" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="35" pathPrecision="10" boxTolerance="0.1"/>
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Exterior Graveyard @ 30/10/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="10" boxTolerance="0.1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
