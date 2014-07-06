@@ -24,7 +24,8 @@
 		or (MarkerExistsAt(1938876099, 3937.963, 592.7666, -11.55366, 100))
 		or (MarkerExistsAt(1938876100, 3937.963, 592.7666, -11.55366, 100))
 		or (MarkerExistsAt(1938876101, 3937.963, 592.7666, -11.55366, 100))
-		or (MarkerExistsAt(1938876102, 3937.963, 592.7666, -11.55366, 100))">
+		or (MarkerExistsAt(1938876102, 3937.963, 592.7666, -11.55366, 100))
+		or (MarkerExistsAt(-1464312746, 3937.963, 592.7666, -11.55366, 10))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Battlefield Bridge Large with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="4070" y="595" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<SafeMoveTo questId="312429" stepId="2" x="4223" y="553" z="0" pathPrecision="5" pathPointLimit="250" statusText="" />
