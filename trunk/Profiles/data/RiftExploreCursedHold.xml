@@ -8,7 +8,6 @@
 	<TargetBlacklist actorId="355635"/> <!-- Furnace -->
 	<TargetBlacklist actorId="157531"/> <!-- Broken Watermill in Oasis -->
 	<TargetBlacklist actorId="170913"/> <!-- Broken door -->
-	<TargetBlacklist actorId="95481"/> <!-- Breakable door -->
 </TargetBlacklists>
 
 <Order>
