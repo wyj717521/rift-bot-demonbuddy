@@ -14,13 +14,13 @@
 <Order>
 	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="150" killRadius="80" />
 	<If condition="Me.IsInTown ">
-		<While condition="CurrentWorldId != 332336">
-			<UseWaypoint waypointNumber="0" questId="1"/>
+		<While condition="CurrentWorldId != 172909">
+			<UseWaypoint waypointNumber="26" questId="1"/>
 			<WaitTimer questId="1" stepId="1" waitTime="500"/>
 		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
-		<While condition="not ActorExistsAt(345935, 375, 595, 24, 10)">
-			<SafeMoveTo questId="312429" stepId="2" x="375" y="595" z="24" pathPrecision="5" statusText="" />
+		<While condition="not ActorExistsAt(345935, 468, 387, 1, 10)">
+			<SafeMoveTo questId="312429" stepId="2" x="468" y="387" z="1" pathPrecision="5" statusText="" />
 			<MoveToActor questId="312429" stepId="2" actorId="364715" interactRange="11" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<WaitTimer questId="312429" stepId="2" waitTime="500" />
 		</While>
@@ -90,7 +90,7 @@
 	
 	<If condition="Me.IsInTown ">
 		<If condition="IsActiveQuestAndStep(337492, 10)">
-			<SafeMoveTo questId="312429" stepId="2" x="398" y="593" z="24" pathPrecision="5" statusText="" />
+			<SafeMoveTo questId="312429" stepId="2" x="449" y="404" z="1" pathPrecision="5" statusText="" />
 			<MoveToActor questId="312429" stepId="2" actorId="363744" interactRange="9" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</If>
