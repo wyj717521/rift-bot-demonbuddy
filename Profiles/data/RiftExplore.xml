@@ -131,9 +131,8 @@
 		</If> 
 		
 		<If condition="CurrentLevelAreaId == 347562"> <!-- Southern Highlands-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Boneyards @ 40/10/0.1" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.1"/>
-			<LoadProfile file="Rift.xml" />
+			<WaitTimer questId="1" stepId="1" waitTime="2000"/>
+			<LoadProfile file="RiftExploreSouthernHighland.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 349181"> <!-- Boneyards-->
