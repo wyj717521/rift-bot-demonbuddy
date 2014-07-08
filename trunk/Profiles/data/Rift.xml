@@ -66,7 +66,7 @@
 			<LogMessage quest="1" step="2" output="[Rift Bot] Townstone found" />
 			<If condition="not Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or CurrentWorldId == 288454">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Explore current level" />
-				<ExploreDungeon questId="337492" stepId="1" until="FullyExplored" ignoreMarkers="true" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
+				<ExploreDungeon questId="337492" stepId="1" until="FullyExplored" ignoreMarkers="true" boxSize="15" pathPrecision="35" boxTolerance="0.15"/>
 				<WaitTimer questId="1" stepId="1" waitTime="500"/>
 			</If>
 		</If>
@@ -75,7 +75,7 @@
 		</If>
 		<If condition="IsActiveQuestAndStep(337492, 3)">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Boss Spawned" />
-			<ExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.1"/>
+			<ExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="35" boxTolerance="0.15"/>
 		</If>
 		<If condition="IsActiveQuestAndStep(337492, 10)">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Rift boss killed" />
