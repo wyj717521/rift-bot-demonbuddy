@@ -71,10 +71,6 @@
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/35/0.25" />
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="35" boxTolerance="0.25">
-			<PriorityScenes>
-				<PriorityScene sceneName="Portal"/>
-				<PriorityScene sceneName="Exit" />
-			</PriorityScenes>
 			</ExploreDungeon>
 			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
 			<LoadProfile file="Rift.xml" />
