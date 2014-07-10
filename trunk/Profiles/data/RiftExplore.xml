@@ -158,8 +158,15 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 275923"> <!-- Cathedral-->
-			<WaitTimer questId="1" stepId="1" waitTime="2000"/>
-			<LoadProfile file="RiftExploreCathedral.xml" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 15/35/0.25" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="35" boxTolerance="0.25">
+			<PriorityScenes>
+				<PriorityScene sceneName="Portal"/>
+				<PriorityScene sceneName="Exit" />
+			</PriorityScenes>
+			</ExploreDungeon>
+			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
+			<LoadProfile file="Rift.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 343965"> <!-- Whimsyshire-->
@@ -316,8 +323,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 347870"> <!-- Exterior Graveyard-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Exterior Graveyard @ 30/10/0.15" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="10" boxTolerance="0.15" >
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Exterior Graveyard @ 30/10/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="10" boxTolerance="0.1" >
 			<IgnoreScenes>
 				<IgnoreScene sceneName="Entrance" />
 			</IgnoreScenes>
