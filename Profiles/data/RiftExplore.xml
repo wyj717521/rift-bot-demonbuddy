@@ -215,7 +215,9 @@
 			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="30" boxSize="40" pathPrecision="10" boxTolerance="0.1" >
 			<PriorityScenes>
 				<PriorityScene sceneName="Edge_N" />
+				<PriorityScene sceneName="Edge_NE" />
 				<PriorityScene sceneName="Edge_E" />
+				<PriorityScene sceneName="Edge_SE" />
 			</PriorityScenes>
 			</ExploreDungeon>
 			<LoadProfile file="Rift.xml" />
