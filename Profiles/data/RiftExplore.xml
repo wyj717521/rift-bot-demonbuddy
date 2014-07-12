@@ -288,8 +288,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 276215"> <!-- Worm Caves--> 
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Worm Caves @ 12/20/0.15" /> 
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="20" boxTolerance="0.15"> 
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Worm Caves @ 12/15/0.2" /> 
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="15" boxTolerance="0.2"> 
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
