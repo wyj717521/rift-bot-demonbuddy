@@ -9,7 +9,7 @@ Leave rift once boss is killed or town stone found. Will not explore the current
 Leave rift once boss is killed. Will explore the last level if town stone found before boss spawns. Set gold inactivity timer!
 
 ====>Rift Bot Full
-Keeps exploring the rift after boss is killed until town stone is found.
+Keeps exploring the rift after boss is killed until town stone is found. If the boss is not spawned after the last level is fully explored, the bot will teleport out and leave the game to start a new one.
 
 ====>Rift Bot Common/Explore/Full with Bounties
 Create games and do A4 bounties then rifts. Credits to sychotix and his wonderful team!
