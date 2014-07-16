@@ -34,8 +34,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 276226"> <!-- Bastion's Keep-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep @ 40/15/0.1" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="15" boxTolerance="0.1">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bastion Keep @ 40/10/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.1">
 				<PriorityScenes>
 					<PriorityScene sceneName="Portal" />
 					<PriorityScene sceneName="Exit" />
@@ -69,15 +69,15 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 331264"> <!-- Westmarch Commons-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/35/0.25" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="35" boxTolerance="0.25" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Westmarch Commons @ 15/30/0.25" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="30" boxTolerance="0.25" />
 			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacombs-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs @ 40/15/0.1" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="15" boxTolerance="0.10	">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs @ 40/10/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.10	">
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
@@ -100,8 +100,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 352652"> <!-- Plague Tunnel-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Plague Tunnel @ 40/15/0.1" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="15" boxTolerance="0.1">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Plague Tunnel @ 40/10/0.1" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.1">
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
@@ -153,8 +153,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 275923"> <!-- Cathedral-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 15/35/0.25" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="35" boxTolerance="0.25">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Cathedral @ 15/30/0.25" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="30" boxTolerance="0.25">
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
@@ -165,8 +165,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 343965"> <!-- Whimsyshire-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Whimsyshire @ 10/40/0.05" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="10" pathPrecision="40" boxTolerance="0.05">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Whimsyshire @ 15/35/0.25" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="35" boxTolerance="0.25">
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
@@ -185,6 +185,9 @@
 			</PriorityScenes>
 			</ExploreDungeon>
 			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
+			<If condition="ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
+				<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="10" boxTolerance="0.1"/>
+			</If>
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
@@ -294,6 +297,9 @@
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
 			</PriorityScenes>
+			<IgnoreScenes>
+				<IgnoreScene sceneName="Entrance" />
+			</IgnoreScenes>
 			</ExploreDungeon>
 			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
 			<LoadProfile file="Rift.xml" /> 
@@ -306,12 +312,15 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 352690"> <!-- Bog Cave-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave @ 12/20/0.15" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="20" boxTolerance="0.15">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Bog Cave @ 12/15/0.15" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="15" boxTolerance="0.15">
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
 			</PriorityScenes>
+			<IgnoreScenes>
+				<IgnoreScene sceneName="Entrance" />
+			</IgnoreScenes>
 			</ExploreDungeon>
 			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
 			<LoadProfile file="Rift.xml" />
@@ -334,6 +343,9 @@
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
 			</PriorityScenes>
+			<IgnoreScenes>
+				<IgnoreScene sceneName="Entrance" />
+			</IgnoreScenes>
 			</ExploreDungeon>
 			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
 			<LoadProfile file="Rift.xml" />
@@ -378,6 +390,9 @@
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
 			</PriorityScenes>
+			<IgnoreScenes>
+				<IgnoreScene sceneName="Entrance" />
+			</IgnoreScenes>
 			</ExploreDungeon>
 			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
 			<LoadProfile file="Rift.xml" />
@@ -390,6 +405,9 @@
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
 			</PriorityScenes>
+			<IgnoreScenes>
+				<IgnoreScene sceneName="Entrance" />
+			</IgnoreScenes>
 			</ExploreDungeon>
 			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
 			<LoadProfile file="Rift.xml" />
