@@ -1,5 +1,5 @@
 <Profile>
-<Name>Rift Bot Common</Name>
+<Name>Rift Bot Common REV 434</Name>
 <KillMonsters>True</KillMonsters>
 <PickupLoot>True</PickupLoot>
 <GameParams act="OpenWorld" resumeFromSave="False" isPrivate="True" numGames="-1" />
