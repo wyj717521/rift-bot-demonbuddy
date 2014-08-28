@@ -20,9 +20,8 @@
 		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
 		<While condition="not ActorExistsAt(345935, 468, 387, 1, 10)">
-			<SafeMoveTo questId="312429" stepId="2" x="468" y="387" z="1" pathPrecision="5" statusText="" />
-			<MoveToActor questId="312429" stepId="2" actorId="364715" interactRange="11" pathPrecision="5" pathPointLimit="250" statusText="" />
-			<WaitTimer questId="312429" stepId="2" waitTime="500" />
+			<OpenRift questId="312429" stepId="2" startTiered="False" />
+			<WaitTimer questId="312429" stepId="2" waitTime="2500" />
 		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Enter Rift" />
 		<MoveToActor questId="312429" stepId="2" actorId="345935" interactRange="9" isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" />
