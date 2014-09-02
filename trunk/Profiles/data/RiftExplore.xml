@@ -413,6 +413,18 @@
 			<LoadProfile file="Rift.xml" />
 		</If>
 		
+		<If condition="CurrentLevelAreaId == 380081"> <!-- The Cesspools-->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore The Cesspools @ 12/25/0.15" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="25" boxTolerance="0.15">
+			<PriorityScenes>
+				<PriorityScene sceneName="Portal"/>
+				<PriorityScene sceneName="Exit" />
+			</PriorityScenes>
+			</ExploreDungeon>
+			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
+			<LoadProfile file="Rift.xml" />
+		</If>
+		
 		<!-- Default 30/15/0.05 -->
 		<LogMessage quest="1" step="2" output="[Rift Bot] Explore Random Map @ 30/15/0.05" />
 		<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="15" boxTolerance="0.05"/>
