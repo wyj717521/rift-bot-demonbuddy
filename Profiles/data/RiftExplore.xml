@@ -112,8 +112,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 275927"> <!-- Halls of Agony-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Halls of Agony @ 15/35/0.2" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="35" boxTolerance="0.2">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Halls of Agony @ 15/20/0.2" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="20" boxTolerance="0.2">
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
