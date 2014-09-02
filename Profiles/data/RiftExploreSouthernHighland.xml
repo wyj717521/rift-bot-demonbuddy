@@ -25,6 +25,7 @@
 		or (MarkerExistsAt(1938876100, 1055.51, 1473.244, 61.84594, 100))
 		or (MarkerExistsAt(1938876101, 1055.51, 1473.244, 61.84594, 100))
 		or (MarkerExistsAt(1938876102, 1055.51, 1473.244, 61.84594, 100))
+		or (MarkerExistsAt(1877684886, 1055.51, 1473.244, 61.84594, 100))
 		or (MarkerExistsAt(-1464312746, 1055.51, 1473.244, 61.84594, 100))">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Southern Highlands with SafeMoveTo." />
 			<SafeMoveTo questId="312429" stepId="2" x="1215" y="1453" z="41" pathPrecision="5" pathPointLimit="250" statusText="" />
