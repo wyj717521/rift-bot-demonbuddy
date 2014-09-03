@@ -76,8 +76,12 @@
 				<WaitTimer questId="1" stepId="1" waitTime="500"/>
 			</If>
 		</If>
-		<If condition="IsActiveQuestAndStep(337492, 1) and not Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC')">
-				<LogMessage quest="1" step="2" output="[Rift Bot] Not able to spawn the boss with the last level fully explored" />
+		<If condition="IsActiveQuestAndStep(337492, 1)">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Not able to spawn the boss with the last level fully explored or in common profile" />
+			<UseTownPortal questId="1" />
+			<LogMessage quest="1" step="2" output="[Rift Bot] Leave and remake" />
+			<WaitTimer questId="1" stepId="1" waitTime="500"/>
+			<LeaveGame quest="1" step="1" stayInParty="False" />
 		</If>
 		<If condition="IsActiveQuestAndStep(337492, 3)">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Boss Spawned" />
