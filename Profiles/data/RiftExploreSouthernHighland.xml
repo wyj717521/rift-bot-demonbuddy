@@ -71,11 +71,11 @@
 						   (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
 						   (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))
 						  )">
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" markerDistance="60" boxSize="35" pathPrecision="10" boxTolerance="0.15"/>
+			<ExploreDungeon questId="1" stepId="2" findExits="True" until="FullyExplored" markerDistance="60" boxSize="35" pathPrecision="10" boxTolerance="0.15"/>
 			<LoadProfile file="Rift.xml" />
 		</While>
 		<While condition="not ActorExistsAt(135248, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)">
-			<ExploreDungeon questId="337492" stepId="1" until="RiftComplete" markerDistance="60" boxSize="35" pathPrecision="10" boxTolerance="0.15"/>
+			<ExploreDungeon questId="337492" stepId="1" findExits="True" until="RiftComplete" markerDistance="60" boxSize="35" pathPrecision="10" boxTolerance="0.15"/>
 			<LoadProfile file="Rift.xml" />
 		</While>
 		<LoadProfile file="Rift.xml" />
