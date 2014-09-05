@@ -77,7 +77,19 @@
 		
 		<If condition="CurrentLevelAreaId == 352713"> <!-- Catacombs-->
 			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Catacombs @ 40/10/0.1" />
-			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" setNodesExploredAutomatically="False" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.10	">
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" setNodesExploredAutomatically="False" markerDistance="60" boxSize="40" pathPrecision="10" boxTolerance="0.10">
+			<PriorityScenes>
+				<PriorityScene sceneName="Portal"/>
+				<PriorityScene sceneName="Exit" />
+			</PriorityScenes>
+			</ExploreDungeon>
+			<MoveToMapMarker questId="1" stepId="1" isPortal="True" destinationWorldId="-1"/>
+			<LoadProfile file="Rift.xml" />	
+		</If>
+		
+		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.25" />
+			<ExploreDungeon questId="1" stepId="2" until="FullyExplored" setNodesExploredAutomatically="False" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.24">
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
