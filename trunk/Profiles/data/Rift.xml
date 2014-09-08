@@ -26,7 +26,7 @@
 		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
 		<While condition="not ActorExistsAt(345935, 360, 263, 0, 10)">
-			<GetItemFromStash questId="1" actorId="323722" />
+			<GetItemFromStash questId="1" stackCount="5" actorId="323722" />
 			<SafeMoveTo questId="312429" stepId="2" x="356" y="266" z="0" pathPrecision="5" statusText="" />
 			<OpenRift questId="312429" stepId="2" startTiered="False" />
 			<WaitTimer questId="312429" stepId="2" waitTime="2500" />
