@@ -425,8 +425,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 380081"> <!-- The Cesspools-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore The Cesspools @ 12/25/0.15" />
-			<ExploreDungeon questId="1" stepId="2" routeMode="WeightedNearestMinimapUnvisited" until="FullyExplored" markerDistance="60" boxSize="12" pathPrecision="25" boxTolerance="0.15">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore The Cesspools @ 15/35/0.25" />
+			<ExploreDungeon questId="1" stepId="2" routeMode="WeightedNearestMinimapUnvisited" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="35" boxTolerance="0.25">
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
