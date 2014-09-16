@@ -87,8 +87,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 333758"> <!-- Pandemonium Fortress-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 9/12/0.25" />
-			<ExploreDungeon questId="1" stepId="2" routeMode="WeightedNearestMinimapUnvisited" until="FullyExplored" markerDistance="60" boxSize="9" pathPrecision="12" boxTolerance="0.25">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Pandemonium Fortress @ 15/30/0.1" />
+			<ExploreDungeon questId="1" stepId="2" routeMode="WeightedNearestMinimapUnvisited" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="30" boxTolerance="0.1">
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
