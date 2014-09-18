@@ -22,6 +22,7 @@
 			<LogMessage quest="1" step="2" output="[Rift Bot] Wait for portal close" />
 		</If>
 		<While condition="ActorExistsAt(345935, 360, 263, 0, 10)">
+            <TownRun minFreeBagSlots="60"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="500" />
 		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
