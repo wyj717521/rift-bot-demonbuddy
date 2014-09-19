@@ -20,7 +20,9 @@
 		</While>
 		<If condition="ActorExistsAt(345935, 360, 263, 0, 10)">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Wait for portal close" />
-            <TownRun minFreeBagSlots="60"/>
+            <ForceTownRun questId="1"/>
+			<SafeMoveTo questId="312429" stepId="2" x="356" y="266" z="0" pathPrecision="5" statusText="" />
+			<WaitTimer questId="312429" stepId="2" waitTime="500" />
 		</If>
 		<While condition="ActorExistsAt(345935, 360, 263, 0, 10)">
 			<WaitTimer questId="312429" stepId="2" waitTime="500" />
