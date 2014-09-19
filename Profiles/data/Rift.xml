@@ -22,10 +22,11 @@
 			<LogMessage quest="1" step="2" output="[Rift Bot] Wait for portal close" />
             <ForceTownRun questId="1"/>
 			<SafeMoveTo questId="312429" stepId="2" x="356" y="266" z="0" pathPrecision="5" statusText="" />
+			<MoveToActor questId="312429" stepId="2" actorId="363744" interactRange="9" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<WaitTimer questId="312429" stepId="2" waitTime="500" />
 		</If>
 		<While condition="ActorExistsAt(345935, 360, 263, 0, 10)">
-			<WaitTimer questId="312429" stepId="2" waitTime="500" />
+			<WaitTimer questId="312429" stepId="2" waitTime="1000" />
 		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
 		<While condition="not ActorExistsAt(345935, 360, 263, 0, 10)">
