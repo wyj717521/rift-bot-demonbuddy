@@ -188,8 +188,8 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 347961"> <!-- Forgotten Battlefield-->
-			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Forgotten Battlefield @ 30/10/0.1" />
-			<ExploreDungeon questId="1" stepId="2" routeMode="WeightedNearestMinimapUnvisited" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="10" boxTolerance="0.1">
+			<LogMessage quest="1" step="2" output="[Rift Bot] Explore Forgotten Battlefield @ 30/10/0.05" />
+			<ExploreDungeon questId="1" stepId="2" routeMode="WeightedNearestMinimapUnvisited" until="FullyExplored" markerDistance="60" boxSize="30" pathPrecision="10" boxTolerance="0.05">
 			<PriorityScenes>
 				<PriorityScene sceneName="Portal"/>
 				<PriorityScene sceneName="Exit" />
