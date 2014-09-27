@@ -41,8 +41,8 @@
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<While condition="HasQuest(369900)">
-			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />
-			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="368169"/>
+			<MoveToObjective questId="1" interactAttempts="20" interactRange="20" pathPrecision="40" />
+			<MoveToActor questId="312429" stepId="2" interactAttempts="20" pathPrecision="5" actorId="368169"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000"/>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
@@ -173,6 +173,10 @@
 			</If>
 			<If condition="CurrentWorldId == 121579">
 				<ExploreDungeon questId="1" stepId="2"  until="ObjectFound" objectDistance="100" actorId="225195" boxSize="40" boxTolerance="0.05" pathPrecision="30">
+					<PriorityScenes>
+						<PriorityScene sceneName="Portal" />
+						<PriorityScene sceneName="Exit" />
+				</PriorityScenes>
 					<Objectives>
 						<Objective markerNameHash="1038619951"/>
 					</Objectives>
@@ -228,9 +232,9 @@
 		<ToggleTargeting questId="1" combat="True" killRadius="45" />
 		<WaitTimer questId="1" stepId="2" waitTime="1000" />
 		<While condition="HasQuest(369878)">
-			<MoveToObjective questId="1" interactRange="20" pathPrecision="40" />	
-			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="365097"/>
-			<MoveToActor questId="312429" stepId="2" pathPrecision="5" actorId="364559"/>
+			<MoveToObjective questId="1" interactAttempts="20" interactRange="20" pathPrecision="40" />	
+			<MoveToActor questId="312429" stepId="2" interactAttempts="20" pathPrecision="5" actorId="365097"/>
+			<MoveToActor questId="312429" stepId="2" interactAttempts="20" pathPrecision="5" actorId="364559"/>
 			<WaitTimer questId="312429" stepId="2" waitTime="1000"/>
 		</While>
 		<WaitTimer questId="1" stepId="1" waitTime="500"/>
@@ -252,6 +256,10 @@
 			</If>
 			<If condition="CurrentWorldId == 129305">
 				<ExploreDungeon questId="1" stepId="2" until="ObjectFound" objectDistance="100" actorId="210763" boxSize="40" boxTolerance="0.05" pathPrecision="30">
+					<PriorityScenes>
+						<PriorityScene sceneName="Portal" />
+						<PriorityScene sceneName="Exit" />
+					</PriorityScenes>
 					<Objectives>
 						<Objective markerNameHash="-72895048"/>
 					</Objectives>
