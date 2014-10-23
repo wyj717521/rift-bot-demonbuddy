@@ -12,16 +12,14 @@
 </TargetBlacklists>
 
 <Order>
-	<ToggleTargeting questId="312429" stepId="2" combat="True" looting="True" lootRadius="150" killRadius="80" />
+	<ToggleTargeting questId="1" combat="True" looting="True" lootRadius="150" killRadius="80" />
 	<If condition="Me.IsInTown ">
 		<While condition="CurrentWorldId != 161472">
-			<UseWaypoint waypointNumber="18" questId="1"/>
-			<WaitTimer questId="1" stepId="1" waitTime="500"/>
+			<UseWaypoint questId="312429" StepId="2" waypointNumber="18"/>
 		</While>
 		<If condition="ActorExistsAt(345935, 360, 263, 0, 10)">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Wait for portal close" />
             <ForceTownRun questId="1"/>
-			<SafeMoveTo questId="312429" stepId="2" x="356" y="266" z="0" pathPrecision="5" statusText="" />
 			<MoveToActor questId="312429" stepId="2" actorId="363744" interactRange="9" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<WaitTimer questId="312429" stepId="2" waitTime="500" />
 		</If>
@@ -31,9 +29,8 @@
 		<LogMessage quest="1" step="2" output="[Rift Bot] Open Rift" />
 		<While condition="not ActorExistsAt(345935, 360, 263, 0, 10)">
 			<GetItemFromStash questId="1" stackCount="5" actorId="323722" />
-			<SafeMoveTo questId="312429" stepId="2" x="356" y="266" z="0" pathPrecision="5" statusText="" />
-			<OpenRift questId="312429" stepId="2" startTiered="False" />
-			<WaitTimer questId="312429" stepId="2" waitTime="2500" />
+			<QTOpenRiftWrapper questId="1" />
+			<WaitTimer questId="312429" stepId="2" waitTime="500" />
 		</While>
 		<LogMessage quest="1" step="2" output="[Rift Bot] Enter Rift" />
 		<MoveToActor questId="312429" stepId="2" actorId="345935" interactRange="9" isPortal="True" destinationWorldId="-1" pathPrecision="5" pathPointLimit="250" statusText="" />
@@ -56,7 +53,9 @@
 						   (CurrentWorldId == 288804 and MarkerExistsAt(1938876100, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
 						   (CurrentWorldId == 288810 and MarkerExistsAt(1938876101, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100)) or 
 						   (CurrentWorldId == 288814 and MarkerExistsAt(1938876102, ZetaDia.Me.Position.X, ZetaDia.Me.Position.Y, ZetaDia.Me.Position.Z, 100))">
-				<MoveToMapMarker questId="312429" stepId="2" isPortal="True" destinationWorldId="-1"/>
+				<MoveToMapMarker questId="337492" stepId="1" isPortal="True" destinationWorldId="-1" />
+				<MoveToMapMarker questId="337492" stepId="13" isPortal="True" destinationWorldId="-1" />
+				<MoveToMapMarker questId="337492" stepId="16" isPortal="True" destinationWorldId="-1" />
 				<WaitTimer questId="312429" stepId="2" waitTime="500" />
 			</If>
 			<LoadProfile file="RiftExplore.xml" />
@@ -77,7 +76,7 @@
 			<LogMessage quest="1" step="2" output="[Rift Bot] Townstone found" />
 			<If condition="not Zeta.Bot.Settings.GlobalSettings.Instance.LastProfile.Contains('RBC') or CurrentWorldId == 288454">
 				<LogMessage quest="1" step="2" output="[Rift Bot] Explore current level" />
-				<ExploreDungeon questId="337492" stepId="1" until="FullyExplored" ignoreMarkers="true" boxSize="15" pathPrecision="35" boxTolerance="0.15"/>
+				<ExploreDungeon questId="337492" stepId="1" routeMode="WeightedNearestMinimapUnvisited" until="FullyExplored" ignoreMarkers="true" boxSize="15" pathPrecision="35" boxTolerance="0.15"/>
 				<WaitTimer questId="1" stepId="1" waitTime="500"/>
 			</If>
 		</If>
@@ -90,7 +89,7 @@
 		</If>
 		<If condition="IsActiveQuestAndStep(337492, 3)">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Boss Spawned" />
-			<ExploreDungeon questId="337492" stepId="3" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="35" boxTolerance="0.15"/>
+			<ExploreDungeon questId="337492" stepId="3" routeMode="WeightedNearestMinimapUnvisited" until="FullyExplored" markerDistance="60" boxSize="15" pathPrecision="35" boxTolerance="0.15"/>
 		</If>
 		<If condition="IsActiveQuestAndStep(337492, 10)">
 			<LogMessage quest="1" step="2" output="[Rift Bot] Rift boss killed" />
@@ -105,7 +104,6 @@
 	
 	<If condition="Me.IsInTown ">
 		<If condition="IsActiveQuestAndStep(337492, 10)">
-			<SafeMoveTo questId="312429" stepId="2" x="349" y="281" z="0" pathPrecision="5" statusText="" />
 			<MoveToActor questId="312429" stepId="2" actorId="363744" interactRange="9" pathPrecision="5" pathPointLimit="250" statusText="" />
 			<WaitTimer questId="1" stepId="1" waitTime="1000"/>
 		</If>
