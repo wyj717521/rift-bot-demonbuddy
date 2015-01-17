@@ -62,8 +62,17 @@
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 334821"> <!-- The Cursed Hold (Warden)-->
-			<WaitTimer questId="1" stepId="1" waitTime="2000"/>
-			<LoadProfile file="RiftExploreCursedHold.xml" />
+		<LogMessage quest="1" step="2" output="[Rift Bot] Explore The Cursed Hold (Warden) @ 20/35/0.2" />
+		<ExploreDungeon questId="1" stepId="2" routeMode="WeightedNearestMinimapUnvisited" until="FullyExplored" markerDistance="60" boxSize="20" pathPrecision="35" boxTolerance="0.2">
+			<PriorityScenes>
+				<PriorityScene sceneName="Portal"/>
+				<PriorityScene sceneName="Exit" />
+			</PriorityScenes>
+			</ExploreDungeon>
+			<MoveToMapMarker questId="337492" stepId="1" isPortal="True" destinationWorldId="-1" />
+			<MoveToMapMarker questId="337492" stepId="13" isPortal="True" destinationWorldId="-1" />
+			<MoveToMapMarker questId="337492" stepId="16" isPortal="True" destinationWorldId="-1" />
+			<LoadProfile file="Rift.xml" />
 		</If>
 		
 		<If condition="CurrentLevelAreaId == 342477"> <!-- Tower of the Damned-->
